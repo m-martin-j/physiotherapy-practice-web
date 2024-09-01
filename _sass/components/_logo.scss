@@ -5,7 +5,9 @@
   }
   img {
     max-width: unset;
+    width: 100px;
     transition: width 0.3s ease;
+    height: auto;
   }
   a {
     display: block;
