@@ -21,7 +21,9 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 3.3
-        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+        # bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+    - name: Install dependencies
+      run: bundle install --path vendor/bundle
     - name: Setup Pages
       uses: actions/configure-pages@v5
     - name: Build
@@ -37,4 +39,3 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    
