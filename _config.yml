@@ -19,6 +19,8 @@ collections:
     sort_by: weight
   team:
     output: true
+  pages:
+    output: true
 
 defaults:
   - scope:

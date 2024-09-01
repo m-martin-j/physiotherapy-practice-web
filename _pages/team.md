@@ -7,6 +7,6 @@ intro_image_absolute: true
 intro_image_hide_on_mobile: false
 ---
 
-# Meet The Team
+# Das Team
 
-Our team of qualified accountants and financial consultants can help your business at any stage of it's growth.
+Unser Team ist qualifiziert. Jeder mag Pizza.
