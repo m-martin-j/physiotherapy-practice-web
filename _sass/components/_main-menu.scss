@@ -16,11 +16,22 @@
         font-weight: normal;
         text-decoration: none;
         color: $primary;
-        &:hover {
-          text-decoration: underline;
-        }
+        // &:hover {
+        //   text-decoration: underline;
+        // }
+      }
+      &:after {
+        display: block;
+        content: '';
+        border-bottom: 1px solid darken($primary, 10%);
+        transform: scaleX(0);
+        transition: transform 225ms ease-in 0s;
+      }
+      &:not(.active):hover:after {
+        transform: scaleX(0.9);
       }
       &.active {
+        border-bottom: 1px solid darken($primary, 10%);
         > a {
           font-weight: bold;
           text-decoration: none;
