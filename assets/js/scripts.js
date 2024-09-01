@@ -7,3 +7,13 @@ menuTrigger.onclick = function() {
     menuTrigger.classList.toggle('is-active')
     body.classList.toggle('lock-scroll')
 }
+
+// shrinking the header on scroll
+window.onscroll = function() {
+  var header = document.querySelector('.header');
+  if (window.scrollY > 50) {
+    header.classList.add('header-shrink');
+  } else {
+    header.classList.remove('header-shrink');
+  }
+}
