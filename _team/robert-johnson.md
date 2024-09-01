@@ -2,7 +2,7 @@
 title: "Robert Johnson"
 date: 2018-12-20T13:44:23+10:00
 image: "images/team/vince-fleming-613817-unsplash.jpg"
-jobtitle: "Developer"
+jobtitle: "Physiotherapeut"
 linkedinurl: "https://www.linkedin.com/"
 weight: 3
 ---
