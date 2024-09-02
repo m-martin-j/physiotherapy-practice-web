@@ -5,6 +5,8 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  # workflow_dispatch:  # To trigger a workflow in a repository, the user should be a collaborator with Write permission in the repository; TODO: check
+  #   (docu: https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#workflow_dispatch)
 
 permissions:
   contents: read
