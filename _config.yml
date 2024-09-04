@@ -2,6 +2,10 @@ baseurl: '/'
 permalink: pretty
 title: Haus des Physio
 
+credits:
+  webdesign: "website by martin-j"
+  legal: "© Haus des Physio"
+
 logo:
   mobile: "images/logo/logo-mobile.svg"
   mobile_height: "32px"
