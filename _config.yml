@@ -54,4 +54,7 @@ exclude:
   - vendor/ruby/
   - LICENSE.md
   - LICENSE
+  - licences/
   - README.md
+  - builtatlightspeed.json
+  - netlify.toml
