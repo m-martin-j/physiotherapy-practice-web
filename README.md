@@ -12,3 +12,11 @@ It employs [Bootstrap](https://getbootstrap.com/) v5.3.3
 * Intro image
   * If it is changed, tweaking in [_sass/components/_intro-image.scss](_sass/components/_intro-image.scss) might become necessary.
   * It could look nice, if it is very white on the left, as the text and the call box could be placed overlapping.
+
+## Understanding Jekyll
+### Assets
+* CSS and SASS/SCSS (https://jekyllrb.com/docs/step-by-step/07-assets/)
+  1. Necessary files: /assets/css/<STYLE_SHEET_FILE_NAME>.scss (or .css)
+  1. Imports in the .scss file are typically searched in the _sass folder on root level
+  1. Jekyll builds the file /assets/css/<STYLE_SHEET_FILE_NAME>.scss to a _site/assets/css/<STYLE_SHEET_FILE_NAME>.css file
+  1. An html (index) file needs to link the built css file with the correct name using `<link href="{{ '/assets/css/<STYLE_SHEET_FILE_NAME>.css' | relative_url }}" rel="stylesheet">` in the header
