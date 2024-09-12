@@ -6,4 +6,4 @@ weight: 7
 
 Lymphdrainage besteht bei uns aus Lymphdrainage.
 
-![Accounting Services](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
+![Sample image]({{ "/images/austin-distel-nGc5RT2HmF0-unsplash.jpg" | relative_url }})

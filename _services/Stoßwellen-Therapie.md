@@ -6,4 +6,4 @@ weight: 2
 
 Stoßwellen-Therapie besteht bei uns aus Stoßwellen.
 
-![Accounting Services](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
+![Sample image]({{ "/images/austin-distel-nGc5RT2HmF0-unsplash.jpg" | relative_url }})

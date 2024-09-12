@@ -7,4 +7,4 @@ weight: 4
 Geräte-Training besteht bei uns aus Geräten.
 <!--more-->
 
-![Accounting Services](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
+![Sample image]({{ "/images/austin-distel-nGc5RT2HmF0-unsplash.jpg" | relative_url }})

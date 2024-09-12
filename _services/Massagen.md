@@ -6,6 +6,6 @@ weight: 1
 
 Massagen bestehen bei uns aus Massagen.
 
-![Accounting Services](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
+![Sample image]({{ "/images/austin-distel-nGc5RT2HmF0-unsplash.jpg" | relative_url }})
 
 > Ja, Massagen
