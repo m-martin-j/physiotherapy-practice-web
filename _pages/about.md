@@ -8,4 +8,4 @@ bodyClass: page-about
 
 Das sind wir
 
-![Accounting Services](/images/team/group_photo.jpg)
+![Team von HdP]({{ "/images/team/group_photo.jpg" | site.baseurl }})
