@@ -1,4 +1,4 @@
-baseurl: '/'
+# baseurl: '/'  # only use if different from '/'
 permalink: pretty
 title: Haus des Physio
 
