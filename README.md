@@ -20,3 +20,9 @@ It employs [Bootstrap](https://getbootstrap.com/) v5.3.3
   1. Imports in the .scss file are typically searched in the _sass folder on root level
   1. Jekyll builds the file /assets/css/<STYLE_SHEET_FILE_NAME>.scss to a _site/assets/css/<STYLE_SHEET_FILE_NAME>.css file
   1. An html (index) file needs to link the built css file with the correct name using `<link href="{{ '/assets/css/<STYLE_SHEET_FILE_NAME>.css' | relative_url }}" rel="stylesheet">` in the header
+
+## Usage
+* Jekyll
+  ```sh
+  bundle exec jekyll serve --baseurl "/"
+  ```
