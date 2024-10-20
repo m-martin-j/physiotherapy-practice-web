@@ -22,8 +22,10 @@ jobs:
       with:
         ruby-version: 3.3
         # bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+    - name: Configure Bundler
+      run: bundle config set --local path vendor/bundle
     - name: Install dependencies
-      run: bundle install --path vendor/bundle
+      run: bundle install
     - name: Setup Pages
       id: pages
       uses: actions/configure-pages@v5
