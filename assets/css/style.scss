@@ -102,10 +102,10 @@ $sub-footer-text-color: $white;
 @import "components/strip";
 @import "components/feature";
 @import "components/social";
+@import "components/team";
 // @import "components/fonts"; // Uncomment this line to self host font
 
 // Pages
-@import "pages/page-teams";
 @import "pages/page-service";
 
 body {
