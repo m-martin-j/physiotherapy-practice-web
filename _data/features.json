@@ -1,7 +1,7 @@
 [
   {
-    "title": "Gesundheit",
-    "description": "Gesund sie sind.",
+    "title": "Expertise",
+    "description": "Wir nehmen uns Zeit, Ihre Beschwerden zu verstehen und entwickeln dafür einen Behandlungsplan. Mittels optimaler Ausstattung und unserer langjährigen Erfahrung führen wir ihn gemeinsam durch.",
     "image": {
       "url": "images/features/noun_branding_1885335.svg",
       "width": 80,
@@ -9,8 +9,8 @@
     }
   },
   {
-    "title": "Zertifizierte Physio-Held*innen",
-    "description": "Heldenhaft sie sind.",
+    "title": "Persönlich",
+    "description": "Sie stehen bei uns im Mittelpunkt. Wir schneiden die Behandlungen auf Ihre Bedürfnisse und körperlichen Vorraussetzungen zu.",
     "image": {
       "url": "images/features/noun_The Process_1885341.svg",
       "width": 80,
@@ -18,8 +18,8 @@
     }
   },
   {
-    "title": "Versprechen",
-    "description": "Das versprechen wir werden.",
+    "title": "Fundiert",
+    "description": "Ziel ist es, Ihnen die bestmögliche Behandlung zu bieten. Dafür bilden wir uns ständig weiter und sind immer auf dem neuesten Stand.",
     "image": {
       "url": "images/features/noun_3d modeling_1885342.svg",
       "width": 80,
