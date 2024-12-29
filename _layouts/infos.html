@@ -17,14 +17,17 @@ layout: default
   </div>
 </div>
 
-<div class="container pt-6 pb-6">
-  {% assign info_elements = site.data.infos %}
-  {% assign sorted_info_elements = info_elements | sort: 'title' %}
+<div id="accordion-patient-infos" class="container accordion pt-6 pb-6">
+  {% assign sorted_info_elements = site.data.infos | sort: 'title' %}
   {% for info in sorted_info_elements %}
-    <div class="row">
-      <div class="col-12">
-        <div class="patient-info">
-          <h2>{{ info.title }}</h2>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button{% unless forloop.first %} collapsed{% endunless %}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ info.title }}">
+          {{ info.title }}
+        </button>
+      </h2>
+      <div id="collapse-{{ info.title }}" class="accordion-collapse collapse {% if forloop.first %} show{% endif %}" data-bs-parent="#accordion-patient-infos">
+        <div class="patient-info accordion-body">
           <p>{{ info.content }}</p>
           {% if info.bullets %}
             <ul>

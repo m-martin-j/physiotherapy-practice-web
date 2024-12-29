@@ -13,6 +13,16 @@ It employs [Bootstrap](https://getbootstrap.com/) v5.3.3
   * If it is changed, tweaking in [_sass/components/_intro-image.scss](_sass/components/_intro-image.scss) might become necessary.
   * It could look nice, if it is very white on the left, as the text and the call box could be placed overlapping.
 
+### Informationen
+* Source
+  * Markdown/Content: [_pages/infos.md](_pages/infos.md)
+  * Layout: [_layouts/infos.html](_layouts/infos.html)
+* A-Z list as Bootstrap Accordion
+  * Data from [_data/infos.yml](_data/infos.yml)
+  * Sorting via `title`
+  * `content` rendered as p
+  * `bullets` separated via `$`
+
 ## Understanding Jekyll
 ### Assets
 * CSS and SASS/SCSS (https://jekyllrb.com/docs/step-by-step/07-assets/)
