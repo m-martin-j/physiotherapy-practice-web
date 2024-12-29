@@ -5,8 +5,18 @@
   content: "Der Bau der Praxis wurde 2025 fertigstellt. Das Gebäude entspricht allen Anforderungen der Barrierefreiheit."
 - title: Parken
   content: "Parkplätze sind auf dem Grundstück vorhanden."
+  link:
+    external: True
+    url: https://www.google.com/maps
+    text: "Hier klicken, um den Standort auf Google Maps zu sehen TODO: URL anpassen."
 - title: Kassenrezept
   content: "Kassenrezepte sind willkommen."
   bullets: >
     Gültigkeit von Kassenrezepten: Die Behandlung muss innerhalb von 28 Tagen nach Ausstellung des Rezeptes begonnen werden. Sollte dies nicht möglich, muss das Ausstellungsdatum von der Arztpraxis abgeändert werden.$
     Unterbrechung der Therapie: Eine Behandlung darf nicht länger als 28 Tage unterbrochen werden, da das Rezept sonst seine Gültigkeit verliert.
+- title: Gutscheine
+  content: "Gutscheine sind erhältlich."
+  link:
+    external: false
+    url: _pages/contact.md
+    text: Für weitere Informationen hier klicken.

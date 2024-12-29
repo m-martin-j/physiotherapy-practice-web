@@ -22,7 +22,8 @@ It employs [Bootstrap](https://getbootstrap.com/) v5.3.3
   * Data from [_data/infos.yml](_data/infos.yml)
   * Sorting via `title`
   * `content` rendered as p
-  * `bullets` separated via `$`
+  * `bullets` is one string with the bullet points separated via `$`
+  * `link` needs attributes `external` set to true|false, `url` set to url|absolute path to internal file, `text` set to the url's text
 
 
 ## Development

@@ -37,6 +37,14 @@ layout: default
               {% endfor %}
             </ul>
           {% endif %}
+          {% if info.link %}
+            <a
+              {% if info.link.external %}target="_blank" rel="noopener noreferrer" href="{{info.link.url}}"
+              {% else %}href="{% link {{info.link.url}} %}"
+              {% endif %}>
+              {{ info.link.text }}
+            </a>
+          {% endif %}
         </div>
       </div>
     </div>
