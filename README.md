@@ -24,6 +24,19 @@ It employs [Bootstrap](https://getbootstrap.com/) v5.3.3
   * `content` rendered as p
   * `bullets` separated via `$`
 
+
+## Development
+* Dependencies: ruby with gems, jekyll, bundler (https://jekyllrb.com/docs/installation/)
+* Launch website serving
+  ```sh
+  bundle exec jekyll serve --baseurl "/"  # optionally add --verbose
+  ```
+* Update gems (e.g. to match the dependencies on the build system)
+  ```sh
+  bundle update
+  ```
+
+
 ## Understanding Jekyll
 ### Assets
 * CSS and SASS/SCSS (https://jekyllrb.com/docs/step-by-step/07-assets/)
