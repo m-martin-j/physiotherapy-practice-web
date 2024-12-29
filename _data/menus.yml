@@ -5,6 +5,9 @@ main:
   - name: "Leistungen"
     url: "/services/"
     weight: 2
+  - name: "Informationen"
+    url: "/info/"
+    weight: 3
   - name: "Über uns"
     url: "/about/"
     weight: 4

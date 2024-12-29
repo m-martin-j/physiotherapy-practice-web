@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<div class="intro">
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+        {{ content }}
+      </div>
+      {% if page.intro_image %}
+      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
+        <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relative_url }}" />
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<div id="accordion-patient-infos" class="container accordion pt-6 pb-6">
+  {% assign sorted_info_elements = site.data.infos | sort: 'title' %}
+  {% for info in sorted_info_elements %}
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button{% unless forloop.first %} collapsed{% endunless %}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ info.title }}">
+          {{ info.title }}
+        </button>
+      </h2>
+      <div id="collapse-{{ info.title }}" class="accordion-collapse collapse {% if forloop.first %} show{% endif %}" data-bs-parent="#accordion-patient-infos">
+        <div class="patient-info accordion-body">
+          <p>{{ info.content }}</p>
+          {% if info.bullets %}
+            <ul>
+              {% assign bullets = info.bullets | split: '$' %}
+              {% for bullet in bullets %}
+                <li>{{ bullet }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
