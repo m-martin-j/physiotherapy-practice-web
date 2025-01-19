@@ -7,8 +7,12 @@ layout: default
     <div class="col-12 col-md-8">
       <div class="team team-single">
         <h1 class="title">{{page.title}}</h1>
+        <img alt="{{ page.title }}" class="d-block d-md-none w-75 rounded mx-auto mb-2" src="{{ page.image | relative_url }}" />
         <div class="content">{{content}}</div>
       </div>
+    </div>
+    <div class="col-md-4">
+      <img alt="{{ page.title }}" class="d-none d-md-inline img-fluid mb-2" src="{{ page.image | relative_url }}" />
     </div>
   </div>
 </div>
