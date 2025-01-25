@@ -21,6 +21,10 @@
     @include media-breakpoint-up(lg) {
       border: none;
     }
+    div {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
   }
   .call-box-bottom {
     flex: auto;
@@ -34,9 +38,6 @@
   .call-name {
     font-size: 1.1rem;
     font-weight: bold;
-  }
-  .call-phone {
-    margin-bottom: 5px;
   }
   .call-email {
     a {

@@ -1,9 +1,15 @@
 <div class="call">
   <div class="call-box-top">
     {% if site.data.contact.phone %}
-    <div class="call-phone d-flex flex-row justify-content-start align-items-center gap-1">
+    <div class="d-flex flex-row justify-content-start align-items-center gap-1">
       <img src="{{ '/images/social/phone-classic.svg' | relative_url}}" title="telephone symbol" alt="telephone symbol"/>
       <strong>Telefon: </strong> {{ site.data.contact.phone }}
+    </div>
+    {% endif %}
+    {% if site.data.contact.address %}
+    <div class="d-flex flex-row justify-content-start align-items-center gap-1">
+      <img src="{{ '/images/social/location-pin.svg' | relative_url}}" title="location symbol" alt="location symbol"/>
+      <strong>Adresse: </strong> {{ site.data.contact.address }}
     </div>
     {% endif %}
     {% if site.data.contact.email %}
