@@ -1,8 +1,6 @@
 # Website
 
-This website is based on the Serif theme (credit: https://github.com/zerostaticthemes/jekyll-serif-theme).
-
-It employs [Bootstrap](https://getbootstrap.com/) v5.3.3
+Copyright (c) 2024-2025 Martin Trat.
 
 
 ## Pages
@@ -51,3 +49,8 @@ It employs [Bootstrap](https://getbootstrap.com/) v5.3.3
   ```sh
   bundle exec jekyll serve --baseurl "/"
   ```
+
+## Acknowledgments
+This website is based on the Serif theme (credit: https://github.com/zerostaticthemes/jekyll-serif-theme, [license](licenses/jekyll-serif-theme).
+
+It employs [Bootstrap](https://getbootstrap.com/) v5.3.3 ([license](licenses/bootstrap)).
