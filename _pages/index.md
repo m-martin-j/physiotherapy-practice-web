@@ -9,6 +9,6 @@ intro_image_hide_on_mobile: false
 show_call_box: true
 ---
 
-# Haus des Physio
+# Main Vital
 
-Riecht gut, läuft gut.
+Ihre Praxis für Physiotherapie in Bamberg.
