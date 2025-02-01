@@ -1,5 +1,5 @@
 ---
-title: Über uns
+title: Über Carmen
 permalink: "/about/"
 layout: about
 description: About
@@ -7,9 +7,9 @@ intro_image: "images/team/group_photo.jpg"
 intro_image_absolute: false
 intro_image_hide_on_mobile: false
 section-intro-heading: >
-  Über uns
+  Über Carmen
 section-intro-text: >
-  Das sind wir
+  Physiotherapie für Dich
 section-praxis-heading: >
   Die Praxis
 section-praxis-text: >

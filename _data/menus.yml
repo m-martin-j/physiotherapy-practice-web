@@ -8,7 +8,7 @@ main:
   - name: "Informationen"
     url: "/info/"
     weight: 3
-  - name: "Über uns"
+  - name: "Über Carmen"
     url: "/about/"
     weight: 4
   - name: "Kontakt"

@@ -23,6 +23,17 @@ Copyright (c) 2024-2025 Martin Trat.
   * `bullets` is one string with the bullet points separated via `$`
   * `link` needs attributes `external` set to true|false, `url` set to url|absolute path to internal file, `text` set to the url's text
 
+### About
+(Über Carmen)
+* Team info
+  * Source
+    * Markdown: [_pages/about.md](_pages/about.md), [_team](_team)
+    * Layout: [_layouts/about.html](_layouts/about.html)
+    * Media: [images/team](images/team)
+  * Team member container (suitable for a team of 2 or more persons) - currently hidden (see Layout)
+    * Reads from member Markdown files
+    * Style with highlight personnel: Set `promoted: true` in member Markdown file
+* Practice info
 
 ## Development
 * Dependencies: ruby with gems, jekyll, bundler (https://jekyllrb.com/docs/installation/)
