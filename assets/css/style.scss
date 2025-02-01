@@ -1,15 +1,16 @@
 ---
 ---
 
+@use 'sass:color';
+
 // Colors
-// https://malen-lernen.org/gruentoene-namen/
-$dummy: 'nothing';
-$primary: #4cbb17;  // Kelly Green
-$primary-dark: #4c9141;  // Maigrün
-$secondary: #f88379;
+$primary: #618914ff;
+$primary-dark: color.scale($primary, $blackness: 10%);
+$secondary: #b09c8d;
+$secondary_light: color.scale($secondary, $lightness: 75%);
 $black: #2f2f41;
 $white: #ffffff;
-$white-offset: #f6f6ffd0;
+$white-offset: color.scale($white, $lightness: -5%);
 $steel: #5a5c5a;
 
 // Links
@@ -117,4 +118,5 @@ body {
     font-size: 16px;
     line-height: 1.3;
   }
+  background-color: $secondary_light;
 }

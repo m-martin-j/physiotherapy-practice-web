@@ -1,11 +1,11 @@
 .header {
   color: $primary;
-  background-color: #ffffff;
+  background-color: color.scale($secondary_light, $lightness: -2%);
   display: flex;
   justify-content: space-between;
   align-items: center;
   // box-shadow: 0 1px 15px rgba(50, 50, 93, 0.2);
-  border-bottom: 1px solid $white-offset;
+  border-bottom: 1px solid color.scale($secondary_light, $lightness: -3%);
   padding: 10px 0px;
   transition: padding 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   .container {
@@ -21,7 +21,8 @@
   &.header-shrink {
     padding: 5px 0px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: color.scale($secondary_light, $alpha: -50%);
+    border-bottom: none;
   }
 }
 .lock-scroll {

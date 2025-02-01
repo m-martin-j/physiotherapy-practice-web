@@ -1,7 +1,3 @@
-.strip {
-  background: white;
-  background-repeat: no-repeat;
-}
 .strip-white {
   background-color: white;
 }
@@ -27,6 +23,9 @@
 }
 .strip-secondary {
   background-color: $secondary;
+}
+.strip-secondary-light {
+  background-color: $secondary_light;
 }
 
 .strip-diagonal-right {
