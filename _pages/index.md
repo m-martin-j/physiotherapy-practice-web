@@ -11,4 +11,8 @@ show_call_box: true
 
 # Main Vital
 
-Ihre Praxis für Physiotherapie in Bamberg.
+Ihre Praxis für Physiotherapie in Hallstadt-Dörfleins
+
+<h2 class="text-center w-100">
+- die Seite befindet sich aktuell im Aufbau -
+</h2>

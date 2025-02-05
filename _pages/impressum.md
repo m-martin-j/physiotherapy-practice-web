@@ -5,6 +5,10 @@ layout: impressum
 description: Impressum
 ---
 
+<h2 class="text-center w-100">
+- die Seite befindet sich aktuell im Aufbau -
+</h2>
+
 Carmen Eichelsdörfer<br>
 Dörfleinser Str. 60<br>
 96103 Hallstadt
