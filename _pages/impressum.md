@@ -11,13 +11,11 @@ description: Impressum
 
 Carmen Eichelsdörfer<br>
 Dörfleinser Str. 60<br>
-96103 Hallstadt
+96103 Hallstadt-Dörfleins
 
 Tel.: +49 xxx xxxx xxx
 
-Verantwortlicher der Website gem. § 55 Abs. 2 RStV: Martin Trat.
-
-<strong>Haftungsausschluss</strong><br>
+**Haftungsausschluss**<br>
 Der Betreiber haftet für die Inhalte der Website, nicht jedoch für Inhalte weiterführender Links. Demnach gilt eine Haftungsbeschränkung für externe Links.
 Es gilt ferner das Urheberrecht.
 <!-- TODO: Zahlreiche weitere Angaben -->
