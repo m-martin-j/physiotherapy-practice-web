@@ -30,12 +30,13 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.2
+          ruby-version: 3.3
           bundler-cache: true
 
       - name: Build Ruby assets
 # uncomment the following lines if you want to add environment variables for this step
-#        env:
+        env:
+           JEKYLL_ENV: production
 #          MY_ENV_VAR: value-for-my-env-var
 #          MY_SECRET_ENV_VAR: ${{ secrets.MY_SECRET }} # here you can find information how to create secrets: https://docs.github.com/en/actions/security-guides/encrypted-secrets
         run: bundle exec jekyll build
