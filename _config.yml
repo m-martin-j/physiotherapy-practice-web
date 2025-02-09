@@ -1,4 +1,4 @@
-# baseurl: '/'  # only use if different from '/'
+baseurl: '/'
 permalink: pretty
 title: Main Vital
 
