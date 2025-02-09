@@ -15,7 +15,7 @@
         display: inline-block;
         font-weight: normal;
         text-decoration: none;
-        color: $primary;
+        color: $header-text-color;
         // &:hover {
         //   text-decoration: underline;
         // }
@@ -23,7 +23,7 @@
       &:after {
         display: block;
         content: '';
-        border-bottom: 1px solid darken($primary, 10%);
+        border-bottom: 1px solid darken($header-text-color, 10%);
         transform: scaleX(0);
         transition: transform 225ms ease-in 0s;
       }
@@ -31,7 +31,7 @@
         transform: scaleX(0.9);
       }
       &.active {
-        border-bottom: 1px solid darken($primary, 10%);
+        border-bottom: 1px solid darken($header-text-color, 10%);
         > a {
           font-weight: bold;
           text-decoration: none;
