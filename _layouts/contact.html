@@ -4,14 +4,36 @@ layout: default
 bodyClass: "page-contact"
 ---
 
-<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
-    <div class="row justify-content-start">
-        <div class="col-12 col-md-8">
-            <div class="service service-single">
+<div class="intro">
+    <div class="container">
+        <div class="row justify-content-start">
+            <div class="col-12 col-md-7 col-lg-6">
                 <h1 class="title">{{page.title}}</h1>
+                <p>{{ page.section-intro-text }}</p>
                 {% include call.html show_button=false %}
-                <div class="content mt-4">{{content}}</div>
             </div>
         </div>
     </div>
 </div>
+
+<div class="strip-white">
+    <div class="container pt-6 pb-6">
+        <div class="content">{{content}}</div>
+    </div>
+</div>
+
+<!-- TODO: Add contact form
+<div class="strip-secondary-light">
+    <div class="container pt-6 pb-6">
+        TBD
+    </div>
+</div>
+-->
+
+<!-- TODO: Add Maps integration
+<div class="strip-white">
+    <div class="container pt-6 pb-6">
+        TBD
+    </div>
+</div>
+-->

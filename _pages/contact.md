@@ -3,6 +3,8 @@ title: Kontakt
 permalink: "/contact/"
 layout: contact
 description: Contact
+section-intro-text: >
+  Wir freuen uns über Ihre Kontaktaufnahme
 ---
 
 Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae crimen habet Priamum nec.
