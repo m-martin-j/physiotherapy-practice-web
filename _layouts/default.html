@@ -5,7 +5,10 @@
   <meta charset="utf-8">
   <title>{% if page.title != "SITE.TITLE" %}{{page.title}}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/png" href="{{ '/images/favicon-32x32.svg' | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ '/images/favicon-96x96.png' | relative_url }}" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="{{ '/images/favicon.svg' | relative_url }}" />
+  <link rel="shortcut icon" href="{{ '/images/favicon.ico' | relative_url }}" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/apple-touch-icon.png' | relative_url }}" />
   <!-- Google Fonts CDN -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
