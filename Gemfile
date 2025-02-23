@@ -9,4 +9,4 @@ gem "csv"
 gem "base64"
 gem "sass-embedded", "1.77.5"
 
-gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+gem 'wdm', '>= 0.1.0', platforms: [:x64_mingw]
