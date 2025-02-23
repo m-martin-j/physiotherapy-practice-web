@@ -38,7 +38,7 @@ Copyright (c) 2024-2025 Martin Trat.
 
 ## Style
 ### Fonts
-* This project uses Arial as base font and self-hosted Quicksand as heading font
+* This project uses Arial as base font (Helvetica only if the user happens to have it installed) and self-hosted Quicksand as heading font.
 * For using variable fonts (such as Quicksand), see e.g. [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_fonts/Variable_fonts_guide).
 * Source
   * pre-load font in HTML: [_layouts/default.html](_layouts/default.html)
@@ -73,7 +73,7 @@ Copyright (c) 2024-2025 Martin Trat.
   ```
 
 ## Acknowledgments
-This website is based on the Serif theme (credit: https://github.com/zerostaticthemes/jekyll-serif-theme, [license](licenses/jekyll-serif-theme).
+This website is based on the Serif theme (credit: https://github.com/zerostaticthemes/jekyll-serif-theme, [license](licenses/jekyll-serif-theme)).
 
 It employs the following software:
 * [Bootstrap](https://getbootstrap.com/) v5.3.3 ([license](licenses/bootstrap))
