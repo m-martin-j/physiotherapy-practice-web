@@ -66,7 +66,7 @@ $sub-footer-text-color: $white;
 // @import "bootstrap/navbar";
 // @import "bootstrap/card";
 @import "bootstrap/accordion";
-// @import "bootstrap/breadcrumb";
+@import "bootstrap/breadcrumb";
 // @import "bootstrap/pagination";
 // @import "bootstrap/badge";
 // @import "bootstrap/alert";
@@ -111,6 +111,7 @@ $sub-footer-text-color: $white;
 @import "components/team";
 @import "components/fonts"; // self host font
 @import "components/accordion";
+@import "components/breadcrumb";
 
 // Pages
 @import "pages/page-service";
