@@ -8,6 +8,6 @@ intro_image_absolute: true
 intro_image_hide_on_mobile: false
 ---
 
-# Unsere Leistungen erfüllen alle Wünsche
+# Leistungen
 
-Wir haben schon ein paar Leistungen.
+Unsere Leistungen erfüllen alle Wünsche.
