@@ -75,4 +75,6 @@ Copyright (c) 2024-2025 Martin Trat.
 ## Acknowledgments
 This website is based on the Serif theme (credit: https://github.com/zerostaticthemes/jekyll-serif-theme, [license](licenses/jekyll-serif-theme).
 
-It employs [Bootstrap](https://getbootstrap.com/) v5.3.3 ([license](licenses/bootstrap)).
+It employs the following software:
+* [Bootstrap](https://getbootstrap.com/) v5.3.3 ([license](licenses/bootstrap))
+* Quicksand font ([license](licenses/Quicksand))
