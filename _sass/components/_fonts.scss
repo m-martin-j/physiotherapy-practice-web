@@ -1,7 +1,6 @@
 @font-face {
-	font-family: 'Playfair Display';
+	font-family: 'Quicksand';
 	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
-	src: local(''), url('../fonts/playfair-display.woff2') format('woff2');
+	font-weight: 300 700;
+	src: local(''), url('/assets/fonts/Quicksand-VariableFont_wght.ttf') format('truetype-variations');
 }

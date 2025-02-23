@@ -22,7 +22,7 @@ $link-hover-decoration: underline;
 
 // Fonts
 $font-family-base: Helvetica, Arial, sans-serif, -apple-system;
-$font-family-heading: "Playfair Display", serif, -apple-system;
+$font-family-heading: Quicksand, sans-serif, -apple-system;
 
 // Header
 $header-background-color: $primary;
@@ -110,7 +110,7 @@ $sub-footer-text-color: $white;
 @import "components/feature";
 @import "components/social";
 @import "components/team";
-// @import "components/fonts"; // Uncomment this line to self host font
+@import "components/fonts"; // self host font
 
 // Pages
 @import "pages/page-service";

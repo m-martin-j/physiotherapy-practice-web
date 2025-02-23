@@ -35,6 +35,17 @@ Copyright (c) 2024-2025 Martin Trat.
     * Style with highlight personnel: Set `promoted: true` in member Markdown file
 * Practice info
 
+
+## Style
+### Fonts
+* This project uses Arial as base font and self-hosted Quicksand as heading font
+* For using variable fonts (such as Quicksand), see e.g. [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_fonts/Variable_fonts_guide).
+* Source
+  * pre-load font in HTML: [_layouts/default.html](_layouts/default.html)
+  * process font in scss: [_sass/components/_fonts.scss](_sass/components/_fonts.scss)
+  * set font-family-related variable in scss: [assets/css/style.scss](assets/css/style.scss)
+
+
 ## Development
 * Dependencies: ruby with gems, jekyll, bundler (https://jekyllrb.com/docs/installation/)
 * Launch website serving
