@@ -28,7 +28,7 @@ layout: default
           </button>
         </h2>
         <div id="collapse-{{ info.title }}" class="accordion-collapse collapse {% if forloop.first %} show{% endif %}" data-bs-parent="#accordion-patient-infos">
-          <div class="patient-info accordion-body">
+          <div class="accordion-body">
             <p>{{ info.content }}</p>
             {% if info.bullets %}
               <ul>

@@ -16,7 +16,7 @@ Copyright (c) 2024-2025 Martin Trat.
   * Markdown/Content: [_pages/infos.md](_pages/infos.md)
   * Layout: [_layouts/infos.html](_layouts/infos.html)
 * Component A-Z list as Bootstrap Accordion
-  * Style from [_sass/components/_patient-info.scss](_sass/components/_patient-info.scss)
+  * Style from [_sass/components/_accordion.scss](_sass/components/_accordion.scss)
   * Data from [_data/infos.yml](_data/infos.yml)
   * Sorting via `title`
   * `content` rendered as p

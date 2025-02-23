@@ -92,7 +92,6 @@ $sub-footer-text-color: $white;
 // Components
 @import "components/type";
 @import "components/page";
-@import "components/patient-info";
 @import "components/header";
 @import "components/footer";
 @import "components/sub-footer";
@@ -111,6 +110,7 @@ $sub-footer-text-color: $white;
 @import "components/social";
 @import "components/team";
 @import "components/fonts"; // self host font
+@import "components/accordion";
 
 // Pages
 @import "pages/page-service";
