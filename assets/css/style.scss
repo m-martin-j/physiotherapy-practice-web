@@ -4,7 +4,7 @@
 @use 'sass:color';
 
 // Other
-$baseurl: "{{ site.baseurl }}";
+$baseurl: if("{{ site.baseurl }}" == "/", "", "{{ site.baseurl }}");
 
 // Colors
 $primary: #618914ff;
