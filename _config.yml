@@ -1,4 +1,5 @@
 baseurl: '/'
+destination: _site
 permalink: pretty
 title: Main Vital
 
