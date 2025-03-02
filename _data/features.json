@@ -1,7 +1,7 @@
 [
   {
-    "title": "Expertise",
-    "description": "Wir nehmen uns Zeit, Ihre Beschwerden zu verstehen und entwickeln dafür einen Behandlungsplan. Mittels optimaler Ausstattung und unserer langjährigen Erfahrung führen wir ihn gemeinsam durch.",
+    "title": "Fokus",
+    "description": "Mit einem ganzheitlichen Ansatz betrachten wir Ihre Gesundheit als Einheit - weit über die reine Symptombehandlung hinaus.Wir setzen den Fokus auf die Ursache Ihrer Beschwerden und behandeln sie nachhaltig.",
     "image": {
       "url": "images/features/noun_branding_1885335.svg",
       "width": 80,
@@ -9,8 +9,8 @@
     }
   },
   {
-    "title": "Persönlich",
-    "description": "Sie stehen bei uns im Mittelpunkt. Wir schneiden die Behandlungen auf Ihre Bedürfnisse und körperlichen Vorraussetzungen zu.",
+    "title": "Expertise",
+    "description": "Unser Anspruch ist es, Ihnen die bestmögliche Behandlung zu bieten. Aus diesem Grund erweitern wir kontinuierlich unser Wissen und bleiben immer auf dem neusten Stand der aktuellen Therapie.",
     "image": {
       "url": "images/features/noun_The Process_1885341.svg",
       "width": 80,
@@ -18,8 +18,8 @@
     }
   },
   {
-    "title": "Fundiert",
-    "description": "Ziel ist es, Ihnen die bestmögliche Behandlung zu bieten. Dafür bilden wir uns ständig weiter und sind immer auf dem neuesten Stand.",
+    "title": "Persönlich",
+    "description": "Jede Behandlung ist so einzigartig wie der Mensch, der sie erhält. Wir schneiden die Behandlungen individuell aufIhre Bedürfnisse und körperlichen Voraussetzungen zu.",
     "image": {
       "url": "images/features/noun_3d modeling_1885342.svg",
       "width": 80,
