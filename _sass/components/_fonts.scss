@@ -3,6 +3,6 @@
 	font-style: normal;
 	font-weight: 300 700;
 	src: local(''),
-		url('/assets/fonts/Quicksand-VariableFont_wght.woff2') format('woff2'),
-		url('/assets/fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+		url($baseurl + 'assets/fonts/Quicksand-VariableFont_wght.woff2') format('woff2'),
+		url($baseurl + 'assets/fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
 }

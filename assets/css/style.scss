@@ -3,6 +3,9 @@
 
 @use 'sass:color';
 
+// Other
+$baseurl: "{{ site.baseurl }}";
+
 // Colors
 $primary: #618914ff;
 $primary-dark: color.scale($primary, $blackness: 10%);
