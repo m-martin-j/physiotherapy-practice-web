@@ -62,4 +62,4 @@ jobs:
         strip_components: 1
     environment:
       name: deploy-target
-      url: ${{ secrets.DEPLOY_URL }}
+      # url: ${{ secrets.DEPLOY_URL }}
