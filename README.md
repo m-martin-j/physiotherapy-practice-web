@@ -76,6 +76,17 @@ Copyright (c) 2024-2025 Martin Trat.
   bundle exec jekyll serve --baseurl "/"
   ```
 
+
+## Hosting
+### Apache
+#### Redirect
+* http to https: This is achieved via a `.htaccess` file, placed inside the web root directory (e.g. `/var/www/your_domain/.htaccess` or at parent locations - see also the documentation of [Apache.org](https://httpd.apache.org/docs/trunk/howto/htaccess.html#when)), with the following content:
+  ```
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+  ``` 
+
 ## Acknowledgments
 This website is based on the Serif theme (credit: https://github.com/zerostaticthemes/jekyll-serif-theme, [license](licenses/jekyll-serif-theme)).
 
