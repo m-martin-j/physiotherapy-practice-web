@@ -24,7 +24,7 @@ Copyright (c) 2024-2025 Martin Trat.
   * Data from [_data/infos.yml](_data/infos.yml)
   * Sorting via `title`
   * `content` rendered as p
-  * `bullets` is one string with the bullet points separated via `$`
+  * `bullets` is an array of bullet point strings
   * `link` needs attributes `external` set to true|false, `url` set to url|absolute path to internal file, `text` set to the url's text
 
 ### About
@@ -85,7 +85,7 @@ Copyright (c) 2024-2025 Martin Trat.
   RewriteEngine On
   RewriteCond %{HTTPS} off
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-  ``` 
+  ```
 
 ## Acknowledgments
 This website is based on the Serif theme (credit: https://github.com/zerostaticthemes/jekyll-serif-theme, [license](licenses/jekyll-serif-theme)).

@@ -23,19 +23,21 @@ layout: default
     <div id="accordion-patient-infos" class="accordion">
       {% assign sorted_info_elements = site.data.infos | sort: 'title' %}
       {% for info in sorted_info_elements %}
+        {% assign collapse_indexer = forloop.index %}
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button{% unless forloop.first %} collapsed{% endunless %}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ info.title }}">
+            <button class="accordion-button{% unless forloop.first %} collapsed{% endunless %}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ collapse_indexer }}">
               {{ info.title }}
             </button>
           </h2>
-          <div id="collapse-{{ info.title }}" class="accordion-collapse collapse {% if forloop.first %} show{% endif %}" data-bs-parent="#accordion-patient-infos">
+          <div id="collapse-{{ collapse_indexer }}" class="accordion-collapse collapse {% if forloop.first %} show{% endif %}" data-bs-parent="#accordion-patient-infos">
             <div class="accordion-body">
-              <p>{{ info.content }}</p>
+              {% if info.content %}
+                <p>{{ info.content }}</p>
+              {% endif %}
               {% if info.bullets %}
                 <ul>
-                  {% assign bullets = info.bullets | split: '$' %}
-                  {% for bullet in bullets %}
+                  {% for bullet in info.bullets %}
                     <li>{{ bullet }}</li>
                   {% endfor %}
                 </ul>
