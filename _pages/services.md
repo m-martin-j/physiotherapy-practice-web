@@ -11,4 +11,4 @@ role: services
 
 # Leistungen
 
-Unsere Leistungen erfüllen alle Wünsche.
+In unserer Praxis passen wir jede Behandlung an Ihr individuelles Beschwerdebild an, um bestmögliche und langanhaltende Therapieergebnisse zu erzielen.
