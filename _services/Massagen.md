@@ -76,11 +76,11 @@ Diese wohltuende Massage konzentriert sich gezielt auf den Schulter-, Nacken- un
 Außerdem bieten wir weitere Massagen an, die für die Behandlung diverser Beschwerden des Bindegewebes sowie der Muskeln ausgerichtet sind.
 
 <p class="text-center">
-  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#massagen_1" aria-expanded="false" aria-controls="massagen_1">
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#massagen_3" aria-expanded="false" aria-controls="massagen_3">
     mehr erfahren
   </button>
 </p>
-<div class="collapse" id="massagen_1">
+<div class="collapse" id="massagen_3">
   <div class="card card-body" markdown="1">
 
 ### Faszientherapie
