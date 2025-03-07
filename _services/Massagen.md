@@ -77,7 +77,7 @@ Außerdem bieten wir weitere Massagen an, die für die Behandlung diverser Besch
 
 <p class="text-center">
   <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#massagen_1" aria-expanded="false" aria-controls="massagen_1">
-    mehr Infos hierzu
+    mehr erfahren
   </button>
 </p>
 <div class="collapse" id="massagen_1">
