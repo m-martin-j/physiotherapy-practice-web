@@ -17,6 +17,7 @@
   }
   .call-box-top {
     flex: 1 0 auto;
+    color: $black;
     div {
       margin: 5px 0px;
     }
@@ -40,10 +41,6 @@
         width: auto;
       }
     }
-  }
-  .call-name {
-    font-size: 1.1rem;
-    font-weight: bold;
   }
   .call-email {
     a {

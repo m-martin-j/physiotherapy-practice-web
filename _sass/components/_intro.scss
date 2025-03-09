@@ -10,10 +10,9 @@
     padding-bottom: 140px;
   }
   h1 {
-    color: $black;
     font-size: 42px;
     font-weight: 500;
-    line-height: 1.2;
+    margin-bottom: 1.2rem;
     @include media-breakpoint-up(md) {
       width: 80%;
       font-size: 48px;
@@ -25,14 +24,9 @@
   h2 {
     width: 80%;
     font-size: 1.2rem;
-    line-height: 1.4;
-    margin-bottom: 30px;
-    color: $black;
   }
   p {
     font-size: 1.2rem;
-    line-height: 1.5;
-    color: $steel;
     @include media-breakpoint-up(md) {
       width: 80%;
     }

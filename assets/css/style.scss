@@ -15,7 +15,7 @@ $secondary_light: color.scale($secondary, $lightness: 75%);
 $black: #2f2f41;
 $white: #ffffff;
 $white-offset: color.scale($white, $lightness: -5%);
-$steel: #5a5c5a;
+$steel: #494d49;
 
 // Links
 $link-color: $primary;
@@ -121,12 +121,6 @@ $sub-footer-text-color: $white;
 @import "pages/page-impressum";
 
 body {
-  font-size: 16px;
-  line-height: 1.2;
   font-family: $font-family-base;
   background-color: $secondary_light;
-  @include media-breakpoint-up(md) {
-    font-size: 16px;
-    line-height: 1.3;
-  }
 }
