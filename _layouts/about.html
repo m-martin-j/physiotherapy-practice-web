@@ -7,8 +7,18 @@ bodyClass: "page-about"
   <div class="container">
     <div class="row justify-content-start">
       <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
-        <h1>{{ page.section-intro-heading }}</h1>
-        <p>{{ page.section-intro-text }}</p>
+        <h1 class="title">{{page.title}}</h1>
+        <p>Hallo, ich bin Carmen Eichelsdörfer,</p>
+        <div class="font-family-heading qualifications my-5" data-inviewport="fly-in">
+          <p>Physiotherapeutin</p>
+          <p>Heilpraktikerin</p>
+          <p>Osteopathin in Ausbildung</p>
+        </div>
+        <p>
+          Mit einer fundierten Ausbildung und jahrelanger Erfahrung in der Physiotherapie und Heilpraktik, widme ich mich der ganzheitlichen Behandlung meiner Patienten. Im Rahmen meiner Arbeit biete ich eine Vielzahl von Therapiemethoden an, um Ihre Beschwerden gezielt und nachhaltig zu lindern.
+        </p>
+        <!-- <h1>{{ page.section-intro-heading }}</h1> -->
+        <!-- <p>{{ page.section-intro-text }}</p> -->
       </div>
       {% if page.intro_image %}
       <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
@@ -21,11 +31,50 @@ bodyClass: "page-about"
 
 <div class="strip-white">
   <div class="container pt-6 pb-6">
-    <h2>{{ page.section-praxis-heading }}</h2>
-    <p>{{ page.section-praxis-text }}</p>
+    <h2>
+      Meine Qualifikationen
+    </h2>
+    <p>
+      <ul>
+        <li>Manuelle Therapie</li>
+        <li>Manuelle Lymphdrainage</li>
+        <li>Krankengymnastik am Gerät</li>
+        <li>Kinesiotaping</li>
+        <li>Myoreﬂextrainer</li>
+        <li>BALLance Concepts</li>
+      </ul>
+    </p>
+    <p>
+      Mein Behandlungsspektrum umfasst vor allem klassische Erkrankungen aus dem orthopädischen und chirurgischen Bereichen. Ich kombiniere verschiedene Therapieansätze, um Ihnen die bestmögliche Behandlung zukommen zu lassen und Ihre Genesung aktiv zu unterstützen.
+      <br>
+      Ich freue mich darauf, Sie in meiner Praxis begrüßen zu dürfen und Sie auf Ihrem Weg zu mehr Wohlbefinden und Gesundheit zu begleiten!
+    </p>
+    <!-- <h2>{{ page.section-praxis-heading }}</h2> -->
+    <!-- <p>{{ page.section-praxis-text }}</p> -->
   </div>
 </div>
 
+<div class="strip-secondary-light">
+  <div class="container pt-6 pb-6">
+    <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+      <h2>Die Praxis</h2>
+      <p><em>Zu finden in Hallstadt-Dörﬂeins --<br>Modern, großzügig und barrierefrei!</em></p>
+    </div>
+    <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative" data-inviewport="fly-in">
+      <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ 'images/practice/building_outer.jpg' | relative_url }}" />
+    </div>
+    <p>
+      Wir freuen uns, Ihnen die neu eröffnete Praxis vorzustellen. Auf einer großzügigen Fläche von 160qm bieten wir Ihnen moderne, gut ausgestattete Räumlichkeiten, die den idealen Rahmen für eine individuelle, speziell auf Ihre Bedürfnisse abgestimmte und effektive Physiotherapie schaffen.
+      <br>
+      Das Gebäude verfügt über mehrere abgeschlossene Behandlungsräume, die Ihnen während Ihrer Therapie den nötigen Raum und die Privatsphäre bieten. Zusätzlich haben wir einen großen Therapieraum, der speziell für Übungen und rehabilitative Maßnahmen ausgelegt ist. Hier können Sie aktiv an Ihrer Genesung arbeiten.
+      Der Zugang ist barrierefrei.
+      Für unsere Patienten sind zudem Parkplätze direkt vor dem Eingang vorgesehen, damit das Ankommen so einfach und komfortabel wie möglich ist. Unser Ziel ist es, Ihnen eine angenehme und effektive Therapieumgebung zu bieten.
+      <br>
+      Wir freuen uns darauf, Sie bald bei uns begrüßen zu dürfen. Möchten Sie mehr über unsere Praxis erfahren oder einen Termin vereinbaren? Wir stehen Ihnen jederzeit zur Verfügung!
+    </p>
+    {% include call.html show_button=true %}
+  </div>
+</div>
 <!-- Das Team
 <div class="strip-secondary-light">
   <div class="container pt-6 pb-6">

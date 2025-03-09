@@ -6,3 +6,10 @@
 		url($baseurl + '/assets/fonts/Quicksand-VariableFont_wght.woff2') format('woff2'),
 		url($baseurl + '/assets/fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
 }
+
+.font-family-heading {
+	p, span, h1, h2, h3, h4, h5, h6 {
+  	font-family: $font-family-heading;
+		font-weight: normal;
+	}
+}
