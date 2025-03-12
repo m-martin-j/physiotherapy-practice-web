@@ -13,8 +13,7 @@ section-haftungsausschluss-text: >
 - die Seite befindet sich aktuell im Aufbau -
 </h2>
 
-Carmen Eichelsdörfer<br>
-Dörfleinser Str. 60<br>
-96103 Hallstadt-Dörfleins
+{{ site.data.contact.boss_name }}<br>
+{{ site.data.contact.address | replace: ',', '' }}
 
-Tel.: +49 xxx xxxx xxx
+Tel.: {{ site.data.contact.phone }}
