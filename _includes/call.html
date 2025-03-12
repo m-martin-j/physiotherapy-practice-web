@@ -14,7 +14,7 @@
     {% endif %}
     {% if site.data.contact.email %}
     <div class="call-email d-flex flex-row justify-content-start align-items-center gap-1">
-      <a href="mailto:{{ site.data.contact.email }}"><img src="{{ '/images/social/email.svg' | relative_url}}" title="email symbol" alt="email symbol"/></a>
+      <a href="mailto:{{ site.data.contact.email }}"><img src="{{ site.data.contact.email_image_path | relative_url}}" title="email symbol" alt="email symbol"/></a>
       <strong>E-Mail: </strong>
       <a href="mailto:{{ site.data.contact.email }}">
         {{ site.data.contact.email }}

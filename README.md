@@ -40,6 +40,23 @@ Copyright (c) 2024-2025 Martin Trat.
 * Practice info
 
 
+## Footer/Sub-Footer
+### Footer
+TBD
+
+### Sub-Footer
+#### Socials
+* Source
+  * Data: Data is included based on [_data/social.json](_data/social.json); expected fields per item are:
+    ```json
+    "name": "<name of the social element>",
+    "link": "<link to the social element's web presence/URI>",
+    "image": "images/social/<image file, svg preferred>"
+    ```
+    * special case: If the `"name"` value equals to `"E-Mail"`, no further json fields are evaluated. Further data is read from [_data/contact.yml](_data/contact.yml).
+  * Layout: [_includes/social.html](_includes/social.html)
+
+
 ## Style
 ### Fonts
 * This project uses Arial as base font (Helvetica only if the user happens to have it installed) and self-hosted Quicksand as heading font.

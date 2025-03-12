@@ -1,5 +1,12 @@
 <div class="social">
   {% for item in site.data.social %}
-    <a href="{{ item.link }}" target="blank"><img src="{{ item.image | relative_url }}" title="{{ item.name }}" alt="{{ item.name }}" /></a>
+    {% if item.name == "E-Mail" %}
+      {% assign item_link = "mailto:" | append: site.data.contact.email %}
+      {% assign item_image = site.data.contact.email_image_path %}
+    {% else %}
+      {% assign item_link = item.link %}
+      {% assign item_image = item.image %}
+    {% endif %}
+      <a href="{{ item_link }}" target="blank"><img src="{{ item_image | relative_url }}" title="{{ item.name }}" alt="{{ item.name }}" /></a>
   {% endfor %}
 </div>
