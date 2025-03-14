@@ -17,8 +17,6 @@ bodyClass: "page-about"
         <p class="w-100">
           Mit einer fundierten Ausbildung und jahrelanger Erfahrung in der Physiotherapie und Heilpraktik, widme ich mich der ganzheitlichen Behandlung meiner Patienten. Im Rahmen meiner Arbeit biete ich eine Vielzahl von Therapiemethoden an, um Ihre Beschwerden gezielt und nachhaltig zu lindern.
         </p>
-        <!-- <h1>{{ page.section-intro-heading }}</h1> -->
-        <!-- <p>{{ page.section-intro-text }}</p> -->
       </div>
       {% if page.intro_image %}
       <div class="col-12 col-md-5 order-1 order-md-2 position-relative">
@@ -53,8 +51,6 @@ bodyClass: "page-about"
           <br>
           Ich freue mich darauf, Sie in meiner Praxis begrüßen zu dürfen und Sie auf Ihrem Weg zu mehr Wohlbefinden und Gesundheit zu begleiten!
         </p>
-        <!-- <h2>{{ page.section-praxis-heading }}</h2> -->
-        <!-- <p>{{ page.section-praxis-text }}</p> -->
       </div>
     </div>
   </div>
@@ -93,8 +89,8 @@ bodyClass: "page-about"
 <!-- Das Team
 <div class="strip-secondary-light">
   <div class="container pt-6 pb-6">
-    <h2>{{ page.section-team-heading }}</h2>
-    <p>{{ page.section-team-text }}</p>
+    <h2>Das Team</h2>
+    <p>Unser Team ist qualifiziert. Jeder mag Pizza.</p>
     {% assign promoted_teams = site.team | where: "promoted", true | sort: "weight" %}
     {% if promoted_teams.size != 0 %}
       <div class="row pb-6">
