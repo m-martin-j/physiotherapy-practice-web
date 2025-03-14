@@ -7,15 +7,15 @@
 $baseurl: if("{{ site.baseurl }}" == "/", "", "{{ site.baseurl }}");
 
 // Colors
-$primary: #618914ff;
+$primary: #618914ff;  // deviating from logo color #768e09ff
 $primary-dark: color.scale($primary, $blackness: 10%);
 // $primary-light: color.scale($primary, $lightness: 85%);
-$secondary: #b09c8d;
-$secondary_light: color.scale($secondary, $lightness: 75%);
+$secondary: #b9ada2;
+$secondary_light: color.scale($secondary, $lightness: 60%);
 $black: #2f2f41;
 $white: #ffffff;
 $white-offset: color.scale($white, $lightness: -5%);
-$steel: #494d49;
+$steel: #3b3b3b;
 
 // Links
 $link-color: $primary;
