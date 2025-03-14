@@ -1,0 +1,36 @@
+
+@keyframes flyIn {  // see also script.js
+  from {
+    opacity: 0;
+    transform: translateX(var(--fly-in-start-x, 40%));
+    // set --fly-in-start-x via style; defaults to 40% (from the right) (from the left: set e.g. -40%)
+  }
+  to {
+    opacity: 1.0;
+    transform: translateX(0);
+  }
+}
+
+[data-inviewport="fly-in"] {
+  p, img {
+    opacity: 0;
+  }
+}
+[data-inviewport="fly-in"].is-inViewport {
+  p, img {
+    animation: flyIn 1.2s ease forwards;
+    position: relative;
+  }
+  p:nth-child(1) {
+    animation-delay: 0.0s;
+    left: 5%
+  }
+  p:nth-child(2) {
+    animation-delay: 0.3s;
+    left: 15%
+  }
+  p:nth-child(3) {
+    animation-delay: 0.6s;
+    left: 25%
+  }
+}
