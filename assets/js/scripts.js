@@ -26,17 +26,14 @@ window.onscroll = function() {
 
 // keyframes flyIn animation
 const inViewport = (entry) => {
-  entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+  entry.target.classList.add("is-inViewport");
 };
 
 const handleIntersectionOnce = (entries, observer) => {
   entries.forEach(entry => {
-    inViewport(entry);
-    if (entry.isIntersecting && windowLoaded) {
+    if (entry.isIntersecting) {
+      inViewport(entry);
       observer.unobserve(entry.target);  // handle intersection only once
-      // TODO: problem; if refreshed with the element in view,
-      //    the animation will trigger a second time
-      //    and only then, the observer will unobserve the element.
     }
   })
 };
