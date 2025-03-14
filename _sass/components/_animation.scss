@@ -2,7 +2,8 @@
 @keyframes flyIn {  // see also script.js
   from {
     opacity: 0;
-    transform: translateX(40%);
+    transform: translateX(var(--fly-in-start-x, 40%));
+    // set --fly-in-start-x via style; defaults to 40% (from the right) (from the left: set e.g. -40%)
   }
   to {
     opacity: 1.0;
