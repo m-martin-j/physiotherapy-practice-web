@@ -14,6 +14,7 @@ section-haftungsausschluss-text: >
 </h2>
 
 {{ site.data.contact.boss_name }}<br>
-{{ site.data.contact.address | replace: ',', '' }}
+{{ site.data.contact.address.street }}<br>
+{{ site.data.contact.address.zip }} {{ site.data.contact.address.city }}
 
 Tel.: {{ site.data.contact.phone }}

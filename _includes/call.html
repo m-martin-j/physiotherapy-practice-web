@@ -9,7 +9,7 @@
     {% if site.data.contact.address %}
     <div class="d-flex flex-row justify-content-start align-items-center gap-1">
       <img src="{{ '/images/social/location-pin.svg' | relative_url}}" title="location symbol" alt="location symbol"/>
-      <strong>Adresse: </strong> {{ site.data.contact.address }}
+      <strong>Adresse: </strong> {{ site.data.contact.address.street }}<br>{{ site.data.contact.address.zip }} {{ site.data.contact.address.city }}
     </div>
     {% endif %}
     {% if site.data.contact.email %}

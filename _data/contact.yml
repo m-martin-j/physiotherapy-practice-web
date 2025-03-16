@@ -1,5 +1,8 @@
 email: 'kontakt@mainvital-physiotherapie.de'
 email_image_path: '/images/social/email.svg'
 phone: 'xxx xxxx xxx'
-address: 'Dörfleinser Str. 60,<br>96103 Hallstadt-Dörfleins'
+address:
+  street: 'Dörfleinser Str. 60'
+  zip: '96103'
+  city: 'Hallstadt-Dörfleins'
 boss_name: 'Carmen Eichelsdörfer'
