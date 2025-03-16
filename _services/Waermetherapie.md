@@ -12,7 +12,7 @@ Die Wärmetherapie in der Physiotherapie ist eine Behandlungsform um Schmerzen z
 
 ## Wärmeanwendungen
 
-TODO: kurzer Überblick
+Die Wärmetherapie dient oft als Vorbereitung auf weitere physiotherapeutische Maßnahmen, indem sie die Muskulatur erwärmt und elastischer macht, wodurch anschließende Übungen, Lockerungen und Mobilisationen effektiver durchgeführt werden können.
 
 <p class="text-center">
   <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#waermetherapie_1" aria-expanded="false" aria-controls="waermetherapie_1">
@@ -33,5 +33,3 @@ Heiße Rolle ist eine spezielle Wärmeanwendung in der Physiotherapie, die Wärm
 
   </div>
 </div>
-
-Die Wärmetherapie dient oft als Vorbereitung auf weitere physiotherapeutische Maßnahmen, indem sie die Muskulatur erwärmt und elastischer macht, wodurch anschließende Übungen, Lockerungen und Mobilisationen effektiver durchgeführt werden können.
