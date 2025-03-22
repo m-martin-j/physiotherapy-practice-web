@@ -23,6 +23,8 @@ collections:
     permalink: /about/team/:name/
   pages:
     output: true
+  downloads:
+    output: true
 
 defaults:
   - scope:

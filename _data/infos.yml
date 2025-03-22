@@ -7,7 +7,7 @@
   content: "Vor der ersten Behandlung ist es notwendig, einen Anamnesebogen auszufüllen, um gesundheitliche Besonderheiten zu erfassen. Das Formular kann hier heruntergeladen werden und bereits ausgefüllt mitgebracht werden:"
   link:
     external: false
-    url: _pages/contact.md
+    url: _downloads/Anamnesebogen_Praxis_Main_Vital.pdf
     text: "Anamnesebogen herunterladen"
 - title: Barrierefrei
   content: "Unsere Praxis ist barrierefrei zugänglich und verfügt über Parkplätze direkt vor der Eingangstür."
@@ -23,7 +23,7 @@
   content: "Vor Ihrem ersten Termin bitten wir Sie, unsere Datenschutzverordnung zu unterzeichnen. Ihre persönlichen Daten werden streng vertraulich behandelt und nicht an Dritte weitergegeben. Sie haben die Möglichkeit, die Datenschutzvordnung direkt in unserer Praxis zu unterzeichnen oder sie hier herunterzuladen:"
   link:
     external: false
-    url: _pages/contact.md
+    url: _downloads/Datenschutzverordnung_Praxis_Main_Vital.pdf
     text: "Datenschutzverordnung herunterladen"
 - title: Erstbefund
   content: "Beim Erstbefund analysieren wir Ihre Beschwerden, Krankengeschichte und körperliche Verfassung. So schaffen wir die Basis für Ihren optimalen Behandlungsplan."
