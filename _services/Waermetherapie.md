@@ -6,7 +6,7 @@ weight: 6
 
 Gezielte Wärmetherapie um Muskelverspannungen zu lösen, die Durchblutung zu fördern und Schmerzen zu lindern.
 
-Die Wärmetherapie in der Physiotherapie ist eine Behandlungsform um Schmerzen zu lindern, Muskelverspannungen zu lösen und die Durchblutung zu fördern. Dabei wird Wärme entweder lokal oder regional angewendet, um den Stoffwechsel anzuregen, die Gewebedurchblutung zu verbessern und den Heilungsprozess zu unterstützen.
+Bei der Wärmetherapie wird wohltuende Wärme gezielt an bestimmten Körperstellen oder großflächig in einer gesamten Region angewendet. Neben der Durchblutung wird der Stoffwechsel sanft angeregt, und der natürliche Heilungsprozess des Körpers auf effektive Weise unterstützt.
 
 ![Sample image]({{ "/images/austin-distel-nGc5RT2HmF0-unsplash.jpg" | relative_url }})
 

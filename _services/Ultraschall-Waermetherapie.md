@@ -16,10 +16,12 @@ Während der Behandlung wird ein spezieller Schallkopf über die betroffene Kör
 - Sehnen- und Bänderverletzungen
 - Narben- und Gewebsverklebungen
 - Schleimbeutelentzündungen
-- Bandscheiben- und Wirbelsäulenbeschwerden Wirkung der Therapie
+- Bandscheiben- und Wirbelsäulenbeschwerden
+
+**Wirkung der Therapie:**
 - Fördert die Durchblutung und den Stoffwechsel
 - Löst Verspannungen und Verhärtungen
 - Reduziert Schmerzen und Entzündungen
 - Beschleunigt die Regeneration von Gewebe
 
-Da die Behandlung sanft und schmerzfrei ist, wird sie oft mit anderen physiotherapeutischen Maßnahmen kombiniert, um eine ganzheitliche Wirkung zu erzielen.
+Die Behandlung ist sanft und schonend. Sie wird daher oft mit anderen physiotherapeutischen Maßnahmen harmonisch kombiniert, um eine ganzheitliche Wirkung zu erzielen.

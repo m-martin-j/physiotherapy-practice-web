@@ -73,7 +73,7 @@ Diese wohltuende Massage konzentriert sich gezielt auf den Schulter-, Nacken- un
 
 
 ## Spezielle Massagetechniken
-Außerdem bieten wir weitere Massagen an, die für die Behandlung diverser Beschwerden des Bindegewebes sowie der Muskeln ausgerichtet sind.
+Darüber hinaus bieten wir weitere spezifische Massagen an, die auf die Behandlung diverser Beschwerden des Bindegewebes sowie der Muskeln ausgerichtet sind.
 
 <p class="text-center">
   <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#massagen_3" aria-expanded="false" aria-controls="massagen_3">

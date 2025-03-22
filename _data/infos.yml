@@ -1,6 +1,6 @@
 
 - title: Anfahrt
-  content: "Unsere Praxis befindet sich in der Dörfleinser Str. 60, 96103 Hallstadt-Dörfleins und ist sowohl mit dem Auto als auch mit öffentlichen Verkehrsmitteln gut erreichbar. Die Buslinie 904 hält an der nahegelegenen Haltestelle „Dörfleinser Straße“, nur 70 Meter von der Praxis entfernt. Parkmöglichkeiten stehen Ihnen direkt vor dem Praxiseingang zur Verfügung."
+  content: "Unsere Praxis befindet sich in der Dörfleinser Str. 60, 96103 Hallstadt-Dörfleins und ist sowohl mit dem Auto als auch mit öffentlichen Verkehrsmitteln gut erreichbar. Die Buslinie 904 hält an der nahegelegenen Haltestelle „Dörfleins Mitte“, nur 70 Meter von der Praxis entfernt. Parkmöglichkeiten stehen Ihnen direkt vor dem Praxiseingang zur Verfügung."
 - title: Anmeldung
   content: "Um einen reibungslosen Ablauf zu gewährleisten, bitten wir Sie, Ihren Termin frühzeitig telefonisch, per E-Mail oder online zu vereinbaren. Falls erforderlich, bringen Sie bitte Ihre Versichertenkarte sowie eine ärztliche Verordnung zur Behandlung mit."
 - title: Anamnesebogen
@@ -8,7 +8,7 @@
   link:
     external: false
     url: _pages/contact.md
-    text: "TODO: ANAMNESEBOGEN EINFÜGEN."
+    text: "Anamnesebogen herunterladen"
 - title: Barrierefrei
   content: "Unsere Praxis ist barrierefrei zugänglich und verfügt über Parkplätze direkt vor der Eingangstür."
 - title: Behandlung
@@ -20,11 +20,11 @@
 - title: "Dauer der Behandlung"
   content: "Die Dauer der Behandlung richtet sich nach der ärztlichen Verordnung sowie den optional von Ihnen in Anspruch genommen privaten Therapieleistungen."
 - title: Datenschutz
-  content: "Vor Ihrem ersten Termin bitten wir Sie, unsere Datenschutzverordnung zu unterzeichnen. Ihre persönlichen Daten werden streng vertraulich behandelt und nicht an Dritte weitergegeben. Sie haben die Möglichkeit, die Datenschutzvordnung direkt in unserer Praxis zu unterzeichnen oder sie hier als Download herunterzuaden:"
+  content: "Vor Ihrem ersten Termin bitten wir Sie, unsere Datenschutzverordnung zu unterzeichnen. Ihre persönlichen Daten werden streng vertraulich behandelt und nicht an Dritte weitergegeben. Sie haben die Möglichkeit, die Datenschutzvordnung direkt in unserer Praxis zu unterzeichnen oder sie hier herunterzuladen:"
   link:
     external: false
     url: _pages/contact.md
-    text: "TODO: DATENSCHUTZ EINFÜGEN."
+    text: "Datenschutzverordnung herunterladen"
 - title: Erstbefund
   content: "Beim Erstbefund analysieren wir Ihre Beschwerden, Krankengeschichte und körperliche Verfassung. So schaffen wir die Basis für Ihren optimalen Behandlungsplan."
 - title: Folgeverordnung
@@ -70,7 +70,11 @@
 - title: Stornierung
   content: "Sollten Sie einen Termin nicht wahrnehmen können, bitten wir Sie, uns mindestens 24 Stunden im Voraus zu informieren. Bei späteren Absagen müssen wir Ihnen 100% des Preises der gebuchten Leistung in Rechnung stellen. Zur Terminabsage können Sie gerne unseren Anrufbeantworter oder unser Kontaktformular nutzen."
 - title: Terminabsprache
-  content: "Terminabsprachen erfolgen ausschließlich telefonisch oder per Mail. Kontaktieren Sie uns dazu gerne unter: TODO: TELEFONNUMMER / MAILADRESSE / KONTAKTFORMULAR"
+  content: "Terminabsprachen erfolgen ausschließlich telefonisch oder per Mail. Kontaktieren Sie uns dazu gerne:"
+  link:
+    external: false
+    url: _pages/contact.md
+    text: "Kontaktdetails anzeigen"
 - title: Therapeutenerkrankung
   content: "Im Falle einer Erkrankung des Therapeuten sind wir leider gezwungen, Ihren Termin abzusagen und einen Ersatztermin zu vereinbaren."
 - title: Tiere
