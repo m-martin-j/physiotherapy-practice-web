@@ -37,6 +37,11 @@ Copyright (c) 2024-2025 Martin Trat.
   * Team member container (suitable for a team of 2 or more persons) - currently hidden (see Layout)
     * Reads from member Markdown files
     * Style with highlight personnel: Set `promoted: true` in member Markdown file
+    * `_config.yml`: Output of the `_team` folder must be enabled:
+      ```yml
+      team:
+        output: true
+      ```
 * Practice info
 
 
