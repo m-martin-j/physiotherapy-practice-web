@@ -18,22 +18,38 @@
   .call-box-top {
     flex: 1 0 auto;
     color: $black;
+    @include media-breakpoint-up(lg) {
+      width: 100%;
+    }
+    @include media-breakpoint-up(xl) {
+      width: auto;
+    }
     div {
       margin: 5px 0px;
     }
   }
+  .call-category {
+    width: auto;
+    @include media-breakpoint-up(lg) {
+      width: 30%;
+    }
+  }
+  .call-value {
+    width: auto;
+    font-size: calc(0.9rem + 0.2vw);
+    @include media-breakpoint-up(sm) {
+      font-size: 1.0rem;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 70%;
+    }
+  }
   .call-box-bottom {
-    margin-top: 20px;
-    padding-top: 20px;
     width: 100%;
-    text-align: center;
     border-top: 1px solid $white-offset;
     @include media-breakpoint-up(xl) {
-      text-align: left;
       border: none;
       width: auto;
-      margin-top: 0;
-      padding-top: 0;
     }
     .button {
       width: 35%;
