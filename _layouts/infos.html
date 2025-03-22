@@ -44,9 +44,12 @@ layout: default
               {% endif %}
               {% if info.link %}
                 <a
-                  {% if info.link.external %}target="_blank" rel="noopener noreferrer" href="{{info.link.url}}"
+                  {% if info.link.external %}href="{{info.link.url}}"
                   {% else %}href="{% link {{info.link.url}} %}"
-                  {% endif %}>
+                  {% endif %}
+                  {% if info.link.external or info.link.file %}target="_blank" rel="noopener noreferrer"
+                  {% endif %}
+                  >
                   {{ info.link.text }}
                 </a>
               {% endif %}
