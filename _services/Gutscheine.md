@@ -5,12 +5,12 @@ weight: 0
 featured: true
 ---
 
-Machen Sie Ihren Lieben eine Freude und verschenken Sie Gesundheit!
+Das perfekte Geschenk für jeden Anlass!
 
-Für verschiedene Leistungen, die wir anbieten, können Sie auch Gutscheine erwerben.
+Verschenken Sie Freude mit unseren exklusiven Gutscheinen - ideal für Geburtstage, Jubiläen oder als spontane Aufmerksamkeit. Wir bieten sowohl flexible Wertgutscheine als auch speziell abgestimmte Gutscheine für ausgewählte Behandlungen an. Die Beschenkten können aus unserem vielfältigen Therapie- und Massageangebot wählen und sich die ideale Behandlung aussuchen.
 
 ![Sample image]({{ "/images/austin-distel-nGc5RT2HmF0-unsplash.jpg" | relative_url }})
 
-Kommen Sie auf uns zu:
+Bestellen Sie Ihren Gutschein ganz bequem über unser Kontaktformular oder telefonisch und machen Sie jemandem eine unvergessliche Freude!
 
-Kontakt
+CALL BOX
