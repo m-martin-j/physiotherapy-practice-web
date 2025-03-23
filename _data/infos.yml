@@ -31,6 +31,12 @@
   content: "Beim Erstbefund analysieren wir Ihre Beschwerden, Krankengeschichte und körperliche Verfassung. So schaffen wir die Basis für Ihren optimalen Behandlungsplan."
 - title: Folgeverordnung
   content: "Falls erforderlich, bitten wir Sie, sich frühzeitig um eine Folgeverordnung in Absprache mit Ihrer/m Therapeut/in zu kümmern. So vermeiden Sie unnötige Pausen zwischen den Behandlungssequenzen."
+- title: Gutscheine
+  content: "Verschenken Sie Gesundheit und Wohlbefinden! Gutscheine für ausgewählte Leistungen oder einfach Wertgutscheine sind erhältlich:"
+  link:
+    external: false
+    url: _services/Gutscheine.md
+    text: "Mehr zu Gutscheinen"
 - title: Hausbesuche
   content: "Auf Wunsch und bei entsprechender ärztlichen Verordnung kommen wir gerne zu Ihnen nach Hause, um die Behandlung durchzuführen."
 - title: Individuelle Therapie

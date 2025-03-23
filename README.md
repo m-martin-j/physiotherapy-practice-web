@@ -6,9 +6,6 @@ Copyright (c) 2024-2025 Martin Trat.
 ## Pages
 * If the the head title of the page shall correspond to `site.title`, use `title: SITE.TITLE` in the front matter of a page. (Function maintained in [_layouts/default.html](_layouts/default.html))
 * The `role` attribute is currently only used for page `services`. It enables identifying a page to be included as parent page in breadcrumbs.
-* breadcrumbs
-  * the divider is set in [_sass/_bootstrap-variables.scss](_sass/_bootstrap-variables.scss)
-  * Layout: [_sass/components/_breadcrumb.scss](_sass/components/_breadcrumb.scss)
 
 ### Home Page
 * Intro image
@@ -26,6 +23,13 @@ Copyright (c) 2024-2025 Martin Trat.
   * `content` rendered as p
   * `bullets` is an array of bullet point strings
   * `link` needs attributes `external` set to true|false, `url` set to url|absolute path to internal file, `text` set to the url's text
+
+### Leistungen
+* breadcrumbs
+  * the divider is set in [_sass/_bootstrap-variables.scss](_sass/_bootstrap-variables.scss)
+  * Layout: [_sass/components/_breadcrumb.scss](_sass/components/_breadcrumb.scss)
+* frontmatter attributes
+  * `voucher`: if set to true, the service is displayed separately from other services on the service overview page; currently, it is not displayed on the landing page; only the first page with `voucher` set to true is processed --> only one page should be assigned this attribute with value true - other will not be shown!
 
 ### About
 (Über Carmen)
