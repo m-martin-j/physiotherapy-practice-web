@@ -25,11 +25,17 @@ Copyright (c) 2024-2025 Martin Trat.
   * `link` needs attributes `external` set to true|false, `url` set to url|absolute path to internal file, `text` set to the url's text
 
 ### Leistungen
+* Source
+  * Markdown/Content: files in folder [_services](_services)
+  * Layout overview: [_layouts/services.html](_layouts/services.html)
+  * Layout individual service page: [_layouts/service.html](_layouts/service.html)
 * breadcrumbs
   * the divider is set in [_sass/_bootstrap-variables.scss](_sass/_bootstrap-variables.scss)
   * Layout: [_sass/components/_breadcrumb.scss](_sass/components/_breadcrumb.scss)
 * frontmatter attributes
   * `voucher`: if set to true, the service is displayed separately from other services on the service overview page; currently, it is not displayed on the landing page; only the first page with `voucher` set to true is processed --> only one page should be assigned this attribute with value true - other will not be shown!
+  * `show_call_button`: if set to true, a call button will be displayed on the bottom of the page.
+  * `call_button_text`: if set, the button default text is replaced.
 
 ### About
 (Über Carmen)

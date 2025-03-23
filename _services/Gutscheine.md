@@ -3,7 +3,8 @@ title: "Gutscheine"
 date: 2019-03-28T15:14:54+10:00
 weight: 0
 voucher: true
-show_call_box: true
+show_call_button: true
+call_button_text: Gutschein anfragen
 ---
 
 Das perfekte Geschenk für jeden Anlass!

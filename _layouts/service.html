@@ -23,4 +23,11 @@ bodyClass: "page-service"
       </div>
     </div>
   </div>
+  {% if page.show_call_button %}
+  <div class="row justify-content-center">
+    <div class="col-auto">
+      <a href="{% link _pages/contact.md %}" class="button button-primary">{{ page.call_button_text | default: "Kontakt" }}</a>
+    </div>
+  </div>
+  {% endif %}
 </div>
