@@ -8,7 +8,7 @@ Eine physiotherapeutische Behandlungsmethode, die hochfrequente Schallwellen nut
 
 Während der Behandlung wird ein spezieller Schallkopf über die betroffene Körperregion geführt, der Ultraschallwellen in das Gewebe sendet. Diese Wellen erzeugen eine mikroskopische Gewebebewegung, wodurch Wärme entsteht. Die dadurch angeregte Durchblutung sorgt für eine bessere Versorgung der Zellen mit Nährstoffen und Sauerstoff, was Verspannungen löst, Schmerzen lindert und Entzündungen reduziert.
 
-![Sample image]({{ "/images/austin-distel-nGc5RT2HmF0-unsplash.jpg" | relative_url }})
+![Längliches weiß-schwarzes Gerät mit metallenem Kopf, das von einer Person auf die Wade einer anderen Person aufgelegt wird. Zudem sind zwei Pflaster über und unter der behandelten Stelle zu erkennen.]({{ "/images/services/Ultraschall-Waermetherapie.jpeg" | relative_url }})
 
 **Die Ultraschall-Wärmetherapie wird häuﬁg eingesetzt bei:**
 - Muskelverspannungen und -verhärtungen

@@ -8,7 +8,7 @@ Gezielte Wärmetherapie um Muskelverspannungen zu lösen, die Durchblutung zu f�
 
 Bei der Wärmetherapie wird wohltuende Wärme gezielt an bestimmten Körperstellen oder großflächig in einer gesamten Region angewendet. Neben der Durchblutung wird der Stoffwechsel sanft angeregt, und der natürliche Heilungsprozess des Körpers auf effektive Weise unterstützt.
 
-![Sample image]({{ "/images/austin-distel-nGc5RT2HmF0-unsplash.jpg" | relative_url }})
+![Das Knie einer Person wird von beiden Händen einer weiteren Person berührt. Rotes Licht einer Wärmelampe ist zu sehen. Die Frau hat ein Herz-Tattoo.]({{ "/images/services/Waermetherapie.jpg" | relative_url }})
 
 ## Wärmeanwendungen
 

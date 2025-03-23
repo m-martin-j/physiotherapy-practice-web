@@ -25,7 +25,7 @@ In dieser Therapie wird eine Eiskompresse, sorgfältig in ein Tuch gewickelt und
   </div>
 </div>
 
-![Sample image]({{ "/images/austin-distel-nGc5RT2HmF0-unsplash.jpg" | relative_url }})
+![Person, die einen blauen kühlenden Beutel mit weißer Kappe auf den vorderen Schulterbereich auflegt]({{ "/images/services/Kaeltetherapie.jpg" | relative_url }})
 
 Mit Kältereizen können neben akuten Entzündungen und Ödemen, auch die Begleiterscheinungen degenerativer Gelenk- und Wirbelsäulenerkrankungen, Weichteilrheumatismus oder Traumata gut behandelt werden.
 
