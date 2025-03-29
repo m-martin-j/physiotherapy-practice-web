@@ -10,7 +10,7 @@ Termin beim Physiotherapeuten ohne vorherigen Arztbesuch!
 
 Haben Sie akute Schmerzen oder möchten Sie präventiv etwas für Ihre Gesundheit tun? Bei uns können Sie ohne vorherigen Arztbesuch direkt eine Behandlung beginnen.
 
-![Stapel von Krankenkassenrezepten, auf denen ein Kugelschreiber liegt]({{ "/images/services/Behandlung-ohne-Rezept.jpeg" | relative_url }})
+![Stapel von Krankenkassenrezepten, auf denen ein Kugelschreiber liegt]({{ "/images/services/Behandlung-ohne-Rezept_md.jpeg" | relative_url }})
 
 Dank der Expertise unserer qualifizierten Heilpraktikerin und Physiotherapeutin erhalten Sie eine individuell abgestimmte Therapie, die gezielt Ihre Beschwerden lindert und langfristig Problemen vorbeugt.
 

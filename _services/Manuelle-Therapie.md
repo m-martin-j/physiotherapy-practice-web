@@ -8,7 +8,7 @@ Eine spezialisierte, physiotherapeutische Methode zur Verbesserung der Beweglich
 
 Verspannte oder überlastete Strukturen werden gezielt entlastet, um das Gleichgewicht im Körper wiederherzustellen. Die manuelle Therapie unterstützt die ganzheitliche Funktion des Bewegungsapparates, indem sie gezielt auf Gelenke, Muskulatur, Bindegewebe und neurale Strukturen einwirkt. Sie fördert die Durchblutung, verbessert die Spannungsregulation der Muskulatur und trägt dazu bei, das harmonische Zusammenspiel von Gelenkrezeptoren, Sehnen- und Muskelrezeptoren zu optimieren. So wird die Beweglichkeit gesteigert und das körperliche Wohlbefinden nachhaltig gefördert.
 
-![Griff einer Physiotherapeutin. Ihre linke Hand umfasst die rechte Schulter einer Patientin und ihre rechte Hand den rechten Ellenbogen dieser.]({{ "/images/services/Manuelle-Therapie.jpeg" | relative_url }})
+![Griff einer Physiotherapeutin. Ihre linke Hand umfasst die rechte Schulter einer Patientin und ihre rechte Hand den rechten Ellenbogen dieser.]({{ "/images/services/Manuelle-Therapie_md.jpeg" | relative_url }})
 
 **Die Behandlung umfasst sowohl aktive als auch passive Techniken, darunter:**
 * Dehnung verkürzter, muskulärer und neuraler Strukturen zur Verbesserung der Beweglichkeit
