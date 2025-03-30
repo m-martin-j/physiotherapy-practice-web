@@ -11,4 +11,4 @@ show_call_box: true
 
 # Main Vital
 
-Ihre Praxis für Physiotherapie in {{ site.data.contact.address.city }}.
+Ihre Praxis für Physiotherapie <span class="d-none d-lg-inline"><br></span>in {{ site.data.contact.address.city }}.
