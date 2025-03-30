@@ -1,5 +1,5 @@
 
-@keyframes flyIn {  // see also script.js
+@keyframes flyIn {
   from {
     opacity: 0;
     transform: translateX(var(--fly-in-start-x, 40%));

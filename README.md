@@ -81,6 +81,16 @@ TBD
   * process font in scss: [_sass/components/_fonts.scss](_sass/components/_fonts.scss)
   * set font-family-related variable in scss: [assets/css/style.scss](assets/css/style.scss)
 
+### Animations
+* fly-in
+  * Source
+    * SCSS: [_sass/components/_animation.scss](_sass/components/_animation.scss) - `@keyframes flyIn`, `data-inviewport`
+    * JavaScript: [assets/js/scripts.js](assets/js/scripts.js)
+    * example HTML: [_layouts/about.html](_layouts/about.html)
+  * Usage:
+    * globally, any CSS class can use the flyIn animation keyframes
+    * `--fly-in-start-x` can be optionally overwritten. E.g. negative percentage values to fly in from the left.
+    * Optionally, html elements can be assigned the `data-inviewport` field. Then, the animation will only be activated once it is visible in the viewport via JavaScript.
 
 ## Development
 * Dependencies: ruby with gems, jekyll, bundler (https://jekyllrb.com/docs/installation/)
