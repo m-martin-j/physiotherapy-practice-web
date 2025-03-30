@@ -2,14 +2,13 @@
   .intro-image-absolute {
     @include media-breakpoint-up(md) {
       left: -90px;
-      bottom: -30px;
+      bottom: -90px;
     }
     @include media-breakpoint-up(lg) {
-      bottom: -110px;
+      bottom: -170px;
     }
     @include media-breakpoint-up(xl) {
       width: 120%;
-      bottom: -145px;
     }
   }
 }
