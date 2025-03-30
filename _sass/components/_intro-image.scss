@@ -14,7 +14,7 @@
   @include media-breakpoint-up(sm) {
   }
   @include media-breakpoint-up(md) {
-    mask-image: linear-gradient(to right, rgb(0, 0, 0, 1.0) 90%, transparent 100%);
+    mask-image: linear-gradient(to top right, rgb(0, 0, 0) 55%, transparent 100%);
     position: absolute;
     bottom: -15px;
     left: -100px;
