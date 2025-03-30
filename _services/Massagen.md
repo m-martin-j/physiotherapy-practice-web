@@ -16,33 +16,43 @@ Unsere medizinischen Massagen sind gezielt darauf ausgerichtet, muskuläre Versp
 Durch präzise Therapie- und Grifftechniken wird die Muskulatur sanft gelockert, der Stoffwechsel angeregt und die regenerative Heilung des Gewebes unterstützt.
 
 
-<p class="text-center">
-  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#massagen_1" aria-expanded="false" aria-controls="massagen_1">
-    mehr erfahren
-  </button>
-</p>
-<div class="collapse" id="massagen_1">
-  <div class="card card-body" markdown="1">
-
-### Klassische Massagetherapie
-Gezielte Streichungen, Knetungen, Klopf- und Druckbewegungen lockern die Muskulatur,lösen Verspannungen und fördern die Durchblutung, wodurch Stoffwechsel und Geweberegeneration unterstützt werden.
-Gleichzeitig verbessert die Massage den Abtransport von Stoffwechselendprodukten und optimiert die Sauerstoffversorgung.
-
-### Bindegewebsmassage
-Die Bindegewebsmassage ist eine spezielle manuelle Reiztherapie, die über gezielte Zug- und Dehnreize an der Haut und dem Unterhautgewebe reflektorisch auf innere Organe, Muskeln und das Nervensystem wirkt. Durch diese Technik können Durchblutung,
-Stoffwechsel und Spannungen im Gewebe reguliert werden. Die Bindegewebsmassage kann ihre Wirkung besonders gut in Kombination mit der Ultraschall-Wärmetherapie entfalten.
-
-### Periostmassage
-Die Periostmassage ist eine Technik, bei der punktuelle, rhythmische Druckmassagen über dem Periost angewendet werden, um die Durchblutung und den Stoffwechsel zu fördern. Mit dieser Methode wird angestrebt, die Heilung von Knochenverletzungen zu unterstützen und zu beschleunigen.
-
-### Segmentmassage
-Bei dieser Massage werden modifizierte Grifftechniken wie Knetungen, Friktionen und Vibrationen entlang der Wirbelsäule angewendet, die alle Gewebeschichten zwischen Haut und Periost erfassen. Dies fördert die Durchblutung und den Stoffwechsel, löst Verspannungen und verbessert durch gezielte Reflexwirkungen die Funktion der inneren
-Organe.
-
-### Colonmassage
-Eine sanfte therapeutische Massagetechnik, die gezielt den Dickdarm anspricht und durch kreisende Bewegungen der Bauchwand die Darmperistaltik anregt. Ziel der Behandlung ist es, die Verdauung zu fördern, Beschwerden wie Verstopfung und Blähungen zu lindern und den natürlichen Stoffwechselprozess zu unterstützen.
-
-  </div>
+<div id="accordion-massagen-1" class="accordion">
+  {% assign services_details_elements = site.data.services-details.massagen.medi %}
+  {% for element in services_details_elements %}
+    {% assign collapse_indexer = forloop.index %}
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ collapse_indexer }}">
+          {{ element.title }}
+        </button>
+      </h2>
+      <div id="collapse-{{ collapse_indexer }}" class="accordion-collapse collapse" data-bs-parent="#accordion-massagen-1">
+        <div class="accordion-body">
+          {% if element.content %}
+            <p>{{ element.content }}</p>
+          {% endif %}
+          {% if element.bullets %}
+            <ul>
+              {% for bullet in element.bullets %}
+                <li>{{ bullet }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+          {% if element.link %}
+            <a
+              {% if element.link.external %}href="{{element.link.url}}"
+              {% else %}href="{% link {{element.link.url}} %}"
+              {% endif %}
+              {% if element.link.external or element.link.file %}target="_blank" rel="noopener noreferrer"
+              {% endif %}
+              >
+              {{ element.link.text }}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
 </div>
 
 
