@@ -19,7 +19,7 @@ bodyClass: "page-about"
         </p>
       </div>
       {% if page.intro_image %}
-      <div class="col-12 col-md-5 order-1 order-md-2 position-relative">
+      <div class="col-12 col-md-5 order-1 order-md-2">
         <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relative_url }}" />
       </div>
       {% endif %}
@@ -63,8 +63,8 @@ bodyClass: "page-about"
         <h2>Die Praxis</h2>
         <p>Zu finden in Hallstadt-Dörﬂeins &mdash;<br>Modern, großzügig und barrierefrei!</p>
       </div>
-      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1 position-relative content" data-inviewport="fly-in" style="--fly-in-start-x: -40%;">
-        <img alt="{{ page.title }}" src="{{ 'images/practice/building_outer.jpg' | relative_url }}" />
+      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1 content" data-inviewport="fly-in" style="--fly-in-start-x: -40%;">
+        <img alt="Das Gebäude der Physiotharpiepraxis, ein Neubau, in Frontansicht." src="{{ 'images/practice/building_outer_front_md.jpeg' | relative_url }}" />
       </div>
     </div>
     <div class="row justify-content-center">
@@ -78,6 +78,9 @@ bodyClass: "page-about"
           <li><strong>Großer Therapieraum:</strong> Platz für Übungen und Rehabilitative Maßnahmen, um aktiv an ihrer Gesundheit zu arbeiten.</li>
           <li><strong>Individuelle Therapie:</strong> Maßgeschneiderte Behandlungsansätze, die auf Ihre Bedürfnisse abgestimmt sind..</li>
         </ul>
+      </div>
+      <div class="col-12 col-md-10 col-lg-8 content">
+        <img alt="Das Gebäude der Physiotharpiepraxis, ein Neubau, in Rückansicht." src="{{ 'images/practice/building_outer_back_md.jpeg' | relative_url }}" />
       </div>
       <p class="col-12 col-md-10">
         Wir freuen uns darauf, Sie bald bei uns begrüßen zu dürfen. Möchten Sie mehr über unsere Praxis erfahren oder einen Termin vereinbaren?
