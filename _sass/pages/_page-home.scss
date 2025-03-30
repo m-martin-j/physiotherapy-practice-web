@@ -1,14 +1,5 @@
 
 .page-home {
   .intro-image-absolute {
-    @include media-breakpoint-up(md) {
-      bottom: 40px;
-    }
-    @include media-breakpoint-up(lg) {
-      bottom: -40px;
-    }
-    @include media-breakpoint-up(xl) {
-      bottom: -175px;
-    }
   }
 }
