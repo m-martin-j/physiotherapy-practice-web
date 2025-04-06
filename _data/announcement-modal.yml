@@ -1,0 +1,21 @@
+
+# TODO
+holiday: true
+# format YYYY-MM-DD, start and end inclusive
+holiday_start_date: "2025-05-31"
+holiday_end_date: "2025-06-01"
+
+title: "🥂 Große Eröffnungs-Feier 🥂"  # ignored if holiday true
+body: |-
+  Wann: 31.05.2025 ab xx Uhr
+  <br>
+  Wo: In der neuen Praxis, Dörfleinser Str. 60, 96103 Hallstadt-Dörfleins
+  <br>
+  <br>
+  Kommens vorbei, schauens sich um! Trinkens auch a bissl an Sekt.
+  Fallens net um.
+
+# announcement activation horizon: format YYYY-MM-DD, start and end inclusive
+start_date: "2025-04-01"
+end_date: "2025-06-01"
+
