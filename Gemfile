@@ -7,6 +7,6 @@ gem "logger"
 gem "ostruct"
 gem "csv"
 gem "base64"
-gem "sass-embedded", "1.77.5"
+gem "sass-embedded", "1.77.8"
 
 gem 'wdm', '>= 0.1.0', platforms: [:x64_mingw]
