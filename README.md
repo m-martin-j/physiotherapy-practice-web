@@ -133,5 +133,5 @@ TBD
 This website is based on the Serif theme (credit: https://github.com/zerostaticthemes/jekyll-serif-theme, [license](licenses/jekyll-serif-theme)).
 
 It employs the following software:
-* [Bootstrap](https://getbootstrap.com/) v5.3.3 ([license](licenses/bootstrap))
+* [Bootstrap](https://getbootstrap.com/) v5.3.5 ([license](licenses/bootstrap))
 * Quicksand font ([license](licenses/Quicksand))
