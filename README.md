@@ -72,6 +72,19 @@ TBD
   * Layout: [_includes/social.html](_includes/social.html)
 
 
+## Announcement Modal
+* Source
+  * HTML: [_layouts/default.html](_layouts/default.html) - before `</body>`
+  * SCSS: [_sass/components/_modal.scss](_sass/components/_modal.scss)
+  * JavaScript [assets/js/scripts.js](assets/js/scripts.js) - see comment `announcementModal`
+  * Data: [_data/announcement-modal.yml](_data/announcement-modal.yml)
+* Activation
+  * Date-based: By setting `start_date` and `end_date` in above-referred data file.
+  * It is shown to visitors once per day, using local storage.
+* Content
+  * via above-referred data file.
+
+
 ## Style
 ### Fonts
 * This project uses Arial as base font (Helvetica only if the user happens to have it installed) and self-hosted Quicksand as heading font.

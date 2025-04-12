@@ -1,0 +1,14 @@
+
+title: "Main Vital feiert Eröffnung 🥂"
+body: |-
+  <strong>Wann:</strong> 31.05.2025 (Uhrzeit wird noch bekanntgegeben)
+  <br>
+  <strong>Wo:</strong> In der neuen Physio-Praxis, Dörfleinser Str. 60, 96103 Hallstadt-Dörfleins
+  <br>
+  <br>
+  Wir freuen uns auf Sie!
+
+# announcement activation horizon: format YYYY-MM-DD, start and end inclusive
+start_date: "2025-04-01"
+end_date: "2025-06-01"
+

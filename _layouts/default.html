@@ -42,5 +42,26 @@
   {% include footer.html %}
   {% include sub-footer.html %}
   <script type="text/javascript" src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
+
+
+  <div class="modal fade" id="announcementModal" tabindex="-1" aria-labelledby="announcementModal" aria-hidden="true">
+    {% assign modal_data = site.data.announcement-modal %}
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="announcementModalLabel">{{ modal_data.title }}</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          {{ modal_data.body }}
+        </div>
+        <div class="modal-footer d-flex align-items-center">
+          <img class="modal-logo" src="{{ '/images/logo/logo_color.svg' | relative_url }}" alt="Logo">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">weiter zur Website</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>

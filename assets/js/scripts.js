@@ -1,3 +1,7 @@
+---
+---
+{}
+
 var windowLoaded = false;
 window.onload = function() {
   windowLoaded = true;
@@ -47,4 +51,29 @@ const Obs = new IntersectionObserver(handleIntersectionOnce, obsOptions);
 
 document.querySelectorAll('[data-inviewport]').forEach(el => {
   Obs.observe(el);
+});
+
+// announcementModal
+document.addEventListener("DOMContentLoaded", function () {
+  const startDate = new Date("{{ site.data.announcement-modal.start_date }}");
+  const endDate = new Date("{{ site.data.announcement-modal.end_date }}");
+  const today = new Date();
+  const todayStr = today.toDateString();
+
+  const modalVersion = startDate.toDateString().replace(/ /g, "_");
+  const modalShownKey = `announcementModalSeen-${modalVersion}`;
+  const lastShownDate = localStorage.getItem(modalShownKey);
+
+  if (
+    today >= startDate && today <= endDate &&
+    lastShownDate !== todayStr
+  ) {
+    const announcementModal = new bootstrap.Modal(document.getElementById('announcementModal'));
+    announcementModal.show();
+
+    // Set the modal to be shown only once per day
+    document.getElementById('announcementModal').addEventListener('hidden.bs.modal', function () {
+      localStorage.setItem(modalShownKey, todayStr);
+    });
+  }
 });
