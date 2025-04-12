@@ -1,5 +1,5 @@
 
-title: "Main Vital feiert Eröffnung 🥂"
+title: "Main Vital feiert Eröffnung 🥂"  # ignored if holiday true
 body: |-
   <strong>Wann:</strong> 31.05.2025 (Uhrzeit wird noch bekanntgegeben)
   <br>
@@ -12,3 +12,8 @@ body: |-
 start_date: "2025-04-01"
 end_date: "2025-06-01"
 
+# TODO
+holiday: true
+# format YYYY-MM-DD, start and end inclusive
+holiday_start_date: "2025-05-31"
+holiday_end_date: "2025-06-01"
