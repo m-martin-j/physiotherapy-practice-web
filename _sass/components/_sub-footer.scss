@@ -11,9 +11,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    @include media-breakpoint-up(md) {
-      flex-direction: row;
-    }
   }
   .copyright {
     margin-top: 10px;
@@ -26,6 +23,16 @@
   .social {
     a:first-of-type {
       margin-left: -10px;
+    }
+  }
+  .siegel-image {
+    padding-right: 8px;
+    img {
+      width: 100px;
+      height: auto;
+      @include media-breakpoint-up(sm) {
+        width: 120px;
+      }
     }
   }
 }
