@@ -3,27 +3,21 @@
     "title": "Fokus",
     "description": "Mit einem ganzheitlichen Ansatz betrachten wir Ihre Gesundheit als Einheit - weit über die reine Symptombehandlung hinaus. Wir setzen den Fokus auf die Ursache Ihrer Beschwerden und behandeln sie nachhaltig.",
     "image": {
-      "url": "images/features/noun_branding_1885335.svg",
-      "width": 80,
-      "height": 80
+      "url": "images/features/people-org.svg"
     }
   },
   {
     "title": "Expertise",
     "description": "Unser Anspruch ist es, Ihnen die bestmögliche Behandlung zu bieten. Aus diesem Grund erweitern wir kontinuierlich unser Wissen und bleiben immer auf dem neusten Stand der aktuellen Therapie.",
     "image": {
-      "url": "images/features/noun_The Process_1885341.svg",
-      "width": 80,
-      "height": 80
+      "url": "images/features/knowledge.svg"
     }
   },
   {
     "title": "Persönlich",
     "description": "Jede Behandlung ist so einzigartig wie der Mensch, der sie erhält. Wir schneiden die Behandlungen individuell auf Ihre Bedürfnisse und körperlichen Voraussetzungen zu.",
     "image": {
-      "url": "images/features/noun_3d modeling_1885342.svg",
-      "width": 80,
-      "height": 80
+      "url": "images/features/wellness.svg"
     }
   }
 ]
