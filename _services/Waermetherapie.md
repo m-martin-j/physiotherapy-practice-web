@@ -14,42 +14,7 @@ Bei der Wärmetherapie wird wohltuende Wärme gezielt an bestimmten Körperstell
 
 Die Wärmetherapie dient oft als Vorbereitung auf weitere physiotherapeutische Maßnahmen, indem sie die Muskulatur erwärmt und elastischer macht, wodurch anschließende Übungen, Lockerungen und Mobilisationen effektiver durchgeführt werden können.
 
-{% assign accordion_id = "accordion-waermetherapie-1" %}
-<div id="{{ accordion_id }}" class="accordion">
-  {% assign services_details_elements = site.data.services-details.waermetherapie.waermeanwendungen %}
-  {% for element in services_details_elements %}
-    {% assign collapse_indexer = forloop.index %}
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ accordion_id }}-{{ collapse_indexer }}">
-          {{ element.title }}
-        </button>
-      </h2>
-      <div id="collapse-{{ accordion_id }}-{{ collapse_indexer }}" class="accordion-collapse collapse" data-bs-parent="#{{ accordion_id }}">
-        <div class="accordion-body">
-          {% if element.content %}
-            <p>{{ element.content }}</p>
-          {% endif %}
-          {% if element.bullets %}
-            <ul>
-              {% for bullet in element.bullets %}
-                <li>{{ bullet }}</li>
-              {% endfor %}
-            </ul>
-          {% endif %}
-          {% if element.link %}
-            <a
-              {% if element.link.external %}href="{{element.link.url}}"
-              {% else %}href="{% link {{element.link.url}} %}"
-              {% endif %}
-              {% if element.link.external or element.link.file %}target="_blank" rel="noopener noreferrer"
-              {% endif %}
-              >
-              {{ element.link.text }}
-            </a>
-          {% endif %}
-        </div>
-      </div>
-    </div>
-  {% endfor %}
-</div>
+{% include service-details-accordion.html
+  id="accordion-waermetherapie-1"
+  elements=site.data.services-details.waermetherapie.waermeanwendungen
+%}
