@@ -25,3 +25,6 @@ footer:
   - name: "Impressum"
     url: "/impressum/"
     weight: 3
+  - name: "Datenschutz"
+    url: "/datenschutz/"
+    weight: 4
