@@ -14,22 +14,42 @@ Bei der Wärmetherapie wird wohltuende Wärme gezielt an bestimmten Körperstell
 
 Die Wärmetherapie dient oft als Vorbereitung auf weitere physiotherapeutische Maßnahmen, indem sie die Muskulatur erwärmt und elastischer macht, wodurch anschließende Übungen, Lockerungen und Mobilisationen effektiver durchgeführt werden können.
 
-<p class="text-center">
-  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#waermetherapie_1" aria-expanded="false" aria-controls="waermetherapie_1">
-    mehr erfahren
-  </button>
-</p>
-<div class="collapse" id="waermetherapie_1">
-  <div class="card card-body" markdown="1">
-
-## Fango-Wärmepackung
-In der physiotherapeutischen Behandlung wird zunächst ein Warmpack auf die betroffene Region gelegt, um eine sanfte, gleichmäßige Wärme zu verteilen. Anschließend wird ein Naturmoor-Einmalpack aufgebracht, das nicht nur die wohltuende Wärme unterstützt, sondern auch durch seine mineralischen Eigenschaften zusätzliche positive Effekte entfaltet. Die harmonische Kombination beider Anwendungen fördert die Durchblutung, löst Verspannungen und trägt so maßgeblich zur effektiven Linderung von Schmerzen bei.
-
-## Heißluft
-Eine innovative Behandlungsmethode, die gezielt erwärmte Luft einsetzt, um Verspannungen zu lösen, die Durchblutung zu fördern und Schmerzen zu lindern. Bei dieser Therapie wird die Wärme gleichmäßig über größere Körperflächen verteilt und entfaltet eine entspannende, belebende Wirkung.
-
-## Heiße Rolle
-Heiße Rolle ist eine spezielle Wärmeanwendung in der Physiotherapie, die Wärme und Massage kombiniert. Mehrere aufgerollte Handtücher werden mit heißem Wasser durchzogen und für die Anwendung vorbereitet. Im Anschluss wird die Rolle auf die Haut getupft oder abgerollt, wodurch eine intensive, feuchte Wärme gezielt auf verspannte oder schmerzende Körperbereiche übertragen wird. Durch die Kombination aus Wärme und Druck kann die heiße Rolle nicht nur entspannend, sondern auch aktivierend wirken.
-
-  </div>
+{% assign accordion_id = "accordion-waermetherapie-1" %}
+<div id="{{ accordion_id }}" class="accordion">
+  {% assign services_details_elements = site.data.services-details.waermetherapie.waermeanwendungen %}
+  {% for element in services_details_elements %}
+    {% assign collapse_indexer = forloop.index %}
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ accordion_id }}-{{ collapse_indexer }}">
+          {{ element.title }}
+        </button>
+      </h2>
+      <div id="collapse-{{ accordion_id }}-{{ collapse_indexer }}" class="accordion-collapse collapse" data-bs-parent="#{{ accordion_id }}">
+        <div class="accordion-body">
+          {% if element.content %}
+            <p>{{ element.content }}</p>
+          {% endif %}
+          {% if element.bullets %}
+            <ul>
+              {% for bullet in element.bullets %}
+                <li>{{ bullet }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+          {% if element.link %}
+            <a
+              {% if element.link.external %}href="{{element.link.url}}"
+              {% else %}href="{% link {{element.link.url}} %}"
+              {% endif %}
+              {% if element.link.external or element.link.file %}target="_blank" rel="noopener noreferrer"
+              {% endif %}
+              >
+              {{ element.link.text }}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
 </div>

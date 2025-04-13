@@ -11,3 +11,31 @@ massagen:
     content: "Bei dieser Massage werden modifizierte Grifftechniken wie Knetungen, Friktionen und Vibrationen entlang der Wirbelsäule angewendet, die alle Gewebeschichten zwischen Haut und Periost einbeziehen. Dies fördert die Durchblutung und den Stoffwechsel, löst Verspannungen und verbessert durch gezielte Reflexwirkungen die Funktion der inneren Organe."
   - title: Colonmassage
     content: "Eine sanfte therapeutische Massagetechnik, die gezielt den Dickdarm anspricht und durch kreisende Bewegungen der Bauchwand die Darmperistaltik anregt. Ziel der Behandlung ist es, die Verdauung zu fördern, Beschwerden wie Verstopfung und Blähungen zu lindern sowie den natürlichen Stoffwechselprozess zu unterstützen."
+  wellness:
+  - title: Aromaölmassage
+    content: "Eine sanfte Massage mit ätherischen Ölen und fließenden Griffen versetzt den Körper in tiefe Entspannung. Die natürlichen Duftessenzen wirken beruhigend auf das Nervensystem, lösen Spannungen und fördern das Wohlbefinden. Je nach Öl entfaltet die Massage eine harmonisierende, belebende oder ausgleichende Wirkung und bietet eine wohltuende Auszeit vom Alltag."
+  - title: Hot-Chocolate-Massage
+    content: "Eine harmonische Verbindung aus wohltuender Wärme, intensiv pflegendem Kakaobutter-Öl und entspannenden Massagetechniken. Der schokoladige Duft fördert die Freisetzung von Glückshormonen, schenkt Wohlbefinden und macht diese Massage zu einem besonderen Verwöhnmoment für Körper und Seele."
+  - title: Schulter-Nacken-Gesichtsmassage
+    content: "Diese wohltuende Massage konzentriert sich gezielt auf den Schulter-, Nacken- und Gesichtsbereich. Mit fließenden Massagegriffen und gezielten Drucktechniken wird die Muskulatur gelockert und der Lymphfluss angeregt. Sie hilft stressbedingte Anspannung, Kopfschmerzen und muskuläre Blockaden zu lindern - ideal bei Nackenverspannungen, Migräne oder mentaler Belastung."
+  spezielle:
+  - title: Faszientherapie
+    content: "Die Faszientherapie konzentriert sich auf die gezielte Behandlung des Bindegewebes, der sogenannten Faszien. Durch gezielte Techniken wird das Gewebe sanft gelockert, die Durchblutung angeregt und die Flexibilität des Körpers wiederhergestellt. Sanfte bis tiefgehende Anwendungen lösen Verklebungen und Verhärtungen."
+  - title: Triggerpunktbehandlung
+    content: 'Eine spezifische Behandlungsmethode zur Lösung von schmerzhaften Muskelverhärtungen, die als "Triggerpunkte" bekannt sind. Durch den Einsatz von manuellem Druck, Dehnungen oder speziellen Therapieinstrumenten werden diese Triggerpunkte gezielt behandelt, um die Muskulatur zu entspannen, die Durchblutung zu verbessern und die Stoffwechselprozesse im Gewebe anzuregen.'
+
+waermetherapie:
+  waermeanwendungen:
+  - title: Fango-Wärmepackung
+    content: "In der physiotherapeutischen Behandlung wird zunächst ein Warmpack auf die betroffene Region gelegt, um eine sanfte, gleichmäßige Wärme zu verteilen. Anschließend wird ein Naturmoor-Einmalpack aufgebracht, das nicht nur die wohltuende Wärme unterstützt, sondern auch durch seine mineralischen Eigenschaften zusätzliche positive Effekte entfaltet. Die harmonische Kombination beider Anwendungen fördert die Durchblutung, löst Verspannungen und trägt so maßgeblich zur effektiven Linderung von Schmerzen bei."
+  - title: Heißluft
+    content: "Eine innovative Behandlungsmethode, die gezielt erwärmte Luft einsetzt, um Verspannungen zu lösen, die Durchblutung zu fördern und Schmerzen zu lindern. Bei dieser Therapie wird die Wärme gleichmäßig über größere Körperflächen verteilt und entfaltet eine entspannende, belebende Wirkung."
+  - title: Heiße Rolle
+    content: "Heiße Rolle ist eine spezielle Wärmeanwendung in der Physiotherapie, die Wärme und Massage kombiniert. Mehrere aufgerollte Handtücher werden mit heißem Wasser durchzogen und für die Anwendung vorbereitet. Im Anschluss wird die Rolle auf die Haut getupft oder abgerollt, wodurch eine intensive, feuchte Wärme gezielt auf verspannte oder schmerzende Körperbereiche übertragen wird. Durch die Kombination aus Wärme und Druck kann die heiße Rolle nicht nur entspannend, sondern auch aktivierend wirken."
+
+kaeltetherapie:
+  gesamt:
+  - title: Eisabreibung
+    content: "Die Eisabreibung ist eine kurze, intensive Kälteanwendung, bei der ein Eislolli gezielt über die betroffene Körperstelle geführt wird. Durch die Kältereize wird die Wärmeabgabe beschleunigt und der Gewebetonus gesenkt. Gleichzeitig lindert die Kälte Schmerzen und kann die Kontraktionsbereitschaft der Muskulatur positiv beeinflussen."
+  - title: Eiskompresse
+    content: "In dieser Therapie wird eine Eiskompresse sorgfältig in ein Tuch gewickelt und auf die betroffene Körperstelle aufgelegt. Die Kälte wirkt gezielt, um Entzündungsprozesse zu reduzieren, Schmerzen zu lindern und die Muskulatur zu entspannen. Diese wohltuende Anwendung unterstützt den Heilungsprozess und fördert die schnelle Regeneration."
