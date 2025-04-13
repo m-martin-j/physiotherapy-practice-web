@@ -16,12 +16,12 @@
   content: "Bitte erscheinen Sie 5 Minuten vor Behandlungsbeginn in der Praxis. Wir sind bemüht, alle Behandlungen pünktlich zu beginnen. Bringen Sie zu jeder Behandlung ein großes Badehandtuch mit und tragen Sie möglichst bequeme Kleidung. Bei verspäteter Ankunft verkürzt sich Ihre Behandlungszeit entsprechend."
 - title: Bezahlung
   content: "Die Begleichung Ihrer Rezeptgebühr oder Leistung ist bei uns ausschließlich über EC-Kartenzahlung oder auf Rechnung möglich."
-- title: Berufsgeschnossenschaftsrezepte
-  content: "Sofern kein konkretes Datum für den Beginn der Behandlung angegeben ist, müssen Berufsgeschnossenschaftsrezepte innerhalb von 14 Tagen nach Ausstellungsdatum eingelöst werden."
+- title: Berufsgenossenschafts-Rezept
+  content: "Sofern kein konkretes Datum für den Beginn der Behandlung angegeben ist, müssen Berufsgenossenschafts-Rezepte innerhalb von 14 Tagen nach Ausstellungsdatum eingelöst werden."
 - title: "Dauer der Behandlung"
   content: "Die Dauer der Behandlung richtet sich nach der ärztlichen Verordnung sowie den optional von Ihnen in Anspruch genommen privaten Therapieleistungen."
 - title: Datenschutz
-  content: "Vor Ihrem ersten Termin bitten wir Sie, unsere Datenschutzverordnung zu unterzeichnen. Ihre persönlichen Daten werden streng vertraulich behandelt und nicht an Dritte weitergegeben. Sie haben die Möglichkeit, die Datenschutzvordnung direkt in unserer Praxis zu unterzeichnen oder sie hier herunterzuladen:"
+  content: "Vor Ihrem ersten Termin bitten wir Sie, unsere Datenschutzverordnung zu unterzeichnen. Ihre persönlichen Daten werden streng vertraulich behandelt und nicht an Dritte weitergegeben. Sie haben die Möglichkeit, die Datenschutzverordnung direkt in unserer Praxis zu unterzeichnen oder sie hier herunterzuladen:"
   link:
     external: false
     file: true
@@ -31,23 +31,23 @@
   content: "Beim Erstbefund analysieren wir Ihre Beschwerden, Krankengeschichte und körperliche Verfassung. So schaffen wir die Basis für Ihren optimalen Behandlungsplan."
 - title: Folgeverordnung
   content: "Falls erforderlich, bitten wir Sie, sich frühzeitig um eine Folgeverordnung in Absprache mit Ihrer/m Therapeut/in zu kümmern. So vermeiden Sie unnötige Pausen zwischen den Behandlungssequenzen."
-- title: Gutscheine
-  content: "Verschenken Sie Gesundheit und Wohlbefinden! Gutscheine für ausgewählte Leistungen oder einfach Wertgutscheine sind erhältlich:"
+- title: Gutschein
+  content: "Verschenken Sie Gesundheit und Wohlbefinden! Erhältlich sind Gutscheine für ausgewählte Leistungen sowie Wertgutscheine:"
   link:
     external: false
     url: _services/Gutscheine.md
     text: "Mehr zu Gutscheinen"
-- title: Hausbesuche
-  content: "Auf Wunsch und bei entsprechender ärztlichen Verordnung kommen wir gerne zu Ihnen nach Hause, um die Behandlung durchzuführen."
+- title: Hausbesuch
+  content: "Auf Wunsch und bei entsprechender ärztlicher Verordnung führen wir die Behandlung auch gerne bei Ihnen zu Hause durch."
 - title: Individuelle Therapie
   content: "Jede Behandlung wird ganz nach Ihren spezifischen Bedürfnissen und Zielen individuell angepasst."
 - title: Hygiene
   content: "Zum Schutz und Komfort unserer Therapeuten bitten wir Sie, mit gepflegter Körperhygiene sowie sauberer, bequemer Kleidung zu Ihrer Behandlung zu erscheinen. Denken Sie bitte auch an Sportschuhe und legen Sie idealerweise Ihren Schmuck zu Hause ab. Für verlorene Gegenstände übernehmen wir keine Haftung."
-- title: Kassenrezepte
+- title: Kassenrezept
   content:
   bullets:
     - "Gültigkeit von Kassenrezepten: Die Behandlung muss innerhalb von 28 Tagen nach Ausstellung des Rezeptes begonnen werden. Sollte dies nicht möglich sein, muss das Ausstellungsdatum durch die Arztpraxis angepasst werden."
-    - "Therapiezeit: Die vorgegebene Behandlungszeit der Krankenkassen beträgt idR. 15-20 Minuten. Gerne können Sie Ihre Therapiezeit durch eine Selbstzahlerleistung verlängern."
+    - "Therapiezeit: Die vorgegebene Behandlungszeit der Krankenkassen beträgt in der Regel 15-20 Minuten. Gerne können Sie Ihre Therapiezeit durch eine Selbstzahlerleistung verlängern."
     - "Unterbrechung der Therapie: Eine Behandlung darf nicht länger als 28 Tage unterbrochen werden, da das Rezept sonst seine Gültigkeit verliert."
 - title: Leistungsübersicht
   content: "Einen Überblick über unser komplettes Leistungsangebot erhalten Sie auf unserer Homepage:"
@@ -69,10 +69,10 @@
   content: "Um unseren Patienten eine ruhige und entspannte Atmosphäre zu bieten, bitten wir Sie, auf laute Telefonate innerhalb der Praxisräume zu verzichten und Ihr Mobiltelefon während der Warte- und Behandlungszeit lautlos zu stellen."
 - title: Parkplätze
   content: "Direkt vor dem Praxiseingang stehen Ihnen kostenfreie Parkplätze für Autos und Fahrräder zur Verfügung."
-- title: Privatrezepte
+- title: Privatrezept
   content: "Vor dem ersten Behandlungstermin schließen wir eine Honorarvereinbarung ab, damit Sie bereits im Voraus über die anfallenden Kosten informiert sind. Nach Abschluss der Therapie erhalten Sie Ihre Rechnung zusammen mit dem Rezept."
 - title: Rezeptgebühr
-  content: "Für gesetzlich versicherte Patienten ab 18 Jahren ist pro Heilmittelverordnung eine Selbstbeteiligung der Behandlungskosten in Höhe vor 10% und eine Rezeptgebühr nach SGB V § 43b in Höhe von 10,00 € zu leisten. Diese Gebühr ist bei der zweiten Behandlung fällig. Falls Sie von der Selbstbeteiligung und Rezeptgebühr befreit sind, legen Sie uns bitte Ihren Befreiungsausweis vor."
+  content: "Für gesetzlich versicherte Patienten ab 18 Jahren ist pro Heilmittelverordnung eine Selbstbeteiligung der Behandlungskosten in Höhe von 10% und eine Rezeptgebühr nach SGB V § 43b in Höhe von 10,00 € zu leisten. Diese Gebühr ist bei der zweiten Behandlung fällig. Falls Sie von der Selbstbeteiligung und Rezeptgebühr befreit sind, legen Sie uns bitte Ihren Befreiungsausweis vor."
 - title: Schwangerschaft
   content: "Aus medizinischen Gründen bitten wir Sie, uns vor Behandlungsbeginn über eine bestehende Schwangerschaft zu informieren."
 - title: Stornierung
@@ -90,8 +90,10 @@
 - title: Unterbrechung der Behandlung
   content: "Die Unterbrechungszeiträume zwischen den einzelnen Behandlungsterminen sind durch die jeweiligen Kostenträgern reglementiert. Einige Kostenträger handeln sehr restriktiv und verlangen einen Behandlungsabbruch bei Überschreiten dieser Fristen."
 - title: Unterlagen zum Termin
-  content: "Um eine optimale, auf ihre Bedürfnisse abgestimmte Akut-, Vor- oder Nachbehandlung zu gewährleisten, dürfen Sie jederzeit aktuelle Arzt- oder Operationsberichte, Ausdrucke bildgebender Verfahren sowie vorliegende Nachbehandlungspläne zu Ihrem Behandlungstermin mitbringen."
-- title: Versäumnis von Terminen
+  content: "Um eine optimale, auf Ihre Bedürfnisse abgestimmte Akut-, Vor- oder Nachbehandlung zu gewährleisten, dürfen Sie jederzeit aktuelle Arzt- oder Operationsberichte, Ausdrucke bildgebender Verfahren sowie vorliegende Nachbehandlungspläne zu Ihrem Behandlungstermin mitbringen."
+- title: Versäumnis eines Termins
   content: "Da wir eine Bestellpraxis sind und Termine speziell für Sie reservieren, sehen wir uns leider gezwungen, unentschuldigte Terminabsagen oder Absagen weniger als 24 Stunden vor dem vereinbarten Termin mit den Kosten der gebuchten Behandlung privat in Rechnung zu stellen."
+- title: Warteliste
+  content: "Falls wir Ihnen nicht sofort einen Termin anbieten können, setzen wir Sie auf unsere Warteliste. Sobald ein Termin durch eine Absage frei wird, informieren wir Sie umgehend und bieten Ihnen diesen an. Bitte beachten Sie, dass dies auch kurzfristig geschehen kann."
 - title: Ziel der Behandlung
   content: "Wir setzen darauf, gemeinsam mit Ihnen einen umfassenden Therapieplan zu entwickeln, der auf eine nachhaltige Verbesserung und dauerhafte Beschwerdefreiheit ausgerichtet ist - weit über eine kurzfristige Linderung hinaus. Wir freuen uns darauf, diesen Weg partnerschaftlich mit Ihnen zu gehen."

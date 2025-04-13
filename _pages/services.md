@@ -11,4 +11,4 @@ role: services
 
 # Leistungen
 
-In unserer Praxis passen wir jede Behandlung an Ihr individuelles Beschwerdebild an, um bestmögliche und langanhaltende Therapieergebnisse zu erzielen.
+In unserer Praxis passen wir jede Behandlung an Ihr individuelles Beschwerdebild an, um bestmögliche und lang anhaltende Therapieergebnisse zu erzielen.

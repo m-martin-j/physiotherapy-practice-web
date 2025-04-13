@@ -6,10 +6,8 @@ weight: 2
 
 Manuelle Behandlung durch präzise Grifftechniken zur Lösung von Verspannungen, Förderung der Durchblutung und Linderung von Schmerzen.
 
-In unserer Praxis erwartet Sie eine vielfältige Auswahl an Massagetherapien, die sowohl
-therapeutische Wirkung entfalten als auch tiefe Entspannung schenken.
-Ob zur gezielten Linderung akuter Beschwerden oder einfach als wohltuende Auszeit vom
-Alltag – wir bieten die passende Behandlung für Ihr persönliches Wohlbefinden.
+In unserer Praxis erwartet Sie eine vielfältige Auswahl an Massagetherapien, die sowohl therapeutische Wirkungen entfalten als auch tiefe Entspannung schenken.
+Ob zur gezielten Linderung akuter Beschwerden oder einfach als wohltuende Auszeit vom Alltag – wir bieten die passende Behandlung für Ihr persönliches Wohlbefinden.
 
 ## Medizinische Massagen
 Unsere medizinischen Massagen sind gezielt darauf ausgerichtet, muskuläre Verspannungen zu lösen, die Durchblutung zu fördern und Schmerzen zu lindern.
@@ -94,7 +92,7 @@ Darüber hinaus bieten wir weitere spezifische Massagen an, die auf die Behandlu
   <div class="card card-body" markdown="1">
 
 ### Faszientherapie
-Die Faszientherapie widmet sich der gezielten Behandlung des Bindegewebes, der sogenannten Faszien. Durch gezielte Techniken wird das Gewebe sanft gelockert, die Durchblutung angeregt und die Flexibilität des Körpers wiederhergestellt. Sanfte bis tiefgehende Anwendungen lösen Verklebungen und Verhärtungen.
+Die Faszientherapie konzentriert sich auf die gezielte Behandlung des Bindegewebes, der sogenannten Faszien. Durch gezielte Techniken wird das Gewebe sanft gelockert, die Durchblutung angeregt und die Flexibilität des Körpers wiederhergestellt. Sanfte bis tiefgehende Anwendungen lösen Verklebungen und Verhärtungen.
 
 ### Triggerpunktbehandlung
 Eine spezifische Behandlungsmethode zur Lösung von schmerzhaften Muskelverhärtungen, die als "Triggerpunkte" bekannt sind. Durch den Einsatz von manuellem Druck, Dehnungen oder speziellen Therapieinstrumenten werden diese Triggerpunkte gezielt behandelt, um die Muskulatur zu entspannen, die Durchblutung zu verbessern und die Stoffwechselprozesse im Gewebe anzuregen.
