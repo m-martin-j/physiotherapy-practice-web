@@ -1,13 +1,17 @@
 <div id="{{ include.id }}" class="accordion">
-  {% for element in include.elements %}
+  {% assign elements = include.elements %}
+  {% if include.sort_elements %}
+    {% assign elements = elements | sort: 'title' %}
+  {% endif %}
+  {% for element in elements %}
     {% assign collapse_indexer = forloop.index %}
     <div class="accordion-item">
       <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ include.id }}-{{ collapse_indexer }}">
+        <button class="accordion-button {% unless include.uncollapse_first and forloop.first %}collapsed{% endunless %}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ include.id }}-{{ collapse_indexer }}">
           {{ element.title }}
         </button>
       </h2>
-      <div id="collapse-{{ include.id }}-{{ collapse_indexer }}" class="accordion-collapse collapse" data-bs-parent="#{{ include.id }}">
+      <div id="collapse-{{ include.id }}-{{ collapse_indexer }}" class="accordion-collapse collapse {% if include.uncollapse_first and forloop.first %}show{% endif %}" data-bs-parent="#{{ include.id }}">
         <div class="accordion-body">
           {% if element.content %}
             <p>{{ element.content }}</p>

@@ -84,6 +84,20 @@ TBD
 * Content
   * via above-referred data file.
 
+## Accordion
+* Listing as Bootstrap Accordion
+  * SCSS: [_sass/components/_accordion.scss](_sass/components/_accordion.scss)
+  * HTML: [_includes/service-details-accordion.html](_includes/service-details-accordion.html)
+  * Functionality (pass as arguments to `{%include details-accordion.html ... %}`)
+    * `id` needs to be provided to make it unique
+    * `sort_elements`: Sorting by data `title` if true
+    * `uncollapse_first`: Uncollapsing first if true
+  * Data
+    * `title` shown in header of element
+    * `content` rendered as p of element
+    * `bullets` is an array of bullet point strings (if bullets provided, `content` is optional)
+    * `link` needs attributes `external` set to true|false, `url` set to url|absolute path to internal file, `text` set to the url's text
+
 
 ## Style
 ### Fonts
