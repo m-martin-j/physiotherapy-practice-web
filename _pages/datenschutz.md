@@ -3,6 +3,12 @@ title: Datenschutz
 permalink: "/datenschutz/"
 layout: legal
 description: Datenschutz
+intro_image:
+intro_image_absolute: false
+intro_image_hide_on_mobile: false
+section-intro-text:
+show_call_box: false
+show_call_box_button: false
 ---
 
 ## Datenschutzerklärung
