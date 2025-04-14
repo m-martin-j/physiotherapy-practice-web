@@ -10,7 +10,7 @@ bodyClass: "page-home"
         <h1 class="branding">{{ site.title }}</h1>
         {{ content }}
         {% if page.show_call_box %}
-          {% include call.html show_button=true %}
+          {% include call.html show_button=page.show_call_box_button %}
         {% endif %}
       </div>
       {% if page.intro_image %}
