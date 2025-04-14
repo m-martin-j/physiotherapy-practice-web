@@ -9,6 +9,4 @@ intro_image_hide_on_mobile: false
 show_call_box: true
 ---
 
-# Main Vital
-
-Ihre Praxis für Physiotherapie <span class="d-none d-lg-inline"><br></span>in {{ site.data.contact.address.city }}.
+Ihre Praxis für Physiotherapie <span class="d-none d-lg-inline d-xl-none"><br></span>in {{ site.data.contact.address.city }}.
