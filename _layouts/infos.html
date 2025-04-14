@@ -20,44 +20,12 @@ layout: default
 <div class="strip-white">
 
   <div class="container pt-6 pb-6">
-    <div id="accordion-patient-infos" class="accordion">
-      {% assign sorted_info_elements = site.data.infos | sort: 'title' %}
-      {% for info in sorted_info_elements %}
-        {% assign collapse_indexer = forloop.index %}
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button{% unless forloop.first %} collapsed{% endunless %}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ collapse_indexer }}">
-              {{ info.title }}
-            </button>
-          </h2>
-          <div id="collapse-{{ collapse_indexer }}" class="accordion-collapse collapse {% if forloop.first %} show{% endif %}" data-bs-parent="#accordion-patient-infos">
-            <div class="accordion-body">
-              {% if info.content %}
-                <p>{{ info.content }}</p>
-              {% endif %}
-              {% if info.bullets %}
-                <ul>
-                  {% for bullet in info.bullets %}
-                    <li>{{ bullet }}</li>
-                  {% endfor %}
-                </ul>
-              {% endif %}
-              {% if info.link %}
-                <a
-                  {% if info.link.external %}href="{{info.link.url}}"
-                  {% else %}href="{% link {{info.link.url}} %}"
-                  {% endif %}
-                  {% if info.link.external or info.link.file %}target="_blank" rel="noopener noreferrer"
-                  {% endif %}
-                  >
-                  {{ info.link.text }}
-                </a>
-              {% endif %}
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
+    {% include details-accordion.html
+      id="accordion-patient-infos"
+      elements=site.data.infos
+      sort_elements=true
+      uncollapse_first=true
+    %}
   </div>
 
   <div class="container pb-5">

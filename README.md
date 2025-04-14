@@ -16,13 +16,7 @@ Copyright (c) 2024-2025 Martin Trat.
 * Source
   * Markdown/Content: [_pages/infos.md](_pages/infos.md)
   * Layout: [_layouts/infos.html](_layouts/infos.html)
-* Component A-Z list as Bootstrap Accordion
-  * Style from [_sass/components/_accordion.scss](_sass/components/_accordion.scss)
-  * Data from [_data/infos.yml](_data/infos.yml)
-  * Sorting via `title`
-  * `content` rendered as p
-  * `bullets` is an array of bullet point strings
-  * `link` needs attributes `external` set to true|false, `url` set to url|absolute path to internal file, `text` set to the url's text
+  * Data from [_data/infos.yml](_data/infos.yml) - used in accordion
 
 ### Leistungen
 * Source
