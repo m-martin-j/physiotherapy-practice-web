@@ -42,15 +42,24 @@ const handleIntersectionOnce = (entries, observer) => {
   })
 };
 
-const obsOptions = {
-  rootMargin: '0% 0% -20% 0%',
+const defaultObsOptions = {
+  rootMargin: '0% 0% 0% 0%',
   threshold: 1.0
   //https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
 };
-const Obs = new IntersectionObserver(handleIntersectionOnce, obsOptions);
+const getObsOptionsForElement = (el) => {
+  const customMargin = el.getAttribute('data-root-margin');
+  const customThreshold = el.getAttribute('data-threshold');
+  return {
+    rootMargin: customMargin || defaultObsOptions.rootMargin,
+    threshold: customThreshold ? parseFloat(customThreshold) : defaultObsOptions.threshold
+  };
+};
 
 document.querySelectorAll('[data-inviewport]').forEach(el => {
-  Obs.observe(el);
+  const obsOptions = getObsOptionsForElement(el);
+  const observer = new IntersectionObserver(handleIntersectionOnce, obsOptions);
+  observer.observe(el);
 });
 
 // announcementModal

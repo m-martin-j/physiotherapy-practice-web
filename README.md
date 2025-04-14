@@ -102,8 +102,9 @@ TBD
     * example HTML: [_layouts/about.html](_layouts/about.html)
   * Usage:
     * globally, any CSS class can use the flyIn animation keyframes
-    * `--fly-in-start-x` can be optionally overwritten. E.g. negative percentage values to fly in from the left.
+    * The style variable `--fly-in-start-x` can be optionally overwritten. E.g. negative percentage values to fly in from the left.
     * Optionally, html elements can be assigned the `data-inviewport` field. Then, the animation will only be activated once it is visible in the viewport via JavaScript.
+      * Additionally, the HTML fields `data-root-margin` and `data-threshold` can optionally be set to control options passed to the IntersectionObserver (deviating from default values).
 
 ## Development
 * Dependencies: ruby with gems, jekyll, bundler (https://jekyllrb.com/docs/installation/)
