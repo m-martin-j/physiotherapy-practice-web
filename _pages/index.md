@@ -1,5 +1,5 @@
 ---
-title: SITE.TITLE
+title: Main Vital
 permalink: /
 layout: home
 description: Die Physiopraxis in deiner Nähe.

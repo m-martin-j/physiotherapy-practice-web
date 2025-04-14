@@ -4,7 +4,6 @@ Copyright (c) 2024-2025 Martin Trat.
 
 
 ## Pages
-* If the the head title of the page shall correspond to `site.title`, use `title: SITE.TITLE` in the front matter of a page. (Function maintained in [_layouts/default.html](_layouts/default.html))
 * The `role` attribute is currently only used for page `services`. It enables identifying a page to be included as parent page in breadcrumbs.
 
 ### Home Page
