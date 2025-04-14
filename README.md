@@ -87,7 +87,7 @@ TBD
 ## Accordion
 * Listing as Bootstrap Accordion
   * SCSS: [_sass/components/_accordion.scss](_sass/components/_accordion.scss)
-  * HTML: [_includes/service-details-accordion.html](_includes/service-details-accordion.html)
+  * HTML: [_includes/details-accordion.html](_includes/details-accordion.html)
   * Functionality (pass as arguments to `{%include details-accordion.html ... %}`)
     * `id` needs to be provided to make it unique
     * `sort_elements`: Sorting by data `title` if true

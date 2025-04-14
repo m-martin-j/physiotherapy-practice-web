@@ -13,7 +13,7 @@ Ob zur gezielten Linderung akuter Beschwerden oder einfach als wohltuende Auszei
 Unsere medizinischen Massagen sind gezielt darauf ausgerichtet, muskuläre Verspannungen zu lösen, die Durchblutung zu fördern und Schmerzen zu lindern.
 Durch präzise Therapie- und Grifftechniken wird die Muskulatur sanft gelockert, der Stoffwechsel angeregt und die regenerative Heilung des Gewebes unterstützt.
 
-{% include service-details-accordion.html
+{% include details-accordion.html
   id="accordion-massagen-1"
   elements=site.data.services-details.massagen.medi
 %}
@@ -24,7 +24,7 @@ Durch präzise Therapie- und Grifftechniken wird die Muskulatur sanft gelockert,
 ## Wellnessmassagen
 Unsere Wellnessmassagen sind darauf ausgerichtet, Körper und Geist in Einklang zu bringen und Ihnen eine wohltuende Auszeit vom Alltag zu schenken. Mit sanften, fließenden Bewegungen und entspannenden Grifftechniken helfen Sie, Stress abzubauen, Verspannungen zu lösen und die innere Balance wiederherzustellen.
 
-{% include service-details-accordion.html
+{% include details-accordion.html
   id="accordion-massagen-2"
   elements=site.data.services-details.massagen.wellness
 %}
@@ -33,7 +33,7 @@ Unsere Wellnessmassagen sind darauf ausgerichtet, Körper und Geist in Einklang 
 ## Spezielle Massagetechniken
 Darüber hinaus bieten wir weitere spezifische Massagen an, die auf die Behandlung diverser Beschwerden des Bindegewebes sowie der Muskeln ausgerichtet sind.
 
-{% include service-details-accordion.html
+{% include details-accordion.html
   id="accordion-massagen-3"
   elements=site.data.services-details.massagen.spezielle
 %}

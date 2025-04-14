@@ -14,7 +14,7 @@ Bei der Wärmetherapie wird wohltuende Wärme gezielt an bestimmten Körperstell
 
 Die Wärmetherapie dient oft als Vorbereitung auf weitere physiotherapeutische Maßnahmen, indem sie die Muskulatur erwärmt und elastischer macht, wodurch anschließende Übungen, Lockerungen und Mobilisationen effektiver durchgeführt werden können.
 
-{% include service-details-accordion.html
+{% include details-accordion.html
   id="accordion-waermetherapie-1"
   elements=site.data.services-details.waermetherapie.waermeanwendungen
 %}

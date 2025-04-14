@@ -8,7 +8,7 @@ Eine Gruppe von Anwendungen, die darauf ausgelegt sind, Schmerzen zu lindern und
 
 Die Kältetherapie ist eine bewährte Methode in der Physiotherapie, die gezielt niedrige Temperaturen einsetzt, um Schmerzen zu lindern, Entzündungen zu hemmen und Schwellungen zu reduzieren. Durch die Anwendung von Kälte wird der Stoffwechsel verlangsamt, die Durchblutung reguliert und die Muskulatur entspannt.
 
-{% include service-details-accordion.html
+{% include details-accordion.html
   id="accordion-kaeltetherapie-1"
   elements=site.data.services-details.kaeltetherapie.gesamt
 %}
