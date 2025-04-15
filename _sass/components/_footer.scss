@@ -5,12 +5,12 @@
 
   .footer-title {
     color: $footer-text-color;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-family: $font-family-heading;
     font-weight: 500;
     margin: 0;
     @include media-breakpoint-up(lg) {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
   }
 
@@ -26,6 +26,11 @@
     li {
       color: $footer-text-color;
       padding: 10px;
+      flex-basis: 50%;
+      text-align: center;
+      @media (min-width: 400px) {
+        flex-basis: unset;
+      }
       a {
         color: $footer-text-color;
         &:hover {
