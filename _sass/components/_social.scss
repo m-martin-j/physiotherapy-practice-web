@@ -10,5 +10,8 @@
     &:hover {
       opacity: 0.8;
     }
+    &:first-of-type {
+      margin-left: -10px;
+    }
   }
 }
