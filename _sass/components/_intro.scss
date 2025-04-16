@@ -9,14 +9,9 @@
     padding-bottom: 140px;
   }
   h1 {
-    font-weight: 500;
-    margin-bottom: 1.2rem;
     @include media-breakpoint-up(md) {
       width: 80%;
     }
-  }
-  h2 {
-    width: 80%;
   }
   p {
     font-size: 1.0rem;
