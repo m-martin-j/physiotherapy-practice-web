@@ -27,8 +27,8 @@ bodyClass: "page-about"
   </div>
 </div>
 
-<div class="strip-white">
-  <div class="container pt-6 pb-6">
+<div class="strip strip-white">
+  <div class="container">
     <div class="row">
       <h2>
         Meine Qualifikationen
@@ -57,8 +57,8 @@ bodyClass: "page-about"
   </div>
 </div>
 
-<div class="strip-secondary-light">
-  <div class="container pt-6 pb-6">
+<div class="strip strip-secondary-light">
+  <div class="container">
     <div class="row justify-content-start align-items-center">
       <div class="col-12 col-md-5 col-lg-8 order-1 order-md-2 ps-md-5">
         <h2>Die Praxis</h2>
@@ -97,8 +97,8 @@ bodyClass: "page-about"
   </div>
 </div>
 <!-- Das Team
-<div class="strip-secondary-light">
-  <div class="container pt-6 pb-6">
+<div class="strip strip-secondary-light">
+  <div class="container">
     <h2>Das Team</h2>
     <p>Unser Team ist qualifiziert. Jeder mag Pizza.</p>
     {% assign promoted_teams = site.team | where: "promoted", true | sort: "weight" %}
@@ -125,7 +125,7 @@ bodyClass: "page-about"
           {% endfor %}
       </div>
     {% endif %}
-    <div class="row pb-6">
+    <div class="row">
         {% assign teams = site.team | where: "promoted", empty | sort: "weight" %}
         {% for team in teams %}
         <div class="col-12 col-md-6 mb-3">
