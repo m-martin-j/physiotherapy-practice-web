@@ -10,7 +10,7 @@ bodyClass: "page-home"
       {% assign service_excerpt = site.services | where_exp: "service", "service.voucher != true" %}
       {% for service in service_excerpt limit: limit %}
       <div class="col-12 col-md-4 mb-3">
-        <div class="service service-summary">
+        <div class="service">
           <div class="service-content">
             <h2 class="service-title">
               <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
