@@ -125,6 +125,11 @@ $sub-footer-text-color: $white;
 @import "pages/page-services";
 
 body {
+  overflow-x: hidden;
   font-family: $font-family-base;
   background-color: $secondary_light;
+}
+
+html {
+  overflow-x: hidden;
 }
