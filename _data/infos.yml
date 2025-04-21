@@ -30,7 +30,7 @@
 - title: Erstbefund
   content: "Beim Erstbefund analysieren wir Ihre Beschwerden, Krankengeschichte und körperliche Verfassung. So schaffen wir die Basis für Ihren optimalen Behandlungsplan."
 - title: Folgeverordnung
-  content: "Falls erforderlich, bitten wir Sie, sich frühzeitig um eine Folgeverordnung in Absprache mit Ihrer/m Therapeut/in zu kümmern. So vermeiden Sie unnötige Pausen zwischen den Behandlungssequenzen."
+  content: "Falls erforderlich, bitten wir Sie, sich frühzeitig um eine Folgeverordnung in Absprache mit Ihrer*m Therapeut*in zu kümmern. So vermeiden Sie unnötige Pausen zwischen den Behandlungssequenzen."
 - title: Gutschein
   content: "Verschenken Sie Gesundheit und Wohlbefinden! Erhältlich sind Gutscheine für ausgewählte Leistungen sowie Wertgutscheine:"
   link:
@@ -42,7 +42,7 @@
 - title: Individuelle Therapie
   content: "Jede Behandlung wird ganz nach Ihren spezifischen Bedürfnissen und Zielen individuell angepasst."
 - title: Hygiene
-  content: "Zum Schutz und Komfort unserer Therapeuten bitten wir Sie, mit gepflegter Körperhygiene sowie sauberer, bequemer Kleidung zu Ihrer Behandlung zu erscheinen. Denken Sie bitte auch an Sportschuhe und legen Sie idealerweise Ihren Schmuck zu Hause ab. Für verlorene Gegenstände übernehmen wir keine Haftung."
+  content: "Zum Schutz und Komfort unserer Therapeut*innen bitten wir Sie, mit gepflegter Körperhygiene sowie sauberer, bequemer Kleidung zu Ihrer Behandlung zu erscheinen. Denken Sie bitte auch an Sportschuhe und legen Sie idealerweise Ihren Schmuck zu Hause ab. Für verlorene Gegenstände übernehmen wir keine Haftung."
 - title: Kassenrezept
   content:
   bullets:
@@ -61,18 +61,18 @@
     - "Vorbereiten der Behandlungsräume"
     - "Anamnese und Befund"
     - "Aufstellen eines individuellen Behandlungsplans"
-    - "Hilfeleistung des Therapeuten"
-    - "Durchführung der physiotherapeutischen Maßnahme am Patienten"
-    - "Verlaufsdokumentation sowie ggf. die Mitteilung an den verordneten Arzt"
+    - "Hilfeleistung der Therapeut*innen"
+    - "Durchführung der physiotherapeutischen Maßnahme an Patient*innen"
+    - "Verlaufsdokumentation sowie ggf. die Mitteilung an den*die verordnete*n Arzt*Ärztin"
     - "Reinigung und Desinfektion der Therapiematerialien"
 - title: Mobiltelefon
-  content: "Um unseren Patienten eine ruhige und entspannte Atmosphäre zu bieten, bitten wir Sie, auf laute Telefonate innerhalb der Praxisräume zu verzichten und Ihr Mobiltelefon während der Warte- und Behandlungszeit lautlos zu stellen."
+  content: "Um unseren Patient*innen eine ruhige und entspannte Atmosphäre zu bieten, bitten wir Sie, auf laute Telefonate innerhalb der Praxisräume zu verzichten und Ihr Mobiltelefon während der Warte- und Behandlungszeit lautlos zu stellen."
 - title: Parkplätze
   content: "Direkt vor dem Praxiseingang stehen Ihnen kostenfreie Parkplätze für Autos und Fahrräder zur Verfügung."
 - title: Privatrezept
   content: "Vor dem ersten Behandlungstermin schließen wir eine Honorarvereinbarung ab, damit Sie bereits im Voraus über die anfallenden Kosten informiert sind. Nach Abschluss der Therapie erhalten Sie Ihre Rechnung zusammen mit dem Rezept."
 - title: Rezeptgebühr
-  content: "Für gesetzlich versicherte Patienten ab 18 Jahren ist pro Heilmittelverordnung eine Selbstbeteiligung der Behandlungskosten in Höhe von 10% und eine Rezeptgebühr nach SGB V § 43b in Höhe von 10,00 € zu leisten. Diese Gebühr ist bei der zweiten Behandlung fällig. Falls Sie von der Selbstbeteiligung und Rezeptgebühr befreit sind, legen Sie uns bitte Ihren Befreiungsausweis vor."
+  content: "Für gesetzlich versicherte Patient*innen ab 18 Jahren ist pro Heilmittelverordnung eine Selbstbeteiligung der Behandlungskosten in Höhe von 10% und eine Rezeptgebühr nach SGB V § 43b in Höhe von 10,00 € zu leisten. Diese Gebühr ist bei der zweiten Behandlung fällig. Falls Sie von der Selbstbeteiligung und Rezeptgebühr befreit sind, legen Sie uns bitte Ihren Befreiungsausweis vor."
 - title: Schwangerschaft
   content: "Aus medizinischen Gründen bitten wir Sie, uns vor Behandlungsbeginn über eine bestehende Schwangerschaft zu informieren."
 - title: Stornierung
@@ -83,8 +83,8 @@
     external: false
     url: _pages/contact.md
     text: "Kontaktdetails anzeigen"
-- title: Therapeutenerkrankung
-  content: "Im Falle einer Erkrankung des Therapeuten sind wir leider gezwungen, Ihren Termin abzusagen und einen Ersatztermin zu vereinbaren."
+- title: Therapeut*innenerkrankung
+  content: "Im Falle einer Erkrankung von Therapeut*innen sind wir leider gezwungen, Ihren Termin abzusagen und einen Ersatztermin zu vereinbaren."
 - title: Tiere
   content: "Wir bitten um Verständnis, dass Tiere aus hygienischen Gründen in der Praxis nicht gestattet sind."
 - title: Unterbrechung der Behandlung
