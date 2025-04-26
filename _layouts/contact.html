@@ -9,13 +9,28 @@ bodyClass: "page-contact"
     </div>
 </div>
 
-<!-- TODO: Add contact form
 <div class="strip strip-secondary-light">
     <div class="container">
-        TBD
+        <div class="col-12 col-lg-8 mx-auto">
+            <div class="online-appointment-embed">
+                <iframe src="{{ site.data.third-party.online_appointment.embed }}" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="pt-2 text-center">
+                    <p>
+                        <strong>Probleme mit diesem Online-Buchungsformular?</strong> Bitte buchen Sie in diesem Fall direkt über die Website unseres Service-Partners {{ site.data.third-party.online_appointment.partner_name }}.
+                    </p>
+                    <p>
+                        <a class="btn btn-secondary" href="{{ site.data.third-party.online_appointment.external }}" target="_blank" rel="noopener noreferrer">
+                            zur Buchung über {{ site.data.third-party.online_appointment.partner_name }}
+                        </a>
+                    </p>
+                    <p>
+                        Alternativ können Sie uns gerne telefonisch oder per E-Mail direkt kontaktieren.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
--->
 
 <!-- TODO: Add Maps integration
 <div class="strip strip-white">

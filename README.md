@@ -138,6 +138,12 @@ TBD
   ```sh
   bundle exec jekyll serve --baseurl "/"
   ```
+* Jekyll with SSL encryption for development
+  * Create an SSL crt and key and move them into folder `custom_cert`
+  * Serve
+    ```sh
+    bundle exec jekyll serve --baseurl "/" --ssl-key custom_cert/localhost.key --ssl-cert custom_cert/localhost.crt
+    ```
 
 
 ## Hosting

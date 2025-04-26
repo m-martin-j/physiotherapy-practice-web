@@ -11,18 +11,13 @@
   z-index: 2;
   padding: 20px;
   @include media-breakpoint-up(xl) {
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    padding: 30px;
   }
   .call-box-top {
     flex: 1 0 auto;
     color: $black;
     @include media-breakpoint-up(lg) {
       width: 100%;
-    }
-    @include media-breakpoint-up(xl) {
-      width: auto;
     }
     div {
       margin: 5px 0px;
@@ -47,15 +42,8 @@
   .call-box-bottom {
     width: 100%;
     border-top: 1px solid $white-offset;
-    @include media-breakpoint-up(xl) {
-      border: none;
-      width: auto;
-    }
     .btn {
-      width: 35%;
-      @include media-breakpoint-up(xl) {
-        width: auto;
-      }
+      width: 200px;
     }
   }
   .call-email {

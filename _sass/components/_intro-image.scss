@@ -26,8 +26,9 @@
     width: 135%;
   }
   @include media-breakpoint-up(xl) {
-    bottom: -185px;
-    left: -35px;
+    bottom: -165px;
+    left: -40px;
+    width: 145%;
   }
 }
 .intro-image-hide-mobile {

@@ -48,6 +48,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
+  - custom_cert/
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
