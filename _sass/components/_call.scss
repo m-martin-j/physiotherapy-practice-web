@@ -38,17 +38,15 @@
     @include media-breakpoint-up(lg) {
       width: 70%;
     }
+    a {
+      color: $black;
+    }
   }
   .call-box-bottom {
     width: 100%;
     border-top: 1px solid $white-offset;
     .btn {
       width: 200px;
-    }
-  }
-  .call-email {
-    a {
-      color: $black;
     }
   }
   strong {

@@ -7,19 +7,10 @@
         <img src="{{ '/images/social/phone-classic.svg' | relative_url}}" title="telephone symbol" alt="telephone symbol"/>
         <strong class="d-none d-lg-block ps-lg-1">Telefon:</strong>
       </div>
-      <span class="call-value">{{ site.data.contact.phone }}</span>
-    </div>
-    {% endif %}
-
-    {% if site.data.contact.address %}
-    <div class="d-flex align-items-center gap-1 gap-sm-2 gap-lg-0">
-      <div class="d-flex flex-row align-items-center call-category">
-        <img src="{{ '/images/social/location-pin.svg' | relative_url}}" title="location symbol" alt="location symbol"/>
-        <strong class="d-none d-lg-block ps-lg-1">Adresse:</strong>
-      </div>
       <span class="call-value">
-        {{ site.data.contact.address.street }}<br>
-        {{ site.data.contact.address.zip }} {{ site.data.contact.address.city }}
+        <a href="tel:{{ site.data.contact.phone_full | remove: ' ' | remove: '-' }}">
+          {{ site.data.contact.phone }}
+        </a>
       </span>
     </div>
     {% endif %}
@@ -32,8 +23,21 @@
         </a>
         <strong class="d-none d-lg-block ps-lg-1">E-Mail:</strong>
       </div>
-      <span class="call-value call-email">
+      <span class="call-value">
         <a href="mailto:{{ site.data.contact.email }}">{{ site.data.contact.email }}</a>
+      </span>
+    </div>
+    {% endif %}
+
+    {% if site.data.contact.address %}
+    <div class="d-flex align-items-center gap-1 gap-sm-2 gap-lg-0">
+      <div class="d-flex flex-row align-items-center call-category">
+        <img src="{{ '/images/social/location-pin.svg' | relative_url}}" title="location symbol" alt="location symbol"/>
+        <strong class="d-none d-lg-block ps-lg-1">Adresse:</strong>
+      </div>
+      <span class="call-value">
+        {{ site.data.contact.address.street }}<br>
+        {{ site.data.contact.address.zip }} {{ site.data.contact.address.city }}
       </span>
     </div>
     {% endif %}
