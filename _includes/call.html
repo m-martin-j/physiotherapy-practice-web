@@ -11,6 +11,9 @@
         <a href="tel:{{ site.data.contact.phone_full | remove: ' ' | remove: '-' }}">
           {{ site.data.contact.phone }}
         </a>
+        {% if site.data.contact.fax and include.show_fax %}
+          (Fax: {{ site.data.contact.fax }})
+        {% endif %}
       </span>
     </div>
     {% endif %}

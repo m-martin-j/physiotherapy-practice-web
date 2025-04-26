@@ -9,6 +9,7 @@ intro_image_hide_on_mobile: false
 section-intro-text: >
   Wir freuen uns über Ihre Kontaktaufnahme
 show_call_box: true
+show_call_box_fax: true
 show_call_box_button: true
 ---
 

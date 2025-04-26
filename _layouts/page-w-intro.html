@@ -12,7 +12,10 @@ bodyClass: "page-basic"
                     <p>{{ page.section-intro-text }}</p>
                 {% endif %}
                 {% if page.show_call_box %}
-                    {% include call.html show_button=page.show_call_box_button %}
+                    {% include call.html
+                        show_button=page.show_call_box_button
+                        show_fax=page.show_call_box_fax
+                    %}
                 {% endif %}
             </div>
             {% if page.intro_image %}
