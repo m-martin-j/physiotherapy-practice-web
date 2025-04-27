@@ -8,10 +8,9 @@
         <strong class="d-none d-lg-block ps-lg-1">Telefon:</strong>
       </div>
       <span class="call-value">
-        <a href="tel:{{ site.data.contact.phone_full | remove: ' ' | remove: '-' }}">
-          {{ site.data.contact.phone }}
-        </a>
+        <a href="tel:{{ site.data.contact.phone_full | remove: ' ' | remove: '-' }}">{{ site.data.contact.phone }}</a>
         {% if site.data.contact.fax and include.show_fax %}
+          <br class="d-inline d-sm-none">
           (Fax: {{ site.data.contact.fax }})
         {% endif %}
       </span>
