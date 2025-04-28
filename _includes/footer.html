@@ -1,10 +1,11 @@
 <div class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-3 mb-1 mb-md-0 d-flex justify-content-start align-items-center">
-        <h2 class="footer-title">{{site.title}}</h2>
+      <div class="col-12 col-md-5 mb-1 mb-md-0 d-flex justify-content-start align-items-center">
+        <!-- <h2 class="footer-title">{{site.title}}</h2> -->
+        <img class="logo-footer" src="{{ '/images/logo/logo_wtext_white.svg' | relative_url }}" alt="Logo">
       </div>
-      <div class="col-12 col-md-9 d-flex align-items-center">
+      <div class="col-12 col-md-7 d-flex align-items-center">
         <ul class="footer-inner d-flex flex-row flex-wrap justify-content-evenly justify-content-md-end">
           {% assign footermenu = site.data.menus.footer | sort: 'weight'  %}
           {% for item in footermenu %}
