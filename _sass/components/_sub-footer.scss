@@ -19,7 +19,10 @@
     img {
       width: 100px;
       height: auto;
-      @include media-breakpoint-up(sm) {
+      @include media-breakpoint-up(md) {
+        width: 105px;
+      }
+      @include media-breakpoint-up(lg) {
         width: 120px;
       }
     }
