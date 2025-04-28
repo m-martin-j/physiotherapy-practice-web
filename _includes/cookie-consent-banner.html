@@ -1,0 +1,22 @@
+
+<!-- TODO: can this be css .hidden per default? -->
+
+<div id="cookie-consent-banner" class="hidden" role="dialog" aria-hidden="true">
+    <div class="d-flex align-items-end justify-content-center h-100">
+        <div class="banner-box">
+            <div class="banner-body">
+                <h2 class="title">Cookie-Richtlinie</h2>
+                <p>Wir verwenden Technologien wie Cookies für zwei Zwecke: (1) Bestimmte Cookies sind für die grundlegende Funktion dieser Website erforderlich. (2) Optional binden wir Inhalte von Google Maps für Sie ein.</p>
+                <div class="d-flex flex-row gap-1 justify-content-center">
+                    <a href="{% link _pages/impressum.md %}"><small>Impressum</small></a>
+                    <a href="{% link _pages/datenschutz.md %}"><small>Datenschutzerklärung</small></a>
+                </div>
+            </div>
+            <div class="banner-footer my-2 d-flex flex-column align-items-center gap-2">
+                <button id="cookie-consent-accept" class="btn btn-primary btn-sm">alle akzeptieren</button>
+                <button id="cookie-consent-limited" class="btn btn-primary btn-sm">nur erforderliche akzeptieren</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="cookie-consent-banner-backdrop" class="hidden"></div>

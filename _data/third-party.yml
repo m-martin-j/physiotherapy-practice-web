@@ -1,5 +1,6 @@
 
-
+google_maps:
+  embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240.50131592632493!2d10.857965558007825!3d49.93172583512239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21cea3e777358115%3A0x612602b77e078c0a!2sMain%20Vital%20Physiotherapie!5e0!3m2!1sde!2sde!4v1745856339932!5m2!1sde!2sde"
 
 online_appointment:
   embed: "https://termine.opticaviva.de/b/LpQimheAqLd_ZQkRMdsrhWV-aKlXV1EO"

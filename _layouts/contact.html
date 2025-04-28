@@ -35,10 +35,16 @@ bodyClass: "page-contact"
 </div>
 -->
 
-<!-- TODO: Add Maps integration
-<div class="strip strip-white">
+<div class="strip strip-secondary-light">
     <div class="container">
-        TBD
+        <h2>Hier finden Sie uns</h2>
+        <div class="google-maps-embed hidden" id="google-maps-container" data-cookie-consent="embedGoogleMaps">
+            <!-- Google Maps will be embedded here if user consent is given -->
+        </div>
+
+        {% include cookie-consent-add-button.html
+            cookie-consent-target="embedGoogleMaps"
+            service-name="Google Maps"
+        %}
     </div>
 </div>
--->
