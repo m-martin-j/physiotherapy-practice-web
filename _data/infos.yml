@@ -4,7 +4,7 @@
 - title: Anmeldung
   content: "Um einen reibungslosen Ablauf zu gewährleisten, bitten wir Sie, Ihren Termin frühzeitig zu vereinbaren. Falls erforderlich, bringen Sie bitte Ihre Versichertenkarte sowie eine ärztliche Verordnung zur Behandlung mit."
 - title: Anamnesebogen
-  content: "Vor der ersten Behandlung ist es notwendig, einen Anamnesebogen auszufüllen, um gesundheitliche Besonderheiten zu erfassen. Das Formular kann hier heruntergeladen werden und bereits ausgefüllt mitgebracht werden:"
+  content: "Vor der ersten Behandlung ist es notwendig einen Anamnesebogen auszufüllen, um gesundheitliche Besonderheiten zu erfassen. Das Formular kann hier heruntergeladen werden und bereits ausgefüllt mitgebracht werden:"
   link:
     external: false
     file: true

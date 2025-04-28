@@ -22,7 +22,7 @@ Durch präzise Therapie- und Grifftechniken wird die Muskulatur sanft gelockert,
 ![Die rechte Hand einer Person gießt gelbliches Öl auf die Fläche der geöffeneten linken Hand. Im Hintergrund ist eine Person mit entblößtem Rücken unscharf zu erkennen.]({{ "/images/services/Massagen_md.jpeg" | relative_url }})
 
 ## Wellnessmassagen
-Unsere Wellnessmassagen sind darauf ausgerichtet, Körper und Geist in Einklang zu bringen und Ihnen eine wohltuende Auszeit vom Alltag zu schenken. Mit sanften, fließenden Bewegungen und entspannenden Grifftechniken helfen Sie, Stress abzubauen, Verspannungen zu lösen und die innere Balance wiederherzustellen.
+Unsere Wellnessmassagen sind darauf ausgerichtet, Körper und Geist in Einklang zu bringen und Ihnen eine wohltuende Auszeit vom Alltag zu schenken. Mit sanften, fließenden Bewegungen und entspannenden Grifftechniken helfen sie, Stress abzubauen, Verspannungen zu lösen und die innere Balance wiederherzustellen.
 
 {% include details-accordion.html
   id="accordion-massagen-2"

@@ -15,7 +15,7 @@ show_call_box_button: false
 - die Seite befindet sich aktuell im Aufbau -
 </h2>
 
-<strong>{{ site.title }}</strong><br>
+<strong>{{ site.title }} Physiotherapie</strong><br>
 {{ site.data.contact.boss_name }}<br>
 {{ site.data.contact.address.street }}<br>
 {{ site.data.contact.address.zip }} {{ site.data.contact.address.city }}
