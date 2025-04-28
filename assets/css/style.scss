@@ -128,10 +128,5 @@ $sub-footer-text-color: $white;
 @import "pages/page-services";
 
 body {
-  overflow-x: hidden;
   font-family: $font-family-base;
-}
-
-html {
-  overflow-x: hidden;
 }
