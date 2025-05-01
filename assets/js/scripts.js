@@ -96,7 +96,7 @@ function launchAnnouncementModal() {
 }
 
 // cookies
-function createCookie(name, value, days) {
+function createCookie(name, value, days={{ site.cookies.expiry_days }}) {
   var expires = "";
   if (days) {
       var date = new Date();
@@ -133,12 +133,12 @@ function showCookieConsentBanner() {
   document.getElementById('cookie-consent-banner-backdrop').classList.remove('hidden');
 
   document.getElementById('cookie-consent-accept').addEventListener("click", function() {
-    createCookie('cookie-consent', 'full', 31);
+    createCookie('cookie-consent', 'full');
     hideCookieConsentBanner();
     location.reload();
   });
   document.getElementById('cookie-consent-limited').addEventListener("click", function() {
-    createCookie('cookie-consent', 'necessary-only', 31);
+    createCookie('cookie-consent', 'necessary-only');
     hideCookieConsentBanner();
     location.reload();
   });
@@ -177,7 +177,7 @@ function checkCookieConsent() {  // checks if the cookie consent is given for ce
         consentAdd.removeAttribute('aria-hidden');
         let consentAddButton = consentAdd.querySelector('.cookie-consent-add-button');
         consentAddButton.addEventListener('click', function () {
-          createCookie('cookie-consent-' + consentName, 'true', 31);
+          createCookie('cookie-consent-' + consentName, 'true');
           location.reload();
         });
       } else {
