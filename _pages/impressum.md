@@ -18,6 +18,7 @@ show_call_box_button: false
 
 ## Kontakt
 Telefon: {{ site.data.contact.phone }}<br>
+Telefax: {{ site.data.contact.fax }}<br>
 E-Mail: {{ site.data.contact.email }}
 
 ## Berufsbezeichnungen
