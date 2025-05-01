@@ -37,6 +37,12 @@
 .strip-secondary-light {
   background-color: $secondary_light;
 }
+.strip-secondary-light-gradient {
+  background: linear-gradient(0deg, white 0%, $secondary_light 15%, $secondary_light 85%, white 100%);
+  &:last-of-type {
+    background: linear-gradient(0deg, $secondary_light 85%, white 100%);
+  }
+}
 
 .strip-diagonal-right {
   margin-top: -100px;
