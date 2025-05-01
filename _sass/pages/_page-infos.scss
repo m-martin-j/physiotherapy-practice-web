@@ -1,17 +1,2 @@
 .page-infos {
-  .intro-image-absolute {
-    @include media-breakpoint-up(md) {
-      left: -100px;
-      bottom: -110px;
-    }
-    @include media-breakpoint-up(lg) {
-      bottom: -215px;
-      left: -125px;
-      width: 145%;
-    }
-    @include media-breakpoint-up(xl) {
-      bottom: -220px;
-      width: 125%;
-    }
-  }
 }
