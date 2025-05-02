@@ -90,7 +90,7 @@ TBD
     * `title` shown in header of element
     * `content` rendered as p of element
     * `bullets` is an array of bullet point strings (if bullets provided, `content` is optional)
-    * `link` needs attributes `external` set to true|false, `url` set to url|absolute path to internal file, `text` set to the url's text
+    * `link` needs attributes `external` set to true|false, `url` set to url|absolute path to internal file, `text` set to the url's text. Its attribute `url_anchor` is optional and is, it set, appended to urls.
 
 
 ## Style

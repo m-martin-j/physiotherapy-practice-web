@@ -25,10 +25,20 @@
           {% endif %}
           {% if element.link %}
             <a
-              {% if element.link.external %}href="{{element.link.url}}"
-              {% else %}href="{% link {{element.link.url}} %}"
+              {% if element.link.url_anchor %}
+                {% assign anchor = element.link.url_anchor %}
+              {% else %}
+                {% assign anchor = "" %}
               {% endif %}
-              {% if element.link.external or element.link.file %}target="_blank" rel="noopener noreferrer"
+
+              {% if element.link.external %}
+                href="{{element.link.url}}{{anchor}}"
+              {% else %}
+                href="{% link {{element.link.url}} %}{{anchor}}"
+              {% endif %}
+
+              {% if element.link.external or element.link.file %}
+                target="_blank" rel="noopener noreferrer"
               {% endif %}
             >
               {{ element.link.text }}
