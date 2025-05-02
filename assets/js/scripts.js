@@ -257,7 +257,7 @@ function manageContactForm() {
     else {  // valid -> send the form
       event.preventDefault();
       grecaptcha.enterprise.ready(async () => {
-        const token = await grecaptcha.enterprise.execute('{{ site.data.third-party.google_recaptcha.site_key }}', {action: 'form-submit'});
+        const token = await grecaptcha.enterprise.execute('{{ site.data.third-party.google_recaptcha.site_key }}', {action: 'submit'});
         const recaptchaResponse = form.querySelector('input[name="g-recaptcha-response"]');
         recaptchaResponse.value = token;
         form.submit();
