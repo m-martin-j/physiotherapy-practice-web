@@ -1,19 +1,22 @@
 
 - title: Anfahrt
-  content: "Unsere Praxis befindet sich in der Dörfleinser Str. 60, 96103 Hallstadt-Dörfleins und ist sowohl mit dem Auto als auch mit öffentlichen Verkehrsmitteln gut erreichbar. Die Buslinie 904 hält an der nahegelegenen Haltestelle „Dörfleins Mitte“, nur 70 Meter von der Praxis entfernt. Parkmöglichkeiten stehen Ihnen direkt vor dem Praxiseingang zur Verfügung."
+  content: "Unsere Praxis befindet sich in der Dörfleinser Str. 60, 96103 Hallstadt-Dörfleins und ist sowohl mit dem Auto als auch mit öffentlichen Verkehrsmitteln gut erreichbar. Die Buslinie 904 hält an der nahegelegenen Haltestelle „Dörfleins Mitte“, nur 70 Meter von der Praxis entfernt. Parkmöglichkeiten stehen Ihnen kostenfrei direkt vor dem Praxiseingang zur Verfügung."
+  link:
+    external: false
+    url: _pages/contact.md
+    url_anchor: "#where"
+    text: "Anfahrtsbeschreibung anzeigen"
 - title: Anmeldung
-  content: "Um einen reibungslosen Ablauf zu gewährleisten, bitten wir Sie, Ihren Termin frühzeitig zu vereinbaren. Falls erforderlich, bringen Sie bitte Ihre Versichertenkarte sowie eine ärztliche Verordnung zur Behandlung mit."
+  content: 'Um einen reibungslosen Ablauf zu gewährleisten, bitten wir Sie, Ihren Termin frühzeitig zu vereinbaren. Falls erforderlich, bringen Sie bitte Ihre Versichertenkarte sowie eine ärztliche Verordnung zur Behandlung mit. Wir würden uns zudem freuen, wenn Sie den Anamnesebogen und die Datenschutzerklärung ausgefüllt und unterschrieben zu Ihrem ersten Termin mitbringen oder uns vorab digital per Mail zukommen lassen. Weitere Informationen finden Sie auf dieser Seite unter den Punkten "Anamnesebogen" und "Datenschutz".<br>Bitte erscheinen Sie spätestens 5 Minuten vor Behandlungsbeginn in der Praxis. Wir sind bemüht, alle Behandlungen pünktlich zu beginnen. Bei verspäteter Ankunft verkürzt sich Ihre Behandlungszeit daher entsprechend.'
 - title: Anamnesebogen
-  content: "Vor der ersten Behandlung ist es notwendig einen Anamnesebogen auszufüllen, um gesundheitliche Besonderheiten zu erfassen. Das Formular kann hier heruntergeladen werden und bereits ausgefüllt mitgebracht werden:"
+  content: "Vor der ersten Behandlung ist es notwendig einen Anamnesebogen auszufüllen, um gesundheitliche Besonderheiten zu erfassen. Dieser steht Ihnen in unserer Praxis zur Verfügung. Sie können ihn auch hier herunterladen und bereits ausgefüllt und unterschrieben vor Ihrem ersten Termin ausgedruckt mitbringen oder uns digital per E-Mail zusenden:"
   link:
     external: false
     file: true
     url: _downloads/Anamnesebogen_Praxis_Main_Vital.pdf
     text: "Anamnesebogen herunterladen"
 - title: Barrierefrei
-  content: "Unsere Praxis ist barrierefrei zugänglich und verfügt über Parkplätze direkt vor der Eingangstür."
-- title: Behandlung
-  content: "Bitte erscheinen Sie 5 Minuten vor Behandlungsbeginn in der Praxis. Wir sind bemüht, alle Behandlungen pünktlich zu beginnen. Bringen Sie zu jeder Behandlung ein großes Badehandtuch mit und tragen Sie möglichst bequeme Kleidung. Bei verspäteter Ankunft verkürzt sich Ihre Behandlungszeit entsprechend."
+  content: "Unsere Praxis ist barrierefrei zugänglich und verfügt über Parkplätze direkt vor der Eingangstür. Sollten Sie Unterstützung beim Zugang benötigen, stehen wir Ihnen selbstverständlich gerne zur Seite."
 - title: Bezahlung
   content: "Die Begleichung Ihrer Rezeptgebühr oder Leistung ist bei uns ausschließlich über EC-Kartenzahlung oder auf Rechnung möglich."
 - title: Berufsgenossenschafts-Rezept
@@ -21,14 +24,14 @@
 - title: "Dauer der Behandlung"
   content: "Die Dauer der Behandlung richtet sich nach der ärztlichen Verordnung sowie den optional von Ihnen in Anspruch genommen privaten Therapieleistungen."
 - title: Datenschutz
-  content: "Vor Ihrem ersten Termin bitten wir Sie, unsere Datenschutzverordnung zu unterzeichnen. Ihre persönlichen Daten werden streng vertraulich behandelt und nicht an Dritte weitergegeben. Sie haben die Möglichkeit, die Datenschutzverordnung direkt in unserer Praxis zu unterzeichnen oder sie hier herunterzuladen:"
+  content: "Vor Ihrem ersten Termin bitten wir Sie, unsere Datenschutzverordnung zu unterzeichnen. Ihre persönlichen Daten werden streng vertraulich behandelt und nicht an Dritte weitergegeben. Sie haben die Möglichkeit, die Datenschutzverordnung direkt in unserer Praxis zu unterzeichnen oder sie vorab unter nachfolgendem Link herunterzuladen und ausgefüllt und unterschrieben zu Ihrem ersten Termin mitzubringen. Alternativ können Sie uns die Datenschutzerklärung ausgefüllt und unterschrieben vorab digital per Mail zukommen lassen."
   link:
     external: false
     file: true
     url: _downloads/Datenschutzverordnung_Praxis_Main_Vital.pdf
     text: "Datenschutzverordnung herunterladen"
 - title: Erstbefund
-  content: "Beim Erstbefund analysieren wir Ihre Beschwerden, Krankengeschichte und körperliche Verfassung. So schaffen wir die Basis für Ihren optimalen Behandlungsplan."
+  content: "Beim Erstbefund analysieren wir Ihre Beschwerden, Krankengeschichte und körperliche Verfassung im Rahmen Ihres ersten Termins. So schaffen wir die Basis für Ihren optimalen Behandlungsplan."
 - title: Folgeverordnung
   content: "Falls erforderlich, bitten wir Sie, sich frühzeitig um eine Folgeverordnung in Absprache mit Ihrer*m Therapeut*in zu kümmern. So vermeiden Sie unnötige Pausen zwischen den Behandlungssequenzen."
 - title: Gutschein
@@ -39,10 +42,8 @@
     text: "Mehr zu Gutscheinen"
 - title: Hausbesuch
   content: "Auf Wunsch und bei entsprechender ärztlicher Verordnung führen wir die Behandlung auch gerne bei Ihnen zu Hause durch."
-- title: Individuelle Therapie
-  content: "Jede Behandlung wird ganz nach Ihren spezifischen Bedürfnissen und Zielen individuell angepasst."
 - title: Hygiene
-  content: "Zum Schutz und Komfort unserer Therapeut*innen bitten wir Sie, mit gepflegter Körperhygiene sowie sauberer, bequemer Kleidung zu Ihrer Behandlung zu erscheinen. Denken Sie bitte auch an Sportschuhe und legen Sie idealerweise Ihren Schmuck zu Hause ab. Für verlorene Gegenstände übernehmen wir keine Haftung."
+  content: "Zum Schutz und Komfort unserer Therapeut*innen bitten wir Sie, mit gepflegter Körperhygiene sowie sauberer, bequemer Kleidung zu Ihrer Behandlung zu erscheinen.<br>Bringen Sie zu jeder Behandlung ein großes Badehandtuch mit und denken Sie bitte auch an Sportschuhe. Wir bitten Sie, Ihren Schmuck bereits zu Hause abzulegen. Für verlorene Gegenstände übernehmen wir keine Haftung."
 - title: Kassenrezept
   content:
   bullets:
@@ -56,7 +57,7 @@
     url: _pages/services.md
     text: "Leistungen"
 - title: Leistungsumfang einer physiotherapeutischen Maßnahme
-  content:
+  content: "Eine physiotherapeutische Maßnahme umfasst eine Vielzahl an wichtigen Schritten, um eine individuell abgestimmte und qualitativ hochwertige Behandlung zu gewährleisten. Dazu gehören:"
   bullets:
     - "Vorbereiten der Behandlungsräume"
     - "Anamnese und Befund"
@@ -81,7 +82,7 @@
     external: false
     url: _pages/contact.md
     text: "Kontaktdetails anzeigen"
-- title: Terminabsprache
+- title: Terminvereinbarung
   content: "Sie können Ihren Termin bei uns ganz bequem online, telefonisch oder per E-Mail vereinbaren – wir freuen uns auf Sie!"
   link:
     external: false
@@ -94,7 +95,7 @@
 - title: Unterbrechung der Behandlung
   content: "Die Unterbrechungszeiträume zwischen den einzelnen Behandlungsterminen sind durch die jeweiligen Kostenträger reglementiert. Einige Kostenträger handeln sehr restriktiv und verlangen einen Behandlungsabbruch bei Überschreiten dieser Fristen."
 - title: Unterlagen zum Termin
-  content: "Um eine optimale, auf Ihre Bedürfnisse abgestimmte Akut-, Vor- oder Nachbehandlung zu gewährleisten, dürfen Sie jederzeit aktuelle Arzt- oder Operationsberichte, Ausdrucke bildgebender Verfahren sowie vorliegende Nachbehandlungspläne zu Ihrem Behandlungstermin mitbringen."
+  content: 'Um eine optimale, auf Ihre Bedürfnisse abgestimmte Akut-, Vor- oder Nachbehandlung zu gewährleisten, dürfen Sie jederzeit aktuelle Arzt- oder Operationsberichte, Ausdrucke bildgebender Verfahren sowie vorliegende Nachbehandlungspläne zu Ihrem Behandlungstermin mitbringen. Neupatient*innen bitten wir, wenn möglich, den Anamnesebogen, sowie die Datenschutzerklärung ausgefüllt und unterschrieben zu Ihrem ersten Termin mitzubringen oder uns vorab digital per Mail zukommen zu lassen. Weitere Informationen finden Sie unter den Punkten "Anamnesebogen" und "Datenschutz".'
 - title: Versäumnis eines Termins
   content: "Da wir eine Bestellpraxis sind und Termine speziell für Sie reservieren, sehen wir uns leider gezwungen, unentschuldigte Terminabsagen oder Absagen weniger als 24 Stunden vor dem vereinbarten Termin mit den Kosten der gebuchten Behandlung privat in Rechnung zu stellen."
 - title: Warteliste
