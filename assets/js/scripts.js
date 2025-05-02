@@ -257,13 +257,22 @@ function manageContactForm() {
     else {  // valid -> send the form
       event.preventDefault();
       grecaptcha.enterprise.ready(async () => {
-        const token = await grecaptcha.enterprise.execute('{{ site.data.third-party.google_recaptcha.site_key }}', {action: 'submit'});
-        const recaptchaResponse = form.querySelector('input[name="g-recaptcha-response"]');
-        recaptchaResponse.value = token;
-        form.submit();
+        const token = await grecaptcha.enterprise
+          .execute('{{ site.data.third-party.google_recaptcha.site_key }}', {action: 'submit'})
+          .catch((error) => {
+            console.error('Error executing reCAPTCHA:', error);
+            return;
+          });
+        if (token) {
+          const recaptchaResponse = form.querySelector('input[name="g-recaptcha-response"]');
+          recaptchaResponse.value = token;
+          form.submit();
+        } else {
+          console.error('No reCAPTCHA token received');
+          replaceContactFormWithError(form);
+          return;
+        }
       });
-
-      replaceContactFormWithSuccess(form, formSuccess);
     }
 
     form.classList.add('was-validated');
@@ -274,4 +283,16 @@ function replaceContactFormWithSuccess(form, formSuccess) {
   form.setAttribute('aria-hidden', 'true');
   formSuccess.classList.remove('hidden');
   formSuccess.removeAttribute('aria-hidden');
+}
+function replaceContactFormWithError(form) {
+  form.classList.add('hidden');
+  form.setAttribute('aria-hidden', 'true');
+
+  const errorMessage = document.createElement('div');
+  errorMessage.classList.add('alert', 'alert-danger', 'text-center');
+  errorMessage.setAttribute('role', 'alert');
+  errorMessage.innerHTML = `
+    <p>Es gab einen Fehler bei der Übermittlung des Formulars. Bitte versuchen Sie es später erneut.</p>
+  `;
+  form.parentNode.insertBefore(errorMessage, form);
 }
