@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
   launchAnnouncementModal();
   launchCookieConsent();
   checkCookieConsent();
+  manageContactForm();
 });
 
 
@@ -159,14 +160,19 @@ function checkCookieConsent() {  // checks if the cookie consent is given for ce
     return;
   }
 
+  let consent_given_necessary = readCookie('cookie-consent') === 'necessary-only';
   let consent_given_full = readCookie('cookie-consent') === 'full';
 
   for (let i = 0; i < relevant_elements.length; i++) {
     let element = relevant_elements[i];
     let consentName = element.getAttribute('data-cookie-consent');
+    let elementNecessary = element.getAttribute('data-cookie-consent-necessary');
 
-    if (consent_given_full  // embed the element
-        || readCookie('cookie-consent-' + consentName) === 'true') {
+    if (// embed the element
+        consent_given_full  // full consent given
+        || readCookie('cookie-consent-' + consentName) === 'true'  // consent given for this element
+        || (elementNecessary && consent_given_necessary)  // necessary consent given and this element is necessary
+      ) {
       if (typeof window[consentName] === 'function') {
         window[consentName]();
       }
@@ -181,6 +187,9 @@ function checkCookieConsent() {  // checks if the cookie consent is given for ce
           location.reload();
         });
       } else {
+        if (elementNecessary) {
+          return;  // no consent add button for necessary elements
+        }
         console.warn('No consent add element found for: ', consentName);
       }
     }
@@ -193,4 +202,76 @@ function embedGoogleMaps() {
   gmapscont.innerHTML = `
       <iframe src="{{ site.data.third-party.google_maps.embed }}" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
   gmapscont.classList.remove('hidden');
+}
+
+// embed Google ReCAPTCHA
+function embedReCAPTCHA() {
+  const script = document.createElement('script');
+  script.src = `{{ site.data.third-party.google_recaptcha.external }}{{ site.data.third-party.google_recaptcha.site_key }}`;
+  script.defer = true;
+  document.body.appendChild(script);
+}
+
+// contact form
+function manageContactForm() {
+  const form = document.getElementById('contact-form');
+  if (!form) {
+    return;
+  }
+
+  // post submission, only show the success message
+  const formSuccess = document.getElementById('form-success');
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('form-submit') === 'success') {
+    replaceContactFormWithSuccess(form, formSuccess);
+    return;
+  }
+  const reasonGutschein = form.querySelector('#Reason_Gutschein');
+  const reasonGenerelleAnfrage = form.querySelector('#Reason_Generelle_Anfrage');
+  const gutscheinwertDiv = form.querySelector('#Gutscheinwert__div');
+  const gutscheinwertInput = form.querySelector('#Gutscheinwert');
+
+  function toggleGutscheinwertDiv() {
+    if (reasonGutschein.checked) {
+      gutscheinwertDiv.classList.remove('hidden');
+      gutscheinwertInput.setAttribute('required', 'required');
+    } else {
+      gutscheinwertDiv.classList.add('hidden');
+      gutscheinwertInput.removeAttribute('required');
+    }
+  }
+
+  reasonGutschein.addEventListener('change', toggleGutscheinwertDiv);
+  reasonGenerelleAnfrage.addEventListener('change', toggleGutscheinwertDiv);
+
+  if (urlParams.get('reason') === 'gutschein') {
+    reasonGutschein.checked = true;
+    toggleGutscheinwertDiv();
+  }
+
+  form.addEventListener('submit', function(event) {
+    if (!form.checkValidity()) {  // not valid
+      event.preventDefault();
+      event.stopPropagation();
+    }
+    else {  // valid -> send the form
+      event.preventDefault();
+      grecaptcha.enterprise.ready(async () => {
+        const token = await grecaptcha.enterprise.execute('{{ site.data.third-party.google_recaptcha.site_key }}', {action: 'form-submit'});
+        const recaptchaResponse = form.querySelector('input[name="g-recaptcha-response"]');
+        recaptchaResponse.value = token;
+        form.submit();
+      });
+
+      replaceContactFormWithSuccess(form, formSuccess);
+    }
+
+    form.classList.add('was-validated');
+  })
+}
+function replaceContactFormWithSuccess(form, formSuccess) {
+  form.classList.add('hidden');
+  form.setAttribute('aria-hidden', 'true');
+  formSuccess.classList.remove('hidden');
+  formSuccess.removeAttribute('aria-hidden');
 }

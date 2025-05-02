@@ -26,9 +26,10 @@ Copyright (c) 2024-2025 Martin Trat.
   * the divider is set in [_sass/_bootstrap-variables.scss](_sass/_bootstrap-variables.scss)
   * Layout: [_sass/components/_breadcrumb.scss](_sass/components/_breadcrumb.scss)
 * frontmatter attributes
-  * `voucher`: if set to true, the service is displayed separately from other services on the service overview page; currently, it is not displayed on the landing page; only the first page with `voucher` set to true is processed --> only one page should be assigned this attribute with value true - other will not be shown!
+  * `voucher`: if set to true, the service is displayed separately from other services on the service overview page; currently, it is not displayed on the landing page; only the first page with `voucher` set to true is processed --> only one page should be assigned this attribute with value true - others will not be shown!
   * `show_call_button`: if set to true, a call button will be displayed on the bottom of the page.
   * `call_button_text`: if set, the button default text is replaced.
+  * `call_button_purpose`: if set to `"voucher_request"`, the user is redirected to the contact form on the contact page with the reason Gutschein being pre-selected via a query parameter. If not set, the button takes the user to the contact page without page anchors or query parameters.
 
 ### About
 (Über Carmen)
@@ -112,6 +113,31 @@ TBD
     * The style variable `--fly-in-start-x` can be optionally overwritten. E.g. negative percentage values to fly in from the left.
     * Optionally, html elements can be assigned the `data-inviewport` field. Then, the animation will only be activated once it is visible in the viewport via JavaScript.
       * Additionally, the HTML fields `data-root-margin` and `data-threshold` can optionally be set to control options passed to the IntersectionObserver (deviating from default values).
+
+
+## Cookies
+* Data
+  * validity duration: [_config.yml](_config.yml) - `cookies.expiry_days`
+* JavaScript: [assets/js/scripts.js](assets/js/scripts.js) - section `cookies`
+  * Logic:
+    * If an HTML element is assigned the attribute `data-cookie-consent`, the embedding of third-party code is prevented until the user's cookie consent is verified (function `checkCookieConsent`). The value of this attribute needs to correspond to the name of a function in the scripts file. If appropriate consent is given, this function will embed necessary elements.
+    * If an HTML element is ADDITIONALLY assigned the attribute `data-cookie-consent-necessary`, only necessary consent needs to be given by the user (for functional necessities of the website). If this attribute is not assigned, a consent add button for delayed user consent is shown.
+* HTML
+  * consent banner: [_includes/cookie-consent-banner.html](_includes/cookie-consent-banner.html)
+  * consent add button: [_includes/cookie-consent-add-button.html](_includes/cookie-consent-add-button.html)
+
+
+## Third-Party Integrations
+### Contact Form
+* HTML: [_includes/contact-form.html](_includes/contact-form.html)
+* JavaScript: [assets/js/scripts.js](assets/js/scripts.js) - section `contact form` and `embed Google ReCAPTCHA`
+* Data: [_data/third-party.yml](_data/third-party.yml)
+* Provider: https://formkeep.com/
+
+### Google Maps
+* JavaScript: [assets/js/scripts.js](assets/js/scripts.js) - section `embed Google Maps`
+* Data: [_data/third-party.yml](_data/third-party.yml)
+
 
 ## Development
 * Dependencies: ruby with gems, jekyll, bundler (https://jekyllrb.com/docs/installation/)

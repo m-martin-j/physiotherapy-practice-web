@@ -6,3 +6,10 @@ online_appointment:
   embed: "https://termine.opticaviva.de/b/LpQimheAqLd_ZQkRMdsrhWV-aKlXV1EO"
   external: "https://termine.opticaviva.de/a/LpQimheAqLd_ZQkRMdsrhWV-aKlXV1EO"
   partner_name: "OpticaViva"
+
+contact_form:
+  external: "https://formkeep.com/f/52ce8143e07e"
+
+google_recaptcha:
+  external: "https://www.recaptcha.net/recaptcha/enterprise.js?render="
+  site_key: "6LeopSsrAAAAAPyUxiw0OHpx1SVSkEf8lie2JftC"

@@ -1,0 +1,33 @@
+
+#contact-form {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  &.hidden {
+    display: none;
+  }
+
+  div.hidden {
+    display: none;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid $steel;
+  }
+}
+
+#form-success {
+  &.hidden {
+    display: none;
+  }
+}
+
+.grecaptcha-badge {
+  display: none;
+}

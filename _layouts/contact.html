@@ -9,32 +9,6 @@ bodyClass: "page-contact"
     </div>
 </div>
 
-<!-- TODO: Add light-weight contact form
-    * add anchor to jump from other pages to here directly
-    * add form fields:
-        * checkboxes
-            * gutschein - dann weitere Felder: Wert (Dropdown mit 5/10er Schritten)
-            * Termin stornieren - dann weitere Felder: Datum, Uhrzeit
-            * generelle Anfrage
-        * name
-        * email
-        * subject
-        * message
-    * add form validation
-    * add consent checkbox: Ich stimme zu, dass meine Angaben aus dem Kontaktformular zur Beantwortung meiner Anfrage und für den Fall von Anschlussfragen erhoben und verarbeitet werden. Die Daten werden nach abgeschlossener Verarbeitung gelöscht.
-    * add success message
-    * add error message
-    * add reCAPTCHA (cookies?): <small data-v-ccf091d5="" class="d-block mt-2"> Diese Seite verwendet reCAPTCHA und es gelten die <a data-v-ccf091d5="" href="https://policies.google.com/privacy" target="_blank">Datenschutzrichtlinien</a> und <a data-v-ccf091d5="" href="https://policies.google.com/terms" target="_blank">Nutzungsbedingungen</a> von Google. </small>
-
-<div class="strip strip-secondary-light-gradient">
-    <div class="container">
-        <div class="col-12 col-lg-8 mx-auto">
-            TODO
-        </div>
-    </div>
-</div>
--->
-
 <div class="strip strip-secondary-light-gradient">
     <div class="container">
         <h2>Hier finden Sie uns</h2>
@@ -48,5 +22,27 @@ bodyClass: "page-contact"
             service-terms-url="https://policies.google.com/terms"
             service-privacy-url="https://policies.google.com/privacy"
         %}
+    </div>
+</div>
+
+<div class="strip strip-white">
+    <div class="container">
+        <div class="row">
+            <h2 id="form">Kontaktformular</h2>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-10 col-xl-10 mx-auto">
+                <div data-cookie-consent="embedReCAPTCHA" data-cookie-consent-necessary="true">
+                    {% include contact-form.html %}
+                </div>
+                <div class="hidden" id="form-success" aria-hidden="true">
+                    <div class="alert alert-success text-center" role="alert">
+                        <strong>Vielen Dank für Ihre Nachricht!</strong>
+                        <br>
+                        Wir werden uns umgehend bei Ihnen melden.
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

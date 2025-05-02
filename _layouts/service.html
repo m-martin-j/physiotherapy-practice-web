@@ -27,7 +27,15 @@ bodyClass: "page-service"
   {% if page.show_call_button %}
   <div class="row justify-content-start">
     <div class="col-12 col-md-8 text-center">
-      <a href="{% link _pages/contact.md %}" class="btn btn-primary">{{ page.call_button_text | default: "Kontakt" }}</a>
+      <a
+        {% if page.call_button_purpose == "voucher_request" %}
+        href="{% link _pages/contact.md %}?reason=gutschein#form"
+        {% else %}
+        href="{% link _pages/contact.md %}"
+        {% endif %}
+        class="btn btn-primary">
+        {{ page.call_button_text | default: "Kontakt" }}
+      </a>
     </div>
   </div>
   {% endif %}

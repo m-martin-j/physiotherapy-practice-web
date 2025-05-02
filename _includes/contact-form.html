@@ -1,0 +1,90 @@
+
+<form class="needs-validation container" id="contact-form" target="_self" enctype="multipart/form-data" action="{{ site.data.third-party.contact_form.external }}" accept-charset="UTF-8" method="post" novalidate>
+  <fieldset>
+
+    <div class="row">
+      <div class="col-12 col-md-6" id="First_Name__div">
+        <!-- <label for="First_Name">Vorname</label> -->
+        <input type="text" name="First Name" id="First_Name" placeholder="Vorname" class="form-control" />
+      </div>
+      <div class="col-12 col-md-6" id="Last_Name__div">
+        <!-- <label for="Last_Name">Nachname</label> -->
+        <input type="text" name="Last Name" id="Last_Name" placeholder="Nachname" class="form-control" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6" id="Email__div">
+        <!-- <label title="required" for="Email">Email *</label> -->
+        <input type="email" name="Email" id="Email" required="required" placeholder="E-Mail-Adresse *" class="form-control" />
+        <div class="invalid-feedback">Bitte geben Sie eine gültige E-Mail-Adresse ein.</div>
+      </div>
+      <div class="col-12 col-md-6" id="Phone__div">
+        <!-- <label for="Phone">Phone</label> -->
+        <input type="tel" name="Phone" id="Phone" placeholder="Telefonnummer" class="form-control" />
+      </div>
+    </div>
+
+    <div class="row mt-2">
+      <div id="Reason__div">
+        <label class="form-label" for="Reason">Betreff Ihrer Anfrage</label>
+        <div class="form-check col-12">
+          <input type="radio" name="Reason" id="Reason_Generelle_Anfrage" value="Generelle Anfrage" class="form-check-input" checked="checked" />
+          <label class="form-check-label" for="Reason_Generelle_Anfrage">Generelle Anfrage</label>
+        </div>
+        <div class="form-check col-12">
+          <input type="radio" name="Reason" id="Reason_Gutschein" value="Gutschein" class="form-check-input" />
+          <label class="form-check-label" for="Reason_Gutschein">Gutscheinanfrage</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row hidden" id="Gutscheinwert__div">
+      <div class="col-6">
+        <!-- <label for="Gutscheinwert">Gutscheinwert</label> -->
+        <input type="text" name="Gutscheinwert" id="Gutscheinwert" placeholder="Gutscheinwert *" pattern="^\d*\.?\d*$" inputmode="decimal" max="500" min="15" class="form-control" />
+        <div class="invalid-feedback">Bitte geben Sie einen Gutscheinwert ein.</div>
+        <small class="form-text text-muted">Bitte geben Sie nur den Zahlenwert ohne Währung ein.</small>
+      </div>
+    </div>
+
+    <div class="row mt-2">
+      <div class="col-12" id="Message__div">
+        <!-- <label title="required" for="Message">Message *</label> -->
+        <textarea name="Message" id="Message" required="required" placeholder="Nachricht an Main Vital *" class="form-control"></textarea>
+        <div class="invalid-feedback">Bitte geben Sie eine Nachricht ein.</div>
+        <small class="form-text text-muted">Bitte geben Sie soviele Details wie möglich an.</small>
+      </div>
+    </div>
+
+    <div class="row mt-2">
+      <div id="consent__div">
+        <div class="form-check col-12">
+          <input type="checkbox" name="consent for personal data processing" id="consent_checked" value="given" required="required" class="form-check-input" />
+          <label class="form-check-label" for="consent_checked">Ich bin mit der Verarbeitung meiner Daten zum Zweck dieser Anfrage einverstanden. Hierbei gilt die <a href="{% link _pages/datenschutz.md %}" target="_blank">Datenschutzerklärung</a> von {{ site.title }}.</label>
+          <div class="invalid-feedback">Bitte stimmen Sie den Bedingungen zu.</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="opacity:0;position:absolute;top:0;left:-5000px;height:0;width:0">
+      <label for="subscribe_52ce8143e07e_48418"></label>
+      <input name="subscribe_52ce8143e07e_48418" value="" tabindex="-1" autocomplete="off" type="email" id="email_subscribe_52ce8143e07e_48418" placeholder="Your email here">
+    </div>
+
+    <input type="hidden" name="g-recaptcha-response" value="" />
+
+    <div class="row mt-3">
+      <div class="col-12 text-center">
+        <input type="submit" value="Anfrage absenden" class="btn btn-primary" data-disable-with="Submit" />
+      </div>
+      <div class="col-12 text-center">
+        <small class="text-muted">
+          Diese Seite verwendet reCAPTCHA. Es gelten die
+          <a href="https://policies.google.com/privacy">Datenschutzrichtlinie</a> und
+          <a href="https://policies.google.com/terms">Nutzungsbedingungen</a> von Google.
+        </small>
+      </div>
+    </div>
+  </fieldset>
+</form>

@@ -5,6 +5,7 @@ weight: 0
 voucher: true
 show_call_button: true
 call_button_text: Gutschein anfragen
+call_button_purpose: "voucher_request"
 ---
 
 Das perfekte Geschenk für jeden Anlass!

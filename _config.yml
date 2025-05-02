@@ -16,6 +16,7 @@ home:
 
 cookies:
   expiry_days: 31
+
 collections:
   services:
     output: true
