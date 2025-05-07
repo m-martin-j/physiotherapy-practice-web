@@ -12,4 +12,17 @@
       }
     }
   }
+  .intro-image-absolute {
+    @include media-breakpoint-up(md) {
+      bottom: 75px;
+    }
+    @include media-breakpoint-up(lg) {
+      bottom: 0px;
+      width: 150%;
+    }
+    @include media-breakpoint-up(xl) {
+      left: -80px;
+      width: 125%;
+    }
+  }
 }
