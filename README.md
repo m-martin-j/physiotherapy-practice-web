@@ -162,6 +162,10 @@ TBD
   ```
 
 
+## Problems
+* Encountered sticky header to flow out to top on scroll down, horizontally non-centered main-menu-mobile --> solved by applying `overflow: hidden` on `.intro` ([_sass/components/_intro.scss](_sass/components/_intro.scss))
+
+
 ## Understanding Jekyll
 ### Assets
 * CSS and SASS/SCSS (https://jekyllrb.com/docs/step-by-step/07-assets/)

@@ -5,6 +5,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background: linear-gradient(0deg, $white 0%, $white-offset 10%, $secondary_light 25%);
+  overflow: hidden;
   @include media-breakpoint-up(lg) {
     padding-top: 140px;
     padding-bottom: 140px;
