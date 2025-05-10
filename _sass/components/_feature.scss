@@ -1,33 +1,42 @@
 .feature {
-  height: 100%;
-  border: 1px solid $white-offset;
-  border-radius: 3px;
-  padding: 20px;
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-  .feature-image {
-    flex: 0 0 auto;
-    width: 80px;
-    height: 80px;
+  .feature-box {
+    height: 100%;
+    border: 1px solid $white-offset;
+    border-radius: 3px;
+    padding: 20px;
+    background-color: #ffffff;
     display: flex;
-    margin-bottom: 20px;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
-  }
-  img {
-    width: 100%;
-    height: auto;
-  }
-  .feature-title {
-  }
-  .feature-content {
-    margin-bottom: auto;
-    margin-top: auto;
-    p {
-      margin: 0px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    .feature-image {
+      flex: 0 0 auto;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      margin-bottom: 20px;
+      text-align: center;
     }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .feature-title {
+    }
+    .feature-content {
+      margin-bottom: auto;
+      margin-top: auto;
+      p {
+        margin: 0px;
+      }
+    }
+  }
+  &[data-inviewport="fly-in"] * {
+    opacity: 0;
+  }
+  &[data-inviewport="fly-in"].is-inViewport * {
+    animation: flyIn 1.2s ease forwards;
+    opacity: 1.0;
   }
 }

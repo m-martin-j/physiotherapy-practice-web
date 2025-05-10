@@ -36,8 +36,8 @@ bodyClass: "page-home"
     <div class="row justify-content-center">
 
       {% for feature in site.data.features %}
-      <div class="col-12 col-md-6 col-lg-4 mb-2 {% if feature_count == 3 %}mb-lg-0{% endif %}">
-        <div class="feature">
+      <div class="feature col-12 col-md-6 col-lg-4 mb-2 {% if feature_count == 3 %}mb-lg-0{% endif %}" data-inviewport="fly-in" data-root-margin="0% 0% 35% 0%" style="--fly-in-start-x: 0;">
+        <div class="feature-box">
           {% if feature.image %}
           <div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image.url | relative_url }}"/></div>
           {% endif %}
