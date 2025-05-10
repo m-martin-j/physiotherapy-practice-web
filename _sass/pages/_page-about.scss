@@ -10,4 +10,27 @@
       width: 250px;
     }
   }
+  .intro-image-absolute {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    --crop-img-bottom: 40%;
+    clip-path: inset(0 0 var(--crop-img-bottom) 0);
+    margin-bottom: calc(var(--crop-img-bottom) * -1);
+    @include media-breakpoint-up(md) {
+      clip-path: unset;
+      margin-bottom: unset;
+      bottom: -30px;
+      left: -15px;
+      width: 120%;
+    }
+    @include media-breakpoint-up(lg) {
+      bottom: -100px;
+    }
+    @include media-breakpoint-up(xl) {
+      left: 20px;
+      width: 100%;
+    }
+  }
 }
