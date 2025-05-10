@@ -19,6 +19,10 @@
 [data-inviewport="fly-in"].is-inViewport {
   p, img {
     animation: flyIn 1.2s ease forwards;
+  }
+}
+[data-inviewport="fly-in"][data-insuccession].is-inViewport {
+  p, img {
     position: relative;
   }
   p:nth-child(1) {

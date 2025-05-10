@@ -122,8 +122,9 @@ TBD
   * Usage:
     * globally, any CSS class can use the flyIn animation keyframes
     * The style variable `--fly-in-start-x` can be optionally overwritten. E.g. negative percentage values to fly in from the left.
-    * Optionally, html elements can be assigned the `data-inviewport` field. Then, the animation will only be activated once it is visible in the viewport via JavaScript.
-      * Additionally, the HTML fields `data-root-margin` and `data-threshold` can optionally be set to control options passed to the IntersectionObserver (deviating from default values).
+    * Optionally, html elements can be assigned the `data-inviewport` attribute. Then, the animation will only be activated once it is visible in the viewport via JavaScript.
+      * Additionally, the HTML attributes `data-root-margin` and `data-threshold` can optionally be set to control options passed to the IntersectionObserver (deviating from default values).
+      * Additionally, the HTML attribute `data-insuccession` can optionally be set (with arbitrary value) to apply the keyframes on the children with delay and increasing horizontal displacement one after another
 
 
 ## Cookies
