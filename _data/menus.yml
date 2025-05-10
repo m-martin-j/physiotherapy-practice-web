@@ -14,6 +14,9 @@ main:
   - name: "Kontakt"
     url: "/contact/"
     weight: 5
+  - name: "Termin online buchen"
+    online_appointment_btn: true
+    weight: 6
 
 footer:
   - name: "Startseite"

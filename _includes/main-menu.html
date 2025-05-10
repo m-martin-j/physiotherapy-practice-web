@@ -3,7 +3,20 @@
   <ul>
     {% for item in mainmenu %}
     <li class="{% if item.url == page.url %}active{% endif %}">
-      <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+      <a
+        {% if item.external %}
+          target="_blank" rel="noopener noreferrer"
+          href="{{ item.url }}"
+        {% elsif item.online_appointment_btn %}
+          target="_blank" rel="noopener noreferrer"
+          href="{{ site.data.third-party.online_appointment.external }}"
+          class="btn btn-primary ms-5"
+        {% else %}
+          href="{{ item.url | relative_url }}"
+        {% endif %}
+      >
+        {{ item.name }}
+      </a>
     </li>
     {% endfor %}
   </ul>

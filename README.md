@@ -49,6 +49,17 @@ Copyright (c) 2024-2025 Martin Trat.
 * Practice info
 
 
+## Menu
+* Data: [_data/menus.yml](_data/menus.yml)
+* Layout: [_includes/main-menu.html](_includes/main-menu.html), [_includes/main-menu-mobile.html](_includes/main-menu-mobile.html)
+  * if a data element has `online_appointment_btn: true`, it is rendered as a button and a click opens a new tab
+  * if a data element has `external: true`, a click opens a new tab
+* SCSS: [_sass/components/_main-menu.scss](_sass/components/_main-menu.scss), [_sass/components/_main-menu-mobile.scss](_sass/components/_main-menu-mobile.scss)
+  * variable `$switch-menu-mobile-desktop-breakpoint` defined in [assets/css/style.scss](assets/css/style.scss) controls the breakpoint, on which mobile is replaced by desktop menu
+  * using `color.scale($primary, $alpha: VALUE%);` instead of `opacity: VALUE;` enables children to override transparency
+* JavaScript: [assets/js/scripts.js](assets/js/scripts.js) sections `mobile menu` and `shrinking the header on scroll`
+
+
 ## Footer/Sub-Footer
 ### Footer
 TBD

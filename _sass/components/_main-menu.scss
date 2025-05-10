@@ -1,6 +1,6 @@
 .main-menu {
   display: none;
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up($switch-menu-mobile-desktop-breakpoint) {
     display: block;
   }
   > ul {
@@ -18,7 +18,12 @@
         text-decoration: none;
         color: $header-text-color;
       }
-      &:after {
+      .btn {
+        font-size: 1.1rem;
+        border: 1px solid $white;
+        border-radius: 0.5rem;
+      }
+      &:not(:has(.btn)):after {
         display: block;
         content: '';
         border-bottom: 1px solid darken($header-text-color, 10%);
