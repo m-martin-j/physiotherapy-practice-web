@@ -8,5 +8,6 @@ gem "ostruct"
 gem "csv"
 gem "base64"
 gem "sass-embedded", "1.77.8"
+gem "jekyll-sitemap", "~> 1.4"
 
 gem 'wdm', '>= 0.1.0', platforms: [:x64_mingw]
