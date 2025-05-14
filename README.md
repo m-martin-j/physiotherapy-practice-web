@@ -161,6 +161,7 @@ TBD
   ```sh
   bundle update
   ```
+* bots: a curated list for [robots.xml](robots.xml) to prevent scraping for AI training purposes: https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/
 
 
 ## Problems
