@@ -12,13 +12,13 @@ show_call_box_button: false
 ---
 
 ## Datenschutzerklärung
-Mit dieser Datenschutzerklärung erläutere ich Ihnen, welche personenbezogenen Daten ich beim Besuch dieser Webseite (www.mainvital-physiotherapie.de) erhebe, auf welcher Rechtsgrundlage ich diese verarbeite und welche Rechte Ihnen diesbezüglich zustehen.
+Mit dieser Datenschutzerklärung erläutere ich Ihnen, welche personenbezogenen Daten ich beim Besuch dieser Webseite (https://mainvital-physiotherapie.de) sowie im Rahmen meiner beruflichen Tätigkeit als Physiotherapeutin und Heilpraktikerin erhebe, auf welcher Rechtsgrundlage ich diese verarbeite und welche Rechte Ihnen diesbezüglich zustehen.
 
 Rechtsgrundlagen des Datenschutzes sind vor allem geregelt in der Datenschutzgrundverordnung (DS-GVO), dem Bundesdatenschutzgesetz (BDSG) und dem Digitale-Dienste-Gesetz (DDG).
 
 
 ## I. Verantwortlicher
-Verantwortlicher für die Datenverarbeitung im Sinne der DS-GVO ist der Webseitenbetreiber, Carmen Eichelsdörfer.
+Verantwortlicher für die Datenverarbeitung im Sinne der DS-GVO ist die Webseitenbetreiberin, Carmen Eichelsdörfer.
 
 {{ site.title }} Physiotherapie<br>
 {{ site.data.contact.boss_name }}<br>
@@ -28,33 +28,33 @@ Telefon: {{ site.data.contact.phone }}<br>
 E-Mail: {{ site.data.contact.email }}
 
 
-## Allgemeines zur Datenverarbeitung
+## II. Allgemeines zur Datenverarbeitung
 ##### 1. Was sind personenbezogene Daten?
 Personenbezogene Daten umfassen Informationen, die individuell mit Ihnen als Person in Verbindung gebracht werden können, wie z.B. Ihr Name, Ihre Adresse, Ihre E-Mail-Adresse, Ihr Geburtsdatum und Ihre Telefonnummer. Im Gegensatz dazu sind nicht personenbezogene Daten allgemeine Informationen, die keine Rückschlüsse auf Ihre Identität zulassen, wie etwa statistische Daten zur Anzahl der Besucher der Webseite.
 
 ##### 2. Umfang der Verarbeitung der personenbezogenen Daten
-Personenbezogene Daten werden dann erhoben, wenn Sie diese Daten selbst mitteilen (z.B. durch die Nutzung des Kontaktformulars auf der Webseite oder durch eine Übersendung einer E-Mail). Ich verarbeite diese Daten, um Ihre Anfrage zu beantworten und abzuwickeln.
+Ich erhebe und verarbeite personenbezogene Daten, wenn Sie mir diese freiwillig mitteilen – etwa über das Kontaktformular auf dieser Website, per E-Mail, Telefon oder im Rahmen eines Behandlungs- oder Beratungsgesprächs in meiner Praxis.
+
+Die Verarbeitung Ihrer Daten erfolgt zur Beantwortung Ihrer Anfrage, zur Vorbereitung und Durchführung physiotherapeutischer Behandlungen und heilkundlicher Tätigkeiten als Heilpraktikerin sowie zur Abrechnung und Dokumentation. Dabei kann es sich auch um besondere Kategorien personenbezogener Daten (Gesundheitsdaten) gemäß Art. 9 DS-GVO handeln.
+
+Die Angabe personenbezogener Daten ist freiwillig. Ohne die Bereitstellung bestimmter Daten kann eine sachgerechte Behandlung oder Bearbeitung Ihrer Anfrage jedoch nicht erfolgen.
 
 ##### 3. Rechtsgrundlage für die Verarbeitung personenbezogener Daten
-Rechtsgrundlage für die Verarbeitung von Daten, die Sie mir im Zuge einer Kontaktanfrage zur Verfügung stellen ist Art. 6 Abs.1 Buchst. f DS-GVO (meine berechtigten Interessen als Verantwortlicher).
+Rechtsgrundlage für die Verarbeitung von Daten, die Sie mir im Zuge einer Kontaktanfrage zur Verfügung stellen ist Art. 6 Abs.1 Buchst. f DS-GVO (meine berechtigten Interessen als Verantwortlicher). Mein berechtigtes Interesse liegt in der sachgerechten Bearbeitung Ihrer Anfrage.
 
-Zielt Ihre Kontaktanfrage auf vorvertragliche Maßnahmen oder den Abschluss eines Vertrages ab, so ist zusätzliche Rechtsgrundlage für die Verarbeitung Art. 6 Abs. 1 Buchst. b DS-GVO (Erfüllung eines Vertrages).
+Zielt Ihre Anfrage auf eine Behandlung oder Beratung ab, erfolgt die Verarbeitung zusätzlich auf Grundlage von Art. 6 Abs. 1 Buchst. b DS-GVO (Vertragsanbahnung bzw. -durchführung). Sofern Sie im Rahmen Ihrer Anfrage oder im weiteren Verlauf freiwillig Gesundheitsdaten angeben (z. B. zu Beschwerden, Diagnosen oder Behandlungswünschen), verarbeite ich diese auf Grundlage Ihrer ausdrücklichen Einwilligung gemäß Art. 9 Abs. 2 Buchst. a DS-GVO oder – im Fall eines Behandlungsverhältnisses – auf Grundlage von Art. 9 Abs. 2 Buchst. h DS-GVO i.V.m. § 22 Abs. 1 Nr. 1 lit. b BDSG (Behandlungszweck durch Angehörige eines Gesundheitsberufs).
 
-Die mir zur Verfügung gestellten Daten werden gelöscht, sobald sie für die Erreichung des Zwecks nicht mehr erforderlich sind. Bei reinen Kontaktanfragen ist dies grundsätzlich dann der Fall, wenn die Anfrage abschließend geklärt und die jeweilige Konversation damit beendet ist.
-
-Andererseits werden Ihre personenbezogenen Daten teilweise auch automatisiert erfasst, wenn Sie die Webseite besuchen. Bei den automatisiert erfassten, personenbezogenen Daten handelt es sich vor allem um technische Daten wie den von Ihnen verwendeten Internetbrowser, das von Ihnen verwendete Betriebssystem, sowie Domainname und die Adresse Ihres Internet-Providers.
-
-Diese Daten werden für die Durchführung, Erleichterung und Optimierung der Übertragung der angeforderten Webseiten verwendet, sowie um Kontaktanfragen bearbeiten zu können.
-
-Rechtsgrundlage für diese Verarbeitungen sind berechtigte Interessen (Art. 6 Abs. 1 Buchst. f DS-GVO) an der Sicherstellung der Datenübertragung und der Integrität der Webseite und meiner Systeme. Ich gehe davon aus, dass die Interessen der Nutzer gleichgelagert sind, da nur so ein Aufruf der Webseite und die Sicherstellung der Funktionalitäten möglich ist.
+Die von Ihnen übermittelten Daten werden gelöscht, sobald sie für die Erreichung des jeweiligen Zwecks nicht mehr erforderlich sind. Bei reinen Kontaktanfragen ist dies in der Regel der Fall, wenn die Kommunikation abgeschlossen ist und keine gesetzliche Aufbewahrungspflicht besteht. Darüber hinaus werden beim Besuch dieser Website automatisiert technische Daten erfasst (z. B. verwendeter Browser, Betriebssystem, IP-Adresse). Diese Daten sind erforderlich, um die Funktionsfähigkeit, Sicherheit und Stabilität der Website zu gewährleisten. Rechtsgrundlage hierfür ist Art. 6 Abs. 1 Buchst. f DS-GVO (berechtigtes Interesse an einer technisch einwandfreien und sicheren Bereitstellung des Online-Angebots).
 
 ##### 4. Datenlöschung und Speicherdauer
-Soweit innerhalb der detaillierten Datenschutzerklärung keine spezielle Speicherdauer angegeben wurde, werden Ihre personenbezogenen Daten nur so lange gespeichert, bis der Zweck für die Datenverarbeitung entfallen ist. Beim Aufruf der Webseite ist dies der Fall, wenn die jeweilige Sitzung auf der Webseite beendet ist.
+Soweit innerhalb der detaillierten Datenschutzerklärung keine spezielle Speicherdauer angegeben wurde, werden Ihre personenbezogenen Daten nur so lange gespeichert, wie es zur Erfüllung des jeweiligen Zwecks erforderlich ist. Beim Aufruf der Webseite ist dies der Fall, wenn die jeweilige Sitzung auf der Webseite beendet ist.
+
+Im Rahmen einer Behandlung oder Beratung richtet sich die Speicherdauer nach den gesetzlichen Aufbewahrungsfristen. Für Gesundheitsdaten gilt in der Regel eine Aufbewahrungsfrist von 10 Jahren gemäß § 630f Abs. 3 BGB bzw. steuerrechtlich nach § 147 AO.
 
 Falls Sie eine Löschung Ihrer personenbezogenen Daten vor diesem Zeitpunkt wünschen, werde ich diesem Wunsch nachkommen, soweit einer Löschung keine rechtlichen Gründe entgegenstehen (z.B. in Form von steuer- oder handelsrechtlichen Aufbewahrungsfristen).
 
 
-## II. Ihre Rechte bezüglich Ihrer personenbezogenen Daten
+## III. Ihre Rechte bezüglich Ihrer personenbezogenen Daten
 Sie haben gemäß der Datenschutzgrundverordnung (DS-GVO) die folgenden Rechte, die Sie jederzeit und unentgeltlich mir gegenüber geltend machen können:
 - Auskunftsrecht (Art. 15 DS-GVO)
 - Recht auf Berichtigung (Art. 16 DS-GVO)
@@ -65,7 +65,7 @@ Sie haben gemäß der Datenschutzgrundverordnung (DS-GVO) die folgenden Rechte, 
 - Recht auf Beschwerde bei einer Aufsichtsbehörde (Art. 77 DS-GVO)
 
 
-## III. Detaillierte Datenschutzerklärung
+## IV. Detaillierte Datenschutzerklärung
 ##### 1. SSL- bzw. TLS-Verschlüsselung
 Diese Webseite nutzt aus Sicherheits- und aus Datenschutzgründen eine SSL- bzw. TLS-Verschlüsselung. Dass die Verbindung zur Webseite tatsächlich verschlüsselt ist, erkennen Sie nach dem Aufruf der Webseite an dem "Schlosssymbol" vor der Adressleiste Ihres Browsers oder am "https://" in der Adresse der Webseite.
 
@@ -77,24 +77,40 @@ Ein Auftragsverarbeitungsvertrag wurde zwischen IONOS und mir geschlossen.
 ##### 3. Rechtsgrundlagen der Datenverarbeitung
 Einwilligung:
 
-Sofern Sie in die Datenverarbeitung eingewilligt haben, werden Ihre personenbezogenen Daten auf Grundlage von Art. 6 Absatz 1 lit. a) DS-GVO bzw. Art. 9 Absatz 2 lit. a) DS-GVO verarbeitet. Im Falle einer ausdrücklichen Einwilligung in die Übertragung personenbezogener Daten in Drittstaaten erfolgt die Datenverarbeitung außerdem auf Grundlage von Art. 49 Absatz 1 lit. a) DS-GVO.
+Sofern Sie in die Datenverarbeitung eingewilligt haben, werden Ihre personenbezogenen Daten auf Grundlage von Art. 6 Absatz 1 lit. a) DS-GVO bzw. Art. 9 Absatz 2 lit. a) DS-GVO verarbeitet. Bei Gesundheitsdaten (z. B. Angaben zu Beschwerden, Diagnosen oder Therapien) stützt sich die Verarbeitung zusätzlich auf Art. 9 Abs. 2 lit. a DS-GVO.
 
-Eine zunächst erteilte Einwilligung kann von Ihnen jederzeit mit einer E-Mail an den Verantwortlichen widerrufen werden. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt jedoch vom Widerruf unberührt.
+Im Falle einer ausdrücklichen Einwilligung in die Übertragung personenbezogener Daten in Drittstaaten erfolgt die Datenverarbeitung außerdem auf Grundlage von Art. 49 Absatz 1 lit. a) DS-GVO nach entsprechender Information über mögliche Risiken.
+
+Widerruf: Eine zunächst erteilte Einwilligung kann von Ihnen jederzeit mit einer E-Mail an den Verantwortlichen widerrufen werden. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt jedoch vom Widerruf unberührt.
 
 Erfüllung rechtlicher Verpflichtungen:
 
-Auch ohne Ihre Einwilligung können Ihre personenbezogenen Daten von mir verarbeitet werden, sofern dies zur Erfüllung einer rechtlichen Verpflichtung erforderlich ist, Art. 6 Absatz 1 lit. c) DS-GVO.
+Auch ohne Ihre Einwilligung können Ihre personenbezogenen Daten von mir verarbeitet werden, sofern dies zur Erfüllung einer rechtlichen Verpflichtung erforderlich ist, Art. 6 Absatz 1 lit. c) DS-GVO. Dies betrifft insbesondere steuer- oder berufsrechtliche Dokumentations- und Aufbewahrungspflichten.
+
+Vertragserfüllung und vorvertragliche Maßnahmen:
+
+Soweit die Verarbeitung Ihrer Daten zur Erfüllung eines Behandlungsvertrags oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist (z. B. Terminvereinbarung, Anamnesegespräch), erfolgt sie auf Grundlage von Art. 6 Abs. 1 lit. b DS-GVO. Gesundheitsdaten werden auf Grundlage von Art. 9 Abs. 2 lit. h DS-GVO i. V. m. § 22 Abs. 1 Nr. 1 lit. b BDSG verarbeitet.
 
 Datenverarbeitung zur Wahrung eines berechtigten Interesses:
 
-In Ausnahmefällen kann auch eine Datenverarbeitung nach Art. 6 Absatz 1 lit. f) erfolgen, wenn dies zur Wahrung eines berechtigten Interesses von mir erforderlich ist.
+In Ausnahmefällen kann auch eine Datenverarbeitung nach Art. 6 Absatz 1 lit. f) erfolgen, wenn dies zur Wahrung eines berechtigten Interesses von mir erforderlich ist. etwa zur Absicherung meiner IT-Systeme, zur Optimierung meines Online-Angebots oder zur Durchsetzung rechtlicher Ansprüche. Ich nehme hierbei eine sorgfältige Interessenabwägung vor.
 
-Datenübermittlung an andere Unternehmen, Behörden oder Gerichte:
+##### 4. Datenübermittlung in Drittstaaten ("Nicht-EU-Staaten")
+Ich verwende auf dieser Webseite teilweise Tools von Unternehmen, die nicht in der Europäischen Union bzw. des Europäischen Wirtschaftsraums ansässig sind ein (z. B. Google).
 
-Ich arbeite mit anderen Unternehmen und diversen staatlichen Stellen zusammen. Im Rahmen dieser Zusammenarbeit ist teilweise auch eine Übermittlung von personenbezogenen Daten an diese externen Stellen erforderlich. Ich gebe personenbezogene Daten jedoch nur dann an externe Stellen weiter, wenn dies im Rahmen einer Vertragserfüllung erforderlich ist oder wenn sie gesetzlich hierzu verpflichtet ist (z. B. bei der Weitergabe von Daten an Steuerbehörden), wenn ein berechtigtes Interesse nach Art. 6 Absatz 1 lit. f) DS-GVO an der Weitergabe der Daten besteht oder wenn eine sonstige Rechtsgrundlage die Datenweitergabe erlaubt.
+Soweit diese Unternehmen dem EU-U.S. Data Privacy Framework (DPF) beigetreten sind – wie z. B. Google LLC – besteht ein angemessenes Datenschutzniveau, das von der EU-Kommission anerkannt wurde. In diesen Fällen ist die Übermittlung gemäß Art. 45 DS-GVO zulässig.
+
+##### 5. Datenübermittlung an andere Unternehmen, Behörden oder Gerichte
+Ihre personenbezogenen Daten werden nur dann an Dritte weitergegeben, wenn dies:
+- zur Vertragserfüllung erforderlich ist (z. B. Abrechnung, Buchhaltung),
+- eine gesetzliche Verpflichtung besteht (z. B. gegenüber Finanzbehörden),
+- Sie ausdrücklich eingewilligt haben oder
+- ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DS-GVO vorliegt.
+
+Zu den Empfängern können z. B. Steuerberater, IT-Dienstleister, Abrechnungsstellen oder – im Rahmen gesetzlicher Vorschriften – Behörden oder Gerichte gehören.
 
 
-## IV. Details zu Ihren Rechten
+## V. Details zu Ihren Rechten
 
 ##### 1. Auskunftsrecht (Art. 15 der DS-GVO)
 Gemäß Art. 15 der DS-GVO können Sie mir gegenüber jederzeit ein unentgeltliches Auskunftsersuchen stellen. Gegenstand dieses Auskunftsersuchens können die Verarbeitungszwecke, die Kategorien personenbezogener Daten, die Empfänger personenbezogener Daten, die geplante Speicherdauer, das Bestehen eines Rechts auf Berichtigung oder Löschung, das Bestehen eines Beschwerderechts bei einer Aufsichtsbehörde sowie auch die Herkunft der personenbezogenen Daten sein.
@@ -103,7 +119,7 @@ Gemäß Art. 15 der DS-GVO können Sie mir gegenüber jederzeit ein unentgeltlic
 Gemäß Art. 16 der DS-GVO können Sie jederzeit mir gegenüber ein unentgeltliches Berichtigungsersuchen stellen. Ich werde unrichtige, personenbezogene Daten von Ihnen unverzüglich berichtigen, sobald ich von der Unrichtigkeit der Daten in Kenntnis gesetzt worden bin.
 
 ##### 3. Recht auf Löschung ("Recht auf Vergessenwerden") (Art. 17 der DS-GVO)
-Gemäß Art. 17 der DS-GVO können Sie jederzeit von mir unentgeltlich verlangen, dass Ihre personenbezogenen Daten unverzüglich gelöscht werden. Ich werde diesem Verlangen unverzüglich nachkommen, sofern mindestens einer der in Art. 17 Absatz 1 lit. a) bis f) DS-GVO genannten Löschungsgründe vorliegt.
+Gemäß Art. 17 der DS-GVO können Sie jederzeit von mir unentgeltlich verlangen, dass Ihre personenbezogenen Daten unverzüglich gelöscht werden. Eine Löschung erfolgt, sofern einer der in Art. 17 Absatz 1 lit. a) bis f) DS-GVO genannten Löschungsgründe vorliegt.
 
 ##### 4. Recht auf Einschränkung der Verarbeitung (Art. 18 der DS-GVO)
 Gemäß Art. 18 der DS-GVO können Sie jederzeit von mir unentgeltlich verlangen, dass die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt werden soll. Ich werde Ihrem Einschränkungsverlangen für die im Einzelfall nötige Dauer nachkommen, sofern eine der in Art. 18 Absatz 1 lit. a) bis d) DS-GVO genannten Voraussetzungen erfüllt ist.
@@ -123,7 +139,71 @@ Bayerischer Landesbeauftragter für den Datenschutz<br>
 Wagmüllerstraße 18<br>
 80538 München
 
-## V. Details zur Datenerfassung auf dieser Webseite, bei E-Mails und Anrufen
-Anfragen per E-Mail oder per Telefon können ebenfalls dazu führen, dass personenbezogene Daten bei mir gespeichert werden. Die Verarbeitung der personenbezogenen Daten erfolgt auf Grundlage von Art. 6 Absatz 1 lit. b) DS-GVO, sofern Ihre Anfrage mit der Anbahnung eines Vertrages oder mit der Erfüllung eines Vertrages zusammenhängt. In allen übrigen Fällen basiert die Datenverarbeitung entweder auf einer explizit von Ihnen erteilten Einwilligung nach Art. 6 Absatz 1 lit. a) DS-GVO oder auf meinem berechtigten Interesse an der effektiven Bearbeitung der an sie gerichteten Kundenanfragen.
+## VI. Details zur Datenerfassung auf dieser Webseite, bei E-Mails und Anrufen
+
+##### 1. Cookies
+Ich verwende auf der Webseite sogenannte Cookies. Cookies sind kleine Informationspakete, die im Browser Ihres Endgeräts gespeichert werden. Cookies richten keinen Schaden auf Ihrem Endgerät an. Session-Cookies werden sogar unmittelbar nach Ende Ihres Webseitenbesuchs gelöscht. Nur permanente Cookies bleiben auf Ihrem Endgerät gespeichert, bis Sie diese selbst löschen oder die Gültigkeitsdauer abläuft. Die Gültigkeitsdauer der permanenten Cookies auf dieser Webseite ist auf 31 Tage beschränkt.
+
+Cookies können sowohl von mir selbst als auch von Drittunternehmen stammen (z.B. durch die Einbindung von Tools wie Google Maps). Cookies sind aus technischen Gründen notwendig, da bestimmte Funktionen der Webseite ansonsten nicht funktionieren würden. Teilweise dienen Cookies auch zur Auswertung des Nutzerverhaltens oder zu Werbezwecken.
+
+Die Nutzung von Cookies auf der Webseite kann einerseits auf Basis von Art. 6 Absatz 1 lit. a) DS-GVO erfolgen, wenn Sie beim Cookie-Banner in die Nutzung von Cookies eingewilligt haben (vgl. auch § 25 des Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz (TDDDG)). Andererseits wird die Nutzung von Cookies auf Art. 6 Absatz 1 lit. f) der DS-GVO gestützt, da Ich ein berechtigtes Interesse an der Funktionsfähigkeit und der Funktionsoptimierung der Webseite habe.
+
+Um Ihre Einwilligung zur Verwendung von Cookies einzuholen, erscheint beim Betreten der Webseite ein Cookie-Banner, das spätestens alle 31 Tage erneut eingeblendet wird, sofern Sie Ihre Einwilligung nicht zuvor widerrufen haben.
+Eine zunächst erteilte Einwilligung kann von Ihnen jederzeit widerrufen werden. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt jedoch vom Widerruf unberührt.
+
+##### 2. Kontaktformular
+Auf der Webseite steht ferner ein Kontaktformular zur Verfügung. Wenn Sie dieses nutzen, werden Ihre dort eingegebenen Kontaktdaten (z.B. Name, E-Mail-Adresse, Nachrichtentext) zwecks Bearbeitung der Anfrage bei mir verarbeitet und gespeichert.
+
+Die Verarbeitung beruht in erster Linie auf der Grundlage von Art. 6 Absatz 1 lit. a) DS-GVO. Diese Einwilligung erteilen Sie aktiv durch das Anklicken einer entsprechenden Checkbox, ohne deren Bestätigung das Formular nicht abgesendet werden kann. Soweit Ihre Anfrage auf den Abschluss oder die Durchführung eines Behandlungsvertrags abzielt, erfolgt die Verarbeitung ergänzend auf Grundlage von Art. 6 Abs. 1 lit. b DS-GVO (Vertragsanbahnung oder -erfüllung). In anderen Fällen kann ergänzend Art. 6 Abs. 1 lit. f DS-GVO als Rechtsgrundlage herangezogen werden, da ich ein berechtigtes Interesse an der sachgerechten Bearbeitung von Kontaktanfragen habe.
+
+Die über das Kontaktformular erhobenen Daten werden nicht an Dritte weitergegeben, es sei denn, ich bin hierzu gesetzlich verpflichtet (z. B. auf behördliche Anordnung).
+
+Die mithilfe des Kontaktformulars gewonnenen, personenbezogenen Daten werden gelöscht, sobald Sie mich zur Löschung auffordern, Sie Ihre diesbezügliche Einwilligung widerrufen haben oder der Zweck für die Datenverarbeitung entfallen ist (z.B. nach abgeschlossener Bearbeitung ihrer Anfrage). Soweit gesetzliche Aufbewahrungspflichten bestehen, werden die Daten entsprechend archiviert und nach Ablauf der Frist gelöscht.
+
+##### 3. Anfrage per E-Mail oder per Telefon
+Wenn Sie per E-Mail oder telefonisch Kontakt mit mir aufnehmen, werden die dabei übermittelten personenbezogenen Daten (z. B. Name, Telefonnummer, E-Mail-Adresse, Anliegen) zur Bearbeitung Ihrer Anfrage verarbeitet und gegebenenfalls gespeichert.
+
+Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. b DS-GVO, sofern Ihre Anfrage der Anbahnung oder Durchführung eines Behandlungsvertrags dient oder mit der Erfüllung eines Vertrages zusammenhängt. In allen übrigen Fällen erfolgt die Verarbeitung entweder auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DS-GVO) oder auf Basis meines berechtigten Interesses an einer effektiven Kommunikation mit Interessierten und Patientinnen/Patienten (Art. 6 Abs. 1 lit. f DS-GVO).
 
 Die aufgrund von Anfragen per E-Mail oder per Telefon gewonnenen, personenbezogenen Daten werden gelöscht, sobald Sie mich zur Löschung auffordern, Sie Ihre diesbezügliche Einwilligung widerrufen haben oder der Zweck für die Datenverarbeitung entfallen ist (z.B. nach erfolgter Bearbeitung der E-Mail oder des Telefonats). Falls steuer- oder handelsrechtliche Aufbewahrungsfristen einer Löschung oder einem Widerruf entgegenstehen, werden Sie von mir darüber gesondert aufgeklärt, sobald Sie die Löschung verlangen oder Sie Ihre Einwilligung widerrufen haben.
+
+## VII. Tools von Drittanbietern
+
+##### 1. OpticaViva
+Zur Online-Terminbuchung setze ich die Software OpticaViva ein. Anbieter ist die Optica Abrechnungszentrum Dr. Gülener GmbH, Marienstraße 10, 70178 Stuttgart.
+
+OpticaViva dient der Terminvereinbarung. Bei Nutzung des Tools können personenbezogene Daten wie Name, Kontaktdaten, gewünschter Termin, Anlass des Gesprächs sowie die IP-Adresse und Browserdaten verarbeitet werden.
+
+Die Verarbeitung dieser Daten erfolgt auf Grundlage meines berechtigten Interesses an einer effizienten und nutzerfreundlichen Terminvergabe gemäß Art. 6 Abs. 1 lit. f DS-GVO. Sofern vor Nutzung des Tools Ihre ausdrückliche Zustimmung zur Datenverarbeitung erforderlich ist, erfolgt die Verarbeitung zusätzlich auf Grundlage Ihrer Einwilligung gemäß Art. 6 Abs. 1 lit. a DS.GVO. Eine erteilte Einwilligung können Sie jederzeit mit Wirkung für die Zukunft widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt hiervon unberührt.
+
+Die im Rahmen der Terminbuchung über Optica Viva verarbeiteten Daten werden in zertifizierten Rechenzentren in Deutschland gespeichert. Mit dem Anbieter habe ich einen Auftragsverarbeitungsvertrag geschlossen. Eine Weitergabe der Daten an Dritte erfolgt nicht, es sei denn, ich bin gesetzlich dazu verpflichtet.
+
+Weitere Informationen zur Datenverarbeitung durch die Optica Abrechnungszentrum Dr. Gülener GmbH finden Sie in der Datenschutzerklärung des Anbieters unter folgendem Link: https://www.optica.de/datenschutz.
+
+##### 2. Google Maps
+Die Webseite setzt Google Maps ein. Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.
+
+Google Maps ist ein Tool, mit dessen Hilfe auf der Website der Standort des Unternehmens dargestellt werden kann, und eine einfache Anfahrt ermöglicht wird. Google Maps erfasst Ihre IP-Adresse und sonstige Browserdaten, die auch an das Mutterunternehmen von Google in die Vereinigten Staaten übertragen werden kann.
+
+Rechtsgrundlage für die hier beschriebene Verarbeitung personenbezogener Daten ist Art. 6 Abs. 1 lit. a) DS-GVO. Eine zunächst erteilte Einwilligung kann von Ihnen jederzeit widerrufen werden. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt jedoch vom Widerruf unberührt.
+
+Das Unternehmen verfügt über eine Zertifizierung nach dem EU-US Data Privacy Framework (DPF). Der DPF ist ein Übereinkommen zwischen der Europäischen Union und den USA, der die Einhaltung europäischer Datenschutzstandards bei Datenverarbeitungen in den USA gewährleisten soll. Jedes nach dem DPF zertifizierte Unternehmen verpflichtet sich, diese Datenschutzstandards einzuhalten. Weitere Informationen hierzu erhalten Sie vom Anbieter unter folgendem Link: https://www.dataprivacyframework.gov/participant/5780.
+
+##### 3. Google Fonts
+Diese Website nutzt Google Fonts. Anbieter ist die Google LLC, 1600 Amphitheatre Parkway, Mountain View, Kalifornien, USA.
+
+Google Fonts sind Schriftarten, welche von Google zur Verfügung gestellt werden und auf den Servern der Google LLC gehostet werden. Diese ist notwendig, um Google Maps darstellen zu können und werden nur in diesem Zusammenhang genutzt. Google Fonts erfasst Ihre IP-Adresse und sonstige Browserdaten, die auch an das Mutterunternehmen von Google in die Vereinigten Staaten übertragen werden kann. Google Fonts werden ausschließlich im Zusammenhang mit der Darstellung von Google Maps genutzt. Es erfolgt keine separate Einbindung von Google Fonts über externe Server.
+
+Rechtsgrundlage für die hier beschriebene Verarbeitung personenbezogener Daten ist Art. 6 Abs. 1 lit. a) DS-GVO. Eine zunächst erteilte Einwilligung kann von Ihnen jederzeit widerrufen werden. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt jedoch vom Widerruf unberührt.
+
+Das Unternehmen verfügt über eine Zertifizierung nach dem EU-US Data Privacy Framework (DPF). Der DPF ist ein Übereinkommen zwischen der Europäischen Union und den USA, der die Einhaltung europäischer Datenschutzstandards bei Datenverarbeitungen in den USA gewährleisten soll. Jedes nach dem DPF zertifizierte Unternehmen verpflichtet sich, diese Datenschutzstandards einzuhalten. Weitere Informationen hierzu erhalten Sie vom Anbieter unter folgendem Link: https://www.dataprivacyframework.gov/participant/5780.
+
+##### 4. Google reCAPCHA
+Diese Website nutzt Google reCAPCHA. Anbieter ist die Google LLC, 1600 Amphitheatre Parkway, Mountain View, Kalifornien, USA.
+
+Google reCAPTCHA ist ein Dienst, der von Google zur Verfügung gestellt und auf den Servern der Google LLC gehostet wird. Dieser ist notwendig, um das Kontaktformular der Website vor missbräuchlicher Nutzung zu schützen und wird nur in diesem Zusammenhang genutzt. Google reCAPTCHA erfasst bestimmte Informationen des Webseitenbesuchers (z. B. IP-Adresse, Mausbewegungen, Verweildauer), um menschliche von automatisierten Eingaben zu unterscheiden.
+
+Rechtsgrundlage für die hier beschriebene Verarbeitung personenbezogener Daten ist Art. 6 Abs. 1 lit. f) DS-GVO (berechtigtes Interesse) insbesondere an der Absicherung der Website vor Missbrauch und Spam. Eine zunächst erteilte Einwilligung kann von Ihnen jederzeit widerrufen werden. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt jedoch vom Widerruf unberührt.
+
+Die erfassten Daten können an Server von Google in die USA übermittelt werden. Google ist unter dem EU-US Data Privacy Framework (DPF) zertifiziert, sodass ein angemessenes Datenschutzniveau gemäß Art. 45 DS-GVO gewährleistet ist.
+Weitere Informationen zur Datenverarbeitung durch Google finden Sie unter: https://policies.google.com/privacy.
