@@ -24,12 +24,12 @@
 - title: "Dauer der Behandlung"
   content: "Die Dauer der Behandlung richtet sich nach der ärztlichen Verordnung sowie den optional von Ihnen in Anspruch genommen privaten Therapieleistungen."
 - title: Datenschutz
-  content: "Vor Ihrem ersten Termin bitten wir Sie, unsere Datenschutzverordnung zu unterzeichnen. Ihre persönlichen Daten werden streng vertraulich behandelt und nicht an Dritte weitergegeben. Sie haben die Möglichkeit, die Datenschutzverordnung direkt in unserer Praxis zu unterzeichnen oder sie vorab unter nachfolgendem Link herunterzuladen und ausgefüllt und unterschrieben zu Ihrem ersten Termin mitzubringen. Alternativ können Sie uns die Datenschutzerklärung ausgefüllt und unterschrieben vorab digital per Mail zukommen lassen."
+  content: "Vor Ihrem ersten Termin bitten wir Sie, unsere Datenschutzerklärung (Einwilligungserklärung zur Datenverarbeitung) zu lesen und zu unterzeichnen. Darin geht es insbesondere um die Verarbeitung Ihrer personenbezogenen Daten, ggf. auch von Gesundheitsdaten, im Rahmen der Kontaktaufnahme, Terminvereinbarung und Behandlung. Ihre persönlichen Daten werden streng vertraulich behandelt und nicht an Dritte weitergegeben. Sie haben die Möglichkeit, die Datenschutzerklärung direkt in unserer Praxis zu unterzeichnen oder sie vorab unter nachfolgendem Link herunterzuladen und ausgefüllt und unterschrieben zu Ihrem ersten Termin mitzubringen. Alternativ können Sie uns die Datenschutzerklärung ausgefüllt und unterschrieben vorab digital per Mail zukommen lassen."
   link:
     external: false
     file: true
-    url: _downloads/Datenschutzverordnung_Praxis_Main_Vital.pdf
-    text: "Datenschutzverordnung herunterladen"
+    url: _downloads/Datenschutzerklaerung_Praxis_Main_Vital.pdf
+    text: "Datenschutzerklärung herunterladen"
 - title: Erstbefund
   content: "Beim Erstbefund analysieren wir Ihre Beschwerden, Krankengeschichte und körperliche Verfassung im Rahmen Ihres ersten Termins. So schaffen wir die Basis für Ihren optimalen Behandlungsplan."
 - title: Folgeverordnung
