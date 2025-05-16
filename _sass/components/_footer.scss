@@ -64,6 +64,21 @@
       box-shadow: none;
       letter-spacing: normal;
       padding: 10px;
+
+      // suppress various cursor-triggered effects
+      color: $white;
+      border: none;
+      outline: none;
+      transition: none;
+      &:hover,
+      &:focus,
+      &:active {
+        background: inherit;
+        color: $white;
+        border: none;
+        box-shadow: none;
+        outline: none;
+      }
     }
   }
   .icon-footer {
