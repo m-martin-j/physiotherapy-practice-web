@@ -51,4 +51,27 @@
       }
     }
   }
+
+  .footer-settings {
+    width: 100%;
+    * {
+      font-size: 0.9rem;
+      @include media-breakpoint-up(lg) {
+        font-size: 1.0rem;
+      }
+    }
+    .btn {
+      box-shadow: none;
+      letter-spacing: normal;
+      padding: 10px;
+    }
+  }
+  .icon-footer {
+    width: 17px;
+    height: auto;
+    margin: 0 5px;
+    @include media-breakpoint-up(lg) {
+      width: 20px;
+    }
+  }
 }

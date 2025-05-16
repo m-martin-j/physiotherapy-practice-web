@@ -5,7 +5,7 @@
         <!-- <h2 class="footer-title">{{site.title}}</h2> -->
         <img class="logo-footer" src="{{ '/images/logo/logo_wtext_white.svg' | relative_url }}" alt="Logo">
       </div>
-      <div class="col-12 col-md-7 d-flex align-items-center">
+      <div class="col-12 col-md-7 d-flex flex-column align-items-center">
         <ul class="footer-inner d-flex flex-row flex-wrap justify-content-evenly justify-content-md-end">
           {% assign footermenu = site.data.menus.footer | sort: 'weight'  %}
           {% for item in footermenu %}
@@ -14,6 +14,12 @@
           </li>
           {% endfor %}
         </ul>
+        <div class="footer-settings d-flex flex-row justify-content-center justify-content-md-end align-items-center">
+          <button class="btn btn-link d-flex flex-row align-items-center" onclick="showCookieConsentBanner()">
+            <img src="{{ '/images/cookies.svg' | relative_url }}" alt="Cookie-Symbol" class="icon-footer"/>
+            <span>Cookie-Einstellungen</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
