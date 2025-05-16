@@ -2,6 +2,10 @@
 ---
 {}
 
+// constants
+const cookieName = 'mvp-cookie-consent';
+
+
 var windowLoaded = false;  // NOTE: currently unused
 window.onload = function() {
   windowLoaded = true;
@@ -79,7 +83,7 @@ function launchAnnouncementModal() {
   const todayStr = today.toDateString();
 
   const modalVersion = startDate.toDateString().replace(/ /g, "_");
-  const modalShownKey = `announcementModalSeen-${modalVersion}`;
+  const modalShownKey = `mvp-announcementModalSeen-${modalVersion}`;
   const lastShownDate = localStorage.getItem(modalShownKey);
 
   if (
@@ -119,9 +123,18 @@ function readCookie(name) {
 function eraseCookie(name) {
   createCookie(name, "", -1);
 }
+function eraseAllButNecessaryCookie() {
+  document.cookie.split(";").forEach(function(cookie) {
+    const eqPos = cookie.indexOf("=");
+    const name = eqPos > -1 ? cookie.substring(0, eqPos).trim() : cookie.trim();
+    if (name && name !== cookieName) {
+      eraseCookie(name);
+    }
+  });
+}
 
 function launchCookieConsent() {
-  if (readCookie('cookie-consent') === 'full' || readCookie('cookie-consent') === 'necessary-only') {
+  if (readCookie(cookieName) === 'full' || readCookie(cookieName) === 'necessary-only') {
     return;
   } else {
     showCookieConsentBanner();
@@ -134,12 +147,13 @@ function showCookieConsentBanner() {
   document.getElementById('cookie-consent-banner-backdrop').classList.remove('hidden');
 
   document.getElementById('cookie-consent-accept').addEventListener("click", function() {
-    createCookie('cookie-consent', 'full');
+    createCookie(cookieName, 'full');
     hideCookieConsentBanner();
     location.reload();
   });
   document.getElementById('cookie-consent-limited').addEventListener("click", function() {
-    createCookie('cookie-consent', 'necessary-only');
+    createCookie(cookieName, 'necessary-only');
+    eraseAllButNecessaryCookie();
     hideCookieConsentBanner();
     location.reload();
   });
@@ -160,8 +174,8 @@ function checkCookieConsent() {  // checks if the cookie consent is given for ce
     return;
   }
 
-  let consent_given_necessary = readCookie('cookie-consent') === 'necessary-only';
-  let consent_given_full = readCookie('cookie-consent') === 'full';
+  let consent_given_necessary = readCookie(cookieName) === 'necessary-only';
+  let consent_given_full = readCookie(cookieName) === 'full';
 
   for (let i = 0; i < relevant_elements.length; i++) {
     let element = relevant_elements[i];
@@ -170,7 +184,7 @@ function checkCookieConsent() {  // checks if the cookie consent is given for ce
 
     if (// embed the element
         consent_given_full  // full consent given
-        || readCookie('cookie-consent-' + consentName) === 'true'  // consent given for this element
+        || readCookie(cookieName + '-' + consentName) === 'true'  // consent given for this element
         || (elementNecessary && consent_given_necessary)  // necessary consent given and this element is necessary
       ) {
       if (typeof window[consentName] === 'function') {
@@ -183,7 +197,7 @@ function checkCookieConsent() {  // checks if the cookie consent is given for ce
         consentAdd.removeAttribute('aria-hidden');
         let consentAddButton = consentAdd.querySelector('.cookie-consent-add-button');
         consentAddButton.addEventListener('click', function () {
-          createCookie('cookie-consent-' + consentName, 'true');
+          createCookie(cookieName + '-' + consentName, 'true');
           location.reload();
         });
       } else {
