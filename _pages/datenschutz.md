@@ -180,7 +180,12 @@ Die im Rahmen der Terminbuchung über Optica Viva verarbeiteten Daten werden in 
 
 Weitere Informationen zur Datenverarbeitung durch die Optica Abrechnungszentrum Dr. Gülener GmbH finden Sie in der Datenschutzerklärung des Anbieters unter folgendem Link: https://www.optica.de/datenschutz.
 
-##### 2. Google Maps
+##### 2. Form.taxi
+Unsere Webseite nutzt Form.taxi, einen Webdienst der Webseite https://form.taxi (nachfolgend "Form.taxi"). Um Ihnen die Funktionalität des Formulars zur Verfügung zu stellen, senden wir die von Ihnen angegebene Daten an Form.taxi. Diese Daten werden dort verarbeitet, gespeichert und an uns per E-Mail weitergegeben. Außerdem werden von Form.taxi unter anderem weitere Daten wie Ihre IP-Adresse, Ihr Typ des Browsers, die Domain der Webseite, das Datum und die Zeit des Zugriffs erhoben, um die gewünschte Funktionalität des Formulars bereitzustellen.
+
+Rechtsgrundlage für die Nutzung von Form.taxi ist Art. 6 Abs. 1 S. 1 lit. f DS-GVO (berechtigtes Interesse). Die Datenverarbeitung und Speicherung erfolgt innerhalb der Europäischen Union. Weitere Informationen entnehmen Sie der Datenschutzerklärung von Form.taxi: https://form.taxi/de/privacy.
+
+##### 3. Google Maps
 Die Webseite setzt Google Maps ein. Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.
 
 Google Maps ist ein Tool, mit dessen Hilfe auf der Website der Standort des Unternehmens dargestellt werden kann, und eine einfache Anfahrt ermöglicht wird. Google Maps erfasst Ihre IP-Adresse und sonstige Browserdaten, die auch an das Mutterunternehmen von Google in die Vereinigten Staaten übertragen werden kann.
@@ -189,7 +194,7 @@ Rechtsgrundlage für die hier beschriebene Verarbeitung personenbezogener Daten 
 
 Das Unternehmen verfügt über eine Zertifizierung nach dem EU-US Data Privacy Framework (DPF). Der DPF ist ein Übereinkommen zwischen der Europäischen Union und den USA, der die Einhaltung europäischer Datenschutzstandards bei Datenverarbeitungen in den USA gewährleisten soll. Jedes nach dem DPF zertifizierte Unternehmen verpflichtet sich, diese Datenschutzstandards einzuhalten. Weitere Informationen hierzu erhalten Sie vom Anbieter unter folgendem Link: https://www.dataprivacyframework.gov/participant/5780.
 
-##### 3. Google Fonts
+##### 4. Google Fonts
 Diese Website nutzt Google Fonts. Anbieter ist die Google LLC, 1600 Amphitheatre Parkway, Mountain View, Kalifornien, USA.
 
 Google Fonts sind Schriftarten, welche von Google zur Verfügung gestellt werden und auf den Servern der Google LLC gehostet werden. Diese ist notwendig, um Google Maps darstellen zu können und werden nur in diesem Zusammenhang genutzt. Google Fonts erfasst Ihre IP-Adresse und sonstige Browserdaten, die auch an das Mutterunternehmen von Google in die Vereinigten Staaten übertragen werden kann. Google Fonts werden ausschließlich im Zusammenhang mit der Darstellung von Google Maps genutzt. Es erfolgt keine separate Einbindung von Google Fonts über externe Server.
@@ -198,7 +203,7 @@ Rechtsgrundlage für die hier beschriebene Verarbeitung personenbezogener Daten 
 
 Das Unternehmen verfügt über eine Zertifizierung nach dem EU-US Data Privacy Framework (DPF). Der DPF ist ein Übereinkommen zwischen der Europäischen Union und den USA, der die Einhaltung europäischer Datenschutzstandards bei Datenverarbeitungen in den USA gewährleisten soll. Jedes nach dem DPF zertifizierte Unternehmen verpflichtet sich, diese Datenschutzstandards einzuhalten. Weitere Informationen hierzu erhalten Sie vom Anbieter unter folgendem Link: https://www.dataprivacyframework.gov/participant/5780.
 
-##### 4. Google reCAPCHA
+##### 5. Google reCAPCHA
 Diese Website nutzt Google reCAPCHA. Anbieter ist die Google LLC, 1600 Amphitheatre Parkway, Mountain View, Kalifornien, USA.
 
 Google reCAPTCHA ist ein Dienst, der von Google zur Verfügung gestellt und auf den Servern der Google LLC gehostet wird. Dieser ist notwendig, um das Kontaktformular der Website vor missbräuchlicher Nutzung zu schützen und wird nur in diesem Zusammenhang genutzt. Google reCAPTCHA erfasst bestimmte Informationen des Webseitenbesuchers (z. B. IP-Adresse, Mausbewegungen, Verweildauer), um menschliche von automatisierten Eingaben zu unterscheiden.

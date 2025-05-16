@@ -9,8 +9,8 @@ online_appointment:
   partner_name: "OpticaViva"
 
 contact_form:
-  external: "https://formkeep.com/f/52ce8143e07e"
-  partner_name: "FormKeep"
+  external: "https://form.taxi/s/8j0nmt43"
+  partner_name: "Form.taxi"
 
 google_recaptcha:
   external: "https://www.recaptcha.net/recaptcha/enterprise.js?render="

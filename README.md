@@ -144,7 +144,6 @@ TBD
 * HTML: [_includes/contact-form.html](_includes/contact-form.html)
 * JavaScript: [assets/js/scripts.js](assets/js/scripts.js) - section `contact form` and `embed Google ReCAPTCHA`
 * Data: [_data/third-party.yml](_data/third-party.yml)
-* Provider: https://formkeep.com/
 
 ### Google Maps
 * JavaScript: [assets/js/scripts.js](assets/js/scripts.js) - section `embed Google Maps`
