@@ -4,6 +4,7 @@
 
 // constants
 const cookieName = 'mvp-cookie-consent';
+const recaptchaActivated = {{ site.data.third-party.google_recaptcha.activated }};
 
 
 var windowLoaded = false;  // NOTE: currently unused
@@ -226,6 +227,27 @@ function embedReCAPTCHA() {
   document.body.appendChild(script);
 }
 
+function evaluateGoogleReCAPTCHA(form) {
+  // requiring the html input element "g-recaptcha-response" to be present in the form
+  // TODO: or just create it in this function?
+  grecaptcha.enterprise.ready(async () => {
+    const token = await grecaptcha.enterprise
+      .execute('{{ site.data.third-party.google_recaptcha.site_key }}', {action: 'submit'})
+      .catch((error) => {
+        console.error('Error executing reCAPTCHA:', error);
+        return false;
+      });
+    if (token) {
+      const recaptchaResponse = form.querySelector('input[name="g-recaptcha-response"]');
+      recaptchaResponse.value = token;
+      return true;
+    } else {
+      console.error('No reCAPTCHA token received');
+      return false;
+    }
+  });
+}
+
 // contact form
 function manageContactForm() {
   const form = document.getElementById('contact-form');
@@ -270,23 +292,19 @@ function manageContactForm() {
     }
     else {  // valid -> send the form
       event.preventDefault();
-      grecaptcha.enterprise.ready(async () => {
-        const token = await grecaptcha.enterprise
-          .execute('{{ site.data.third-party.google_recaptcha.site_key }}', {action: 'submit'})
-          .catch((error) => {
-            console.error('Error executing reCAPTCHA:', error);
-            return;
-          });
-        if (token) {
-          const recaptchaResponse = form.querySelector('input[name="g-recaptcha-response"]');
-          recaptchaResponse.value = token;
+
+      if (!recaptchaActivated) {
+        form.submit();
+      }
+
+      else {
+        let spamValid = evaluateGoogleReCAPTCHA(form);
+        if (spamValid) {
           form.submit();
         } else {
-          console.error('No reCAPTCHA token received');
-          replaceContactFormWithError(form);
-          return;
+          console.error('Spam validation failed');
         }
-      });
+      }
     }
 
     form.classList.add('was-validated');

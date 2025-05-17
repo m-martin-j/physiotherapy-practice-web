@@ -16,3 +16,4 @@ google_recaptcha:
   external: "https://www.recaptcha.net/recaptcha/enterprise.js?render="
   site_key: "6LeopSsrAAAAAPyUxiw0OHpx1SVSkEf8lie2JftC"
   partner_name: "Google reCAPTCHA"
+  activated: false

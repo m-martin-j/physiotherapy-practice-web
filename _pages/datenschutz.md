@@ -203,6 +203,7 @@ Rechtsgrundlage für die hier beschriebene Verarbeitung personenbezogener Daten 
 
 Das Unternehmen verfügt über eine Zertifizierung nach dem EU-US Data Privacy Framework (DPF). Der DPF ist ein Übereinkommen zwischen der Europäischen Union und den USA, der die Einhaltung europäischer Datenschutzstandards bei Datenverarbeitungen in den USA gewährleisten soll. Jedes nach dem DPF zertifizierte Unternehmen verpflichtet sich, diese Datenschutzstandards einzuhalten. Weitere Informationen hierzu erhalten Sie vom Anbieter unter folgendem Link: https://www.dataprivacyframework.gov/participant/5780.
 
+{% if site.data.third-party.google_recaptcha.activated %}
 ##### 5. Google reCAPCHA
 Diese Website nutzt Google reCAPCHA. Anbieter ist die Google LLC, 1600 Amphitheatre Parkway, Mountain View, Kalifornien, USA.
 
@@ -212,3 +213,4 @@ Rechtsgrundlage für die hier beschriebene Verarbeitung personenbezogener Daten 
 
 Die erfassten Daten können an Server von Google in die USA übermittelt werden. Google ist unter dem EU-US Data Privacy Framework (DPF) zertifiziert, sodass ein angemessenes Datenschutzniveau gemäß Art. 45 DS-GVO gewährleistet ist.
 Weitere Informationen zur Datenverarbeitung durch Google finden Sie unter: https://policies.google.com/privacy.
+{% endif %}
