@@ -29,19 +29,30 @@ bodyClass: "page-contact"
     <div class="container">
         <div class="row">
             <h2 id="form">Kontaktformular</h2>
-        </div>
-        <div class="row">
             <div class="col-12 col-lg-10 col-xl-10 mx-auto">
-                <div>
-                    {% include contact-form.html %}
-                </div>
-                <div class="hidden" id="form-success" aria-hidden="true">
-                    <div class="alert alert-success text-center" role="alert">
-                        <strong>Vielen Dank für Ihre Nachricht!</strong>
-                        <br>
-                        Wir werden uns umgehend bei Ihnen melden.
+                {% if site.data.third-party.contact_form.activated %}
+
+                    <div>
+                        {% include contact-form.html %}
                     </div>
-                </div>
+                    <div class="hidden" id="form-success" aria-hidden="true">
+                        <div class="alert alert-success text-center" role="alert">
+                            <strong>Vielen Dank für Ihre Nachricht!</strong>
+                            <br>
+                            Wir werden uns umgehend bei Ihnen melden.
+                        </div>
+                    </div>
+
+                {% else %}
+
+                    <strong>Das Kontaktformular ist derzeit nicht verfügbar.</strong>
+                    Bitte kontaktieren Sie uns direkt per E-Mail:
+                    <br>
+                    <div class="text-center">
+                        <a href="mailto:{{ site.data.contact.email }}">{{ site.data.contact.email }}</a>
+                    </div>
+
+                {% endif %}
             </div>
         </div>
     </div>

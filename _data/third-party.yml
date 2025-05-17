@@ -11,6 +11,7 @@ online_appointment:
 contact_form:
   external: "https://form.taxi/s/8j0nmt43"
   partner_name: "Form.taxi"
+  activated: true
 
 google_recaptcha:
   external: "https://www.recaptcha.net/recaptcha/enterprise.js?render="

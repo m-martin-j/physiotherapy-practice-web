@@ -180,10 +180,12 @@ Die im Rahmen der Terminbuchung über Optica Viva verarbeiteten Daten werden in 
 
 Weitere Informationen zur Datenverarbeitung durch die Optica Abrechnungszentrum Dr. Gülener GmbH finden Sie in der Datenschutzerklärung des Anbieters unter folgendem Link: https://www.optica.de/datenschutz.
 
+{% if site.data.third-party.contact_form.activated %}
 ##### 2. Form.taxi
 Unsere Webseite nutzt Form.taxi, einen Webdienst der Webseite https://form.taxi (nachfolgend "Form.taxi"). Um Ihnen die Funktionalität des Formulars zur Verfügung zu stellen, senden wir die von Ihnen angegebene Daten an Form.taxi. Diese Daten werden dort verarbeitet, gespeichert und an uns per E-Mail weitergegeben. Außerdem werden von Form.taxi unter anderem weitere Daten wie Ihre IP-Adresse, Ihr Typ des Browsers, die Domain der Webseite, das Datum und die Zeit des Zugriffs erhoben, um die gewünschte Funktionalität des Formulars bereitzustellen.
 
 Rechtsgrundlage für die Nutzung von Form.taxi ist Art. 6 Abs. 1 S. 1 lit. f DS-GVO (berechtigtes Interesse). Die Datenverarbeitung und Speicherung erfolgt innerhalb der Europäischen Union. Weitere Informationen entnehmen Sie der Datenschutzerklärung von Form.taxi: https://form.taxi/de/privacy.
+{% endif %}
 
 ##### 3. Google Maps
 Die Webseite setzt Google Maps ein. Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.
