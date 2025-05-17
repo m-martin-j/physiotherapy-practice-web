@@ -256,12 +256,12 @@ function manageContactForm() {
   }
 
   // post submission, only show the success message
-  const formSuccess = document.getElementById('form-success');
   const urlParams = new URLSearchParams(window.location.search);
   if (urlParams.get('form-submit') === 'success') {
-    replaceContactFormWithSuccess(form, formSuccess);
+    replaceContactFormWithSuccess(form);
     return;
   }
+
   const reasonGutschein = form.querySelector('#Reason_Gutschein');
   const reasonGenerelleAnfrage = form.querySelector('#Reason_Generelle_Anfrage');
   const gutscheinwertDiv = form.querySelector('#Gutscheinwert__div');
@@ -311,16 +311,26 @@ function manageContactForm() {
     form.classList.add('was-validated');
   })
 }
-function replaceContactFormWithSuccess(form, formSuccess) {
+function hideContactForm(form) {
   form.classList.add('hidden');
   form.setAttribute('aria-hidden', 'true');
+}
+function replaceContactFormWithSuccess(form) {
+  hideContactForm(form);
 
-  formSuccess.classList.remove('hidden');
-  formSuccess.removeAttribute('aria-hidden');
+  const successMessage = document.createElement('div');
+  successMessage.classList.add('alert', 'alert-primary', 'text-center');
+  successMessage.setAttribute('role', 'alert');
+  successMessage.innerHTML = `
+    <strong>Vielen Dank für Ihre Nachricht!</strong>
+    <br>
+    Wir werden uns umgehend bei Ihnen melden.
+  `;
+  form.parentNode.insertBefore(successMessage, form);
+
 }
 function replaceContactFormWithError(form) {
-  form.classList.add('hidden');
-  form.setAttribute('aria-hidden', 'true');
+  hideContactForm(form);
 
   const errorMessage = document.createElement('div');
   errorMessage.classList.add('alert', 'alert-danger', 'text-center');
