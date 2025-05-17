@@ -188,6 +188,8 @@ function checkCookieConsent() {  // checks if the cookie consent is given for ce
         || readCookie(cookieName + '-' + consentName) === 'true'  // consent given for this element
         || (elementNecessary && consent_given_necessary)  // necessary consent given and this element is necessary
       ) {
+        // NOTE: without at least one of the above conditions being true, no element is embedded
+        //  This satisfies the requirements of the GDPR
       if (typeof window[consentName] === 'function') {
         window[consentName]();
       }
