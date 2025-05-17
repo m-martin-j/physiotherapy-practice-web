@@ -303,6 +303,7 @@ function manageContactForm() {
           form.submit();
         } else {
           console.error('Spam validation failed');
+          replaceContactFormWithError(form);
         }
       }
     }
@@ -313,6 +314,7 @@ function manageContactForm() {
 function replaceContactFormWithSuccess(form, formSuccess) {
   form.classList.add('hidden');
   form.setAttribute('aria-hidden', 'true');
+
   formSuccess.classList.remove('hidden');
   formSuccess.removeAttribute('aria-hidden');
 }
