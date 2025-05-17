@@ -2,6 +2,8 @@
 title: "Krankengymnastik"
 date: 2025-05-01T15:14:54+10:00
 weight: 3
+show_call_button: true
+call_button_text: Termin vereinbaren
 ---
 
 Individuelle Übungen zur Wiederherstellung und zum Erhalt der Beweglichkeit, Aktivierung der Muskulatur und Optimierung der gesamten Körperfunktionen.

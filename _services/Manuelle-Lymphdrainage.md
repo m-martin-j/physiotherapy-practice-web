@@ -2,6 +2,8 @@
 title: "Manuelle Lymphdrainage"
 date: 2025-05-01T15:14:54+10:00
 weight: 4
+show_call_button: true
+call_button_text: Termin vereinbaren
 ---
 
 Eine sanfte, rhythmische Massagetechnik, die speziell darauf ausgelegt ist, den Lymphabfluss anzuregen und Schwellungen zu reduzieren.

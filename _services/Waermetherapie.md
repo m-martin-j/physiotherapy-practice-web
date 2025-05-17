@@ -2,6 +2,8 @@
 title: "Wärmetherapie"
 date: 2025-05-01T15:14:54+10:00
 weight: 6
+show_call_button: true
+call_button_text: Termin vereinbaren
 ---
 
 Gezielte Wärmetherapie, um Muskelverspannungen zu lösen, die Durchblutung zu fördern und Schmerzen zu lindern.
