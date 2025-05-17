@@ -1,7 +1,7 @@
 ---
 title: "Behandlung ohne Rezept"
-date: 2019-03-28T15:14:54+10:00
-weight: 9
+date: 2025-05-01T15:14:54+10:00
+weight: 10
 show_call_button: true
 call_button_text: Termin vereinbaren
 ---

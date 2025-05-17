@@ -1,6 +1,6 @@
 ---
 title: "Manuelle Lymphdrainage"
-date: 2019-05-18T12:33:46+10:00
+date: 2025-05-01T15:14:54+10:00
 weight: 4
 ---
 
