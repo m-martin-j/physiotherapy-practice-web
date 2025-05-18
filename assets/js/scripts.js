@@ -294,6 +294,8 @@ function manageContactForm() {
     }
     else {  // valid -> send the form
       event.preventDefault();
+      const fieldset = form.querySelector('fieldset');
+      fieldset.setAttribute('disabled', '');
 
       if (!recaptchaActivated) {
         form.submit();
