@@ -3,7 +3,6 @@ title: "Gutscheine"
 date: 2025-05-01T15:14:54+10:00
 weight: 0
 voucher: true
-show_call_button: true
 call_button_text: Gutschein anfragen
 call_button_purpose: "voucher_request"
 ---

@@ -37,6 +37,8 @@ defaults:
     values:
       layout: "service"
       description: Unser Leistungsspektrum umfasst Manuelle Therapie, Krankengymnastik, Lymphdrainage, Massagen, sowie weitere Therapieformen, individuell auf Sie abgestimmt.
+      show_call_button: true
+      call_button_text: Termin vereinbaren
   - scope:
       path: ""
       type: "team"

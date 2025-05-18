@@ -2,8 +2,6 @@
 title: "Kinesiologie-Tape"
 date: 2025-05-01T15:14:54+10:00
 weight: 8
-show_call_button: true
-call_button_text: Termin vereinbaren
 ---
 
 Elastische Bandanlage zur Unterstützung und Rehabilitation von Muskulatur und Gelenken.

@@ -2,8 +2,6 @@
 title: "Behandlung ohne Rezept"
 date: 2025-05-01T15:14:54+10:00
 weight: 10
-show_call_button: true
-call_button_text: Termin vereinbaren
 ---
 
 Termin beim Physiotherapeuten – auch ohne vorherigen Arztbesuch!

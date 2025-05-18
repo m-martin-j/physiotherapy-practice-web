@@ -2,8 +2,6 @@
 title: "Massagen"
 date: 2025-05-01T15:14:54+10:00
 weight: 2
-show_call_button: true
-call_button_text: Termin vereinbaren
 ---
 
 Manuelle Behandlung durch präzise Grifftechniken zur Lösung von Verspannungen, Förderung der Durchblutung und Linderung von Schmerzen.

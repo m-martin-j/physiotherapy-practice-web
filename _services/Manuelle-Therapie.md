@@ -2,8 +2,6 @@
 title: "Manuelle Therapie"
 date: 2025-05-01T15:14:54+10:00
 weight: 1
-show_call_button: true
-call_button_text: Termin vereinbaren
 ---
 
 Eine spezialisierte, physiotherapeutische Methode zur Verbesserung der Beweglichkeit und Behandlung von Funktionsstörungen durch gezielte Handgriffe und Mobilisationstechniken.

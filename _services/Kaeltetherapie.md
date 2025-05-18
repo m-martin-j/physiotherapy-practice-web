@@ -2,8 +2,6 @@
 title: "Kältetherapie"
 date: 2025-05-01T15:14:54+10:00
 weight: 5
-show_call_button: true
-call_button_text: Termin vereinbaren
 ---
 
 Eine Gruppe von Anwendungen, die darauf ausgelegt sind, Schmerzen zu lindern und Entzündungen zu reduzieren.

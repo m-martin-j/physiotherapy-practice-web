@@ -2,8 +2,6 @@
 title: "Ultraschall-Wärmetherapie"
 date: 2025-05-01T15:14:54+10:00
 weight: 7
-show_call_button: true
-call_button_text: Termin vereinbaren
 ---
 
 Eine physiotherapeutische Behandlungsmethode, die hochfrequente Schallwellen nutzt, um tief liegendes Gewebe gezielt zu erwärmen und Heilungsprozesse zu fördern.
