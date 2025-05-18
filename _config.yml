@@ -36,6 +36,7 @@ defaults:
       type: "services"
     values:
       layout: "service"
+      description: Unser Leistungsspektrum umfasst Manuelle Therapie, Krankengymnastik, Lymphdrainage, Massagen, sowie weitere Therapieformen, individuell auf Sie abgestimmt.
   - scope:
       path: ""
       type: "team"

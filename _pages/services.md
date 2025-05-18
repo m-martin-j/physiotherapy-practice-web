@@ -2,7 +2,7 @@
 title: Leistungen
 permalink: "/services/"
 layout: services
-description: Services
+description: Unser Leistungsspektrum umfasst Manuelle Therapie, Krankengymnastik, Lymphdrainage, Massagen, sowie weitere Therapieformen, individuell auf Sie abgestimmt.
 intro_image: "images/services/Krankengymnastik_1_md.jpeg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false
