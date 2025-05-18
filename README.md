@@ -5,6 +5,7 @@ Copyright (c) 2024-2025 Martin Trat.
 
 ## Pages
 * The `role` attribute is currently only used for page `services`. It enables identifying a page to be included as parent page in breadcrumbs.
+* head meta description: If frontmatter attribute `description` is set on individual markdown page files, the default value in [_config.yml](_config.yml) is overwritten.
 
 ### Home Page
 * Intro image

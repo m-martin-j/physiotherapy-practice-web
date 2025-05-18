@@ -2,6 +2,7 @@ baseurl: '/'
 destination: _site
 permalink: pretty
 title: Main Vital
+description: Willkommen bei Main Vital, Ihrer modernen Physiotherapiepraxis in Hallstadt-Dörfleins bei Bamberg. Für ganzheitliche Gesundheit und mehr Lebensqualität.
 
 credits:
   webdesign: "website by m-martin-j"

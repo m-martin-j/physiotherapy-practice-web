@@ -2,7 +2,6 @@
 title: Main Vital
 permalink: /
 layout: home
-description: Die Physiopraxis in deiner Nähe.
 intro_image: "images/team/Carmen_2_md.jpg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false
