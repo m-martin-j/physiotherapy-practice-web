@@ -2,7 +2,6 @@
 title: Informationen
 permalink: "/info/"
 layout: infos
-description: About
 intro_image:
 intro_image_absolute: true
 intro_image_hide_on_mobile: false

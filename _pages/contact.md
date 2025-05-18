@@ -2,7 +2,7 @@
 title: Kontakt
 permalink: "/contact/"
 layout: contact
-description: Contact
+description: Kontaktieren Sie unsere moderne Physiotherapiepraxis in Hallstadt-Dörfleins. Wir begleiten Sie kompetent auf Ihrem Weg zu mehr Wohlbefinden und Gesundheit.
 intro_image:
 intro_image_absolute: false
 intro_image_hide_on_mobile: false
