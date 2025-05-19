@@ -7,7 +7,7 @@
     url_anchor: "#where"
     text: "Anfahrtsbeschreibung anzeigen"
 - title: Anmeldung
-  content: 'Um einen reibungslosen Ablauf zu gewährleisten, bitten wir Sie, Ihren Termin frühzeitig zu vereinbaren. Falls erforderlich, bringen Sie bitte Ihre Versichertenkarte sowie eine ärztliche Verordnung zur Behandlung mit. Wir würden uns zudem freuen, wenn Sie den Anamnesebogen und die Datenschutzerklärung ausgefüllt und unterschrieben zu Ihrem ersten Termin mitbringen oder uns vorab digital per Mail zukommen lassen. Weitere Informationen finden Sie auf dieser Seite unter den Punkten "Anamnesebogen" und "Datenschutz".<br>Bitte erscheinen Sie spätestens 5 Minuten vor Behandlungsbeginn in der Praxis. Wir sind bemüht, alle Behandlungen pünktlich zu beginnen. Bei verspäteter Ankunft verkürzt sich Ihre Behandlungszeit daher entsprechend.'
+  content: 'Um einen reibungslosen Ablauf zu gewährleisten, bitten wir Sie, Ihren Termin frühzeitig zu vereinbaren. Falls erforderlich, bringen Sie bitte Ihre Versichertenkarte sowie eine ärztliche Verordnung zur Behandlung mit. Wir würden uns zudem freuen, wenn Sie den Anamnesebogen, die Datenschutzerklärung und die Praxishinweise ausgefüllt und unterschrieben zu Ihrem ersten Termin mitbringen oder uns vorab digital per Mail zukommen lassen. Weitere Informationen finden Sie auf dieser Seite unter den Punkten "Anamnesebogen", "Datenschutz" und "Praxishinweise".<br>Bitte erscheinen Sie spätestens 5 Minuten vor Behandlungsbeginn in der Praxis. Wir sind bemüht, alle Behandlungen pünktlich zu beginnen. Bei verspäteter Ankunft verkürzt sich Ihre Behandlungszeit daher entsprechend.'
 - title: Anamnesebogen
   content: "Vor der ersten Behandlung ist es notwendig einen Anamnesebogen auszufüllen, um gesundheitliche Besonderheiten zu erfassen. Dieser steht Ihnen in unserer Praxis zur Verfügung. Sie können ihn auch hier herunterladen und bereits ausgefüllt und unterschrieben vor Ihrem ersten Termin ausgedruckt mitbringen oder uns digital per E-Mail zusenden:"
   link:
@@ -72,6 +72,13 @@
   content: "Um unseren Patient*innen eine ruhige und entspannte Atmosphäre zu bieten, bitten wir Sie, auf laute Telefonate innerhalb der Praxisräume zu verzichten und Ihr Mobiltelefon während der Warte- und Behandlungszeit lautlos zu stellen."
 - title: Parkplätze
   content: "Direkt vor dem Praxiseingang stehen Ihnen kostenfreie Parkplätze für Autos und Fahrräder zur Verfügung."
+- title: Praxishinweise
+  content: "Bitte beachten Sie, dass es einige organisatorische Hinweise und Praxisregeln gibt, die für einen reibungslosen Betrieb in unserer Praxis wichtig sind. Diese Informationen haben wir in einem Praxishinweis-Dokument für Sie zusammengefasst.<br>Vor Ihrer ersten Behandlung bitten wir Sie, diese Hinweise sorgfältig zu lesen und durch Ihre Unterschrift zu bestätigen. Das Dokument steht Ihnen zum Download zur Verfügung und kann gerne ausgefüllt zum Ersttermin mitgebracht oder uns digital per E-Mail zugesendet werden:"
+  link:
+    external: false
+    file: true
+    url: _downloads/Praxishinweise_Main_Vital.pdf
+    text: "Praxishinweise herunterladen"
 - title: Privatrezept
   content: "Vor dem ersten Behandlungstermin schließen wir eine Honorarvereinbarung ab, damit Sie bereits im Voraus über die anfallenden Kosten informiert sind. Nach Abschluss der Therapie erhalten Sie Ihre Rechnung zusammen mit dem Rezept."
 - title: Rezeptgebühr
