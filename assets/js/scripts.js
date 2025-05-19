@@ -5,7 +5,8 @@
 // constants
 const cookieName = 'mvp-cookie-consent';
 const recaptchaActivated = {{ site.data.third-party.google_recaptcha.activated }};
-
+const announcementArray = {{ site.data.announcements | jsonify }};
+console.log("announcements: ", announcementArray);
 
 var windowLoaded = false;  // NOTE: currently unused
 window.onload = function() {
@@ -77,24 +78,33 @@ document.querySelectorAll('[data-inviewport]').forEach(el => {
 });
 
 // announcementModal
+function getCurrentAnnouncement(today) {
+  for (const ann of announcements) {
+    const start = new Date(ann.start_date);
+    const end = new Date(ann.end_date);
+    if (today >= start && today <= end) {
+      return ann;
+    }
+  }
+  return null;
+}
 function launchAnnouncementModal() {
-  const startDate = new Date("{{ site.data.announcements.start_date }}");
-  const endDate = new Date("{{ site.data.announcements.end_date }}");
   const today = new Date();
   const todayStr = today.toDateString();
+  const ann = getCurrentAnnouncement(today);
+  if (!ann) return;
 
-  const modalVersion = startDate.toDateString().replace(/ /g, "_");
+  const modalVersion = ann.start_date.replace(/-/g, "_");
   const modalShownKey = `mvp-announcementModalSeen-${modalVersion}`;
   const lastShownDate = localStorage.getItem(modalShownKey);
 
-  if (
-    today >= startDate && today <= endDate &&
-    lastShownDate !== todayStr
-  ) {
+  if (lastShownDate !== todayStr) {
+    // Set modal content dynamically here using ann.title, ann.body, etc.
     const announcementModal = new bootstrap.Modal(document.getElementById('announcementModal'));
+    // e.g. document.getElementById('announcementModalTitle').innerHTML = ann.title;
+    //      document.getElementById('announcementModalBody').innerHTML = ann.body;
     announcementModal.show();
 
-    // Set the modal to be shown only once per day
     document.getElementById('announcementModal').addEventListener('hidden.bs.modal', function () {
       localStorage.setItem(modalShownKey, todayStr);
     });
