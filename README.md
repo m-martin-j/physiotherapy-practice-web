@@ -84,7 +84,7 @@ TBD
   * HTML: [_layouts/default.html](_layouts/default.html) - before `</body>`
   * SCSS: [_sass/components/_modal.scss](_sass/components/_modal.scss)
   * JavaScript [assets/js/scripts.js](assets/js/scripts.js) - see comment `announcementModal`
-  * Data: [_data/announcement-modal.yml](_data/announcement-modal.yml)
+  * Data: [_data/announcements.yml](_data/announcements.yml)
 * Activation
   * Date-based: By setting `start_date` and `end_date` in above-referred data file.
   * It is shown to visitors once per day, using local storage.

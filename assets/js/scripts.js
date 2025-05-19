@@ -78,8 +78,8 @@ document.querySelectorAll('[data-inviewport]').forEach(el => {
 
 // announcementModal
 function launchAnnouncementModal() {
-  const startDate = new Date("{{ site.data.announcement-modal.start_date }}");
-  const endDate = new Date("{{ site.data.announcement-modal.end_date }}");
+  const startDate = new Date("{{ site.data.announcements.start_date }}");
+  const endDate = new Date("{{ site.data.announcements.end_date }}");
   const today = new Date();
   const todayStr = today.toDateString();
 
