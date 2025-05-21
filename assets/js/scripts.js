@@ -79,10 +79,17 @@ document.querySelectorAll('[data-inviewport]').forEach(el => {
 
 // announcementModal
 function getCurrentAnnouncement(today) {
-  for (const ann of announcements) {
-    const start = new Date(ann.start_date);
-    const end = new Date(ann.end_date);
+  for (const ann of announcementArray) {
+     // start_date and end_date are inclusive, daylight saving time is not accounted for
+    const start = new Date(`${ann.start_date}T00:00:00+01:00`);
+    const end = new Date(`${ann.end_date}T23:59:59.999+01:00`);
+    // override today for test to 2.6.2025
+    today = new Date('2025-06-02T00:00:00+01:00');
+    console.log("today: ", today);
+    console.log("start: ", start);
+    console.log("end: ", end);
     if (today >= start && today <= end) {
+      console.log("hit: ", ann);
       return ann;
     }
   }
@@ -96,14 +103,20 @@ function launchAnnouncementModal() {
 
   const modalVersion = ann.start_date.replace(/-/g, "_");
   const modalShownKey = `mvp-announcementModalSeen-${modalVersion}`;
+  console.log("modalShownKey: ", modalShownKey);
   const lastShownDate = localStorage.getItem(modalShownKey);
 
   if (lastShownDate !== todayStr) {
-    // Set modal content dynamically here using ann.title, ann.body, etc.
-    const announcementModal = new bootstrap.Modal(document.getElementById('announcementModal'));
-    // e.g. document.getElementById('announcementModalTitle').innerHTML = ann.title;
-    //      document.getElementById('announcementModalBody').innerHTML = ann.body;
-    announcementModal.show();
+    const announcementModal = document.getElementById('announcementModal');
+    const announcementModal_BS = new bootstrap.Modal(announcementModal);
+    const modalTitle = announcementModal.querySelector('.modal-title');
+    modalTitle.innerHTML = ann.title;
+    const modalBody = announcementModal.querySelector('.modal-body');
+    modalBody.innerHTML = ann.body;
+    if (ann.body_center_text) {
+      modalBody.classList.add('text-center');
+    }
+    announcementModal_BS.show();
 
     document.getElementById('announcementModal').addEventListener('hidden.bs.modal', function () {
       localStorage.setItem(modalShownKey, todayStr);
