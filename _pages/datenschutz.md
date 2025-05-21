@@ -182,9 +182,14 @@ Weitere Informationen zur Datenverarbeitung durch die Optica Abrechnungszentrum 
 
 {% if site.data.third-party.contact_form.activated %}
 ##### 2. Form.taxi
-Unsere Webseite nutzt Form.taxi, einen Webdienst der Webseite https://form.taxi (nachfolgend "Form.taxi"). Um Ihnen die Funktionalität des Formulars zur Verfügung zu stellen, senden wir die von Ihnen angegebene Daten an Form.taxi. Diese Daten werden dort verarbeitet, gespeichert und an uns per E-Mail weitergegeben. Außerdem werden von Form.taxi unter anderem weitere Daten wie Ihre IP-Adresse, Ihr Typ des Browsers, die Domain der Webseite, das Datum und die Zeit des Zugriffs erhoben, um die gewünschte Funktionalität des Formulars bereitzustellen.
+Zur Übermittlung von Nachrichten über das Kontaktformular setze ich die Software Form.taxi ein. Anbieter ist Mathias Beke, Kapellenweg 1, 4861 Schörfling am Attersee, Österreich.
 
-Rechtsgrundlage für die Nutzung von Form.taxi ist Art. 6 Abs. 1 S. 1 lit. f DS-GVO (berechtigtes Interesse). Die Datenverarbeitung und Speicherung erfolgt innerhalb der Europäischen Union. Weitere Informationen entnehmen Sie der Datenschutzerklärung von Form.taxi: https://form.taxi/de/privacy.
+Form.taxi dient der sicheren Übertragung und Verwaltung von Kontaktanfragen. Bei Nutzung des Formulars können personenbezogene Daten wie Name, E-Mail-Adresse, Nachrichtentext, IP-Adresse sowie Browserdaten verarbeitet werden.
+
+Die Verarbeitung dieser Daten erfolgt auf Grundlage meines berechtigten Interesses an einer effizienten und nutzerfreundlichen Kommunikation gemäß Art. 6 Abs. 1 lit. f DSGVO. Sofern vor Nutzung des Formulars Ihre ausdrückliche Zustimmung zur Datenverarbeitung erforderlich ist, erfolgt die Verarbeitung zusätzlich auf Grundlage Ihrer Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO. Eine erteilte Einwilligung können Sie jederzeit mit Wirkung für die Zukunft widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt hiervon unberührt.
+
+Die im Rahmen der Nutzung von Form.taxi verarbeiteten Daten werden laut Anbieter auf Servern in der Europäischen Union gespeichert. Mit dem Anbieter wurde ein Auftragsverarbeitungsvertrag gemäß Art. 28 DSGVO geschlossen, der die datenschutzkonforme Verarbeitung der personenbezogenen Daten sicherstellt. Eine Weitergabe der Daten an Dritte erfolgt nicht, es sei denn, ich bin gesetzlich dazu verpflichtet.
+Weitere Informationen zur Datenverarbeitung durch Form.taxi finden Sie in der Datenschutzerklärung des Anbieters unter: https://form.taxi/de/privacy.
 {% endif %}
 
 ##### 3. Google Maps
@@ -195,6 +200,7 @@ Google Maps ist ein Tool, mit dessen Hilfe auf der Website der Standort des Unte
 Rechtsgrundlage für die hier beschriebene Verarbeitung personenbezogener Daten ist Art. 6 Abs. 1 lit. a) DS-GVO. Eine zunächst erteilte Einwilligung kann von Ihnen jederzeit widerrufen werden. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt jedoch vom Widerruf unberührt.
 
 Das Unternehmen verfügt über eine Zertifizierung nach dem EU-US Data Privacy Framework (DPF). Der DPF ist ein Übereinkommen zwischen der Europäischen Union und den USA, der die Einhaltung europäischer Datenschutzstandards bei Datenverarbeitungen in den USA gewährleisten soll. Jedes nach dem DPF zertifizierte Unternehmen verpflichtet sich, diese Datenschutzstandards einzuhalten. Weitere Informationen hierzu erhalten Sie vom Anbieter unter folgendem Link: https://www.dataprivacyframework.gov/participant/5780.
+Weitere Informationen zur Datenverarbeitung durch Google finden Sie unter: https://policies.google.com/privacy.
 
 ##### 4. Google Fonts
 Diese Website nutzt Google Fonts. Anbieter ist die Google LLC, 1600 Amphitheatre Parkway, Mountain View, Kalifornien, USA.
