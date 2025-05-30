@@ -1,2 +1,17 @@
 .page-infos {
+  .doc-download-button {
+    width: 90%;
+    @include media-breakpoint-up(sm) {
+      width: 75%;
+    }
+    @include media-breakpoint-up(md) {
+      width: 50%;
+    }
+  }
+  .icon {
+    width: 2.0em;
+    height: auto;
+    // margin-right: 0.5em;
+    // vertical-align: middle;
+  }
 }
