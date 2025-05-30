@@ -17,14 +17,14 @@ modal:
     start_date: "2025-04-01"
     end_date: "2025-05-31"
 
-  - title: "Willkommen in der Praxis Main Vital"
+  - title: "Willkommen bei Main Vital"
     body: |-
-      Ich freue mich, Sie in der neu eröffneten Praxis begrüßen und auf Ihrem Weg zur Gesundheit begleiten zu dürfen!
+      Ich freue mich, Sie in der neu eröffneten Physio-Praxis begrüßen und auf Ihrem Weg zur Gesundheit begleiten zu dürfen!
       <br>
       <br>
       Termine können Sie ganz bequem online, telefonisch oder per E-Mail vereinbaren.
     start_date: "2025-06-01"
-    end_date: "2025-08-01"
+    end_date: "2025-07-31"
 
 
 individual_closing_days:
