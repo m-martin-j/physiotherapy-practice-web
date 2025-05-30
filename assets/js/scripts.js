@@ -109,9 +109,6 @@ function launchAnnouncementModal() {
       modalTitle.innerHTML = ann.title;
       const modalBody = announcementModal.querySelector('.modal-body');
       modalBody.innerHTML = ann.body;
-      if (ann.body_center_text) {
-        modalBody.classList.add('text-center');
-      }
       announcementModal_BS.show();
 
       document.getElementById('announcementModal').addEventListener('hidden.bs.modal', function () {

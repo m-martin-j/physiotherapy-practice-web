@@ -12,7 +12,6 @@
     <br>
     <br>
     <span style="color: #618914;">Terminvereinbarungen sind ab dem 20.05.2025 möglich.</span>
-  body_center_text: true
   # announcement activation horizon: format YYYY-MM-DD, start and end inclusive
   start_date: "2025-04-01"
   end_date: "2025-05-31"
@@ -23,6 +22,5 @@
     <br>
     <br>
     Termine können Sie ganz bequem online, telefonisch oder per E-Mail vereinbaren.
-  body_center_text: true
   start_date: "2025-06-01"
   end_date: "2025-08-01"
