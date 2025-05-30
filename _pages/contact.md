@@ -23,3 +23,5 @@ show_call_box_button: true
 Termine außerhalb der Öffnungszeiten nach Vereinbarung.
 <br>
 Änderungen vorbehalten.
+
+<div id="vacation-note"></div>

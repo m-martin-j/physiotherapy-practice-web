@@ -5,7 +5,7 @@
 // constants
 const cookieName = 'mvp-cookie-consent';
 const recaptchaActivated = {{ site.data.third-party.google_recaptcha.activated }};
-const announcementArray = {{ site.data.announcements | jsonify }};
+const announcementData = {{ site.data.announcements | jsonify }};
 
 var windowLoaded = false;  // NOTE: currently unused
 window.onload = function() {
@@ -78,7 +78,7 @@ document.querySelectorAll('[data-inviewport]').forEach(el => {
 
 // announcementModal
 function getCurrentAnnouncement(today) {
-  for (const ann of announcementArray) {
+  for (const ann of announcementData.modal) {
      // start_date and end_date are inclusive, daylight saving time is not accounted for
     const start = new Date(`${ann.start_date}T00:00:00+01:00`);
     const end = new Date(`${ann.end_date}T23:59:59.999+01:00`);
@@ -108,7 +108,19 @@ function launchAnnouncementModal() {
       const modalTitle = announcementModal.querySelector('.modal-title');
       modalTitle.innerHTML = ann.title;
       const modalBody = announcementModal.querySelector('.modal-body');
-      modalBody.innerHTML = ann.body;
+
+      if (ann.vacation) {
+        const vacationStartDate = new Date(ann.vacation.start_date);
+        const vacationEndDate = new Date(ann.vacation.end_date);
+        let vacationText = document.createElement('p');
+        vacationText.innerHTML = `<strong>Wann:</strong> vom <strong>${vacationStartDate.toLocaleDateString('de-DE')}</strong> bis zum <strong>${vacationEndDate.toLocaleDateString('de-DE')}</strong>`;
+        modalBody.appendChild(vacationText);
+      }
+
+      let content = document.createElement('div')
+      content.innerHTML = ann.body;
+      modalBody.appendChild(content);
+
       announcementModal_BS.show();
 
       document.getElementById('announcementModal').addEventListener('hidden.bs.modal', function () {

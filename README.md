@@ -79,17 +79,39 @@ TBD
   * Layout: [_includes/social.html](_includes/social.html)
 
 
-## Announcement Modal
+## Announcements
 * Source
-  * HTML: [_layouts/default.html](_layouts/default.html) - before `</body>`
+  * HTML: [_includes/announcementModal.html](_includes/announcementModal.html), [_layouts/contact.html](_layouts/contact.html), [_pages/contact.md](_pages/contact.md)
   * SCSS: [_sass/components/_modal.scss](_sass/components/_modal.scss)
   * JavaScript [assets/js/scripts.js](assets/js/scripts.js) - see comment `announcementModal`
   * Data: [_data/announcements.yml](_data/announcements.yml)
-* Activation
-  * Date-based: By setting `start_date` and `end_date` in above-referred data file. These dates need to exactly conform to the pattern `YYYY-MM-DD`; no time of day may be provided. The beginning and the end of day is automatically used as start and end, respectively.
+* Activation of the modal
+  * Date-based: By setting `start_date` and `end_date` in above-referred data file for an entry of the array `modal`. These dates need to exactly conform to the pattern `YYYY-MM-DD`; no time of day may be provided. The beginning and the end of day is automatically used as start and end, respectively.
   * It is shown to visitors once per day, implemented via using local storage.
-* Content
-  * via yaml array data in above-referred data file. The first array element with a day falling into the range between `start_date` and `end_date` is taken; no further evaluation of the data takes place. Overlapping time ranges are not error-handled.
+* Content for modal announcement
+  * yaml structure
+    ```yml
+    modal:
+      - title: <string>
+        body: |-
+          <multi-line string>
+        start_date: "YYYY-MM-DD"
+        end_date: "YYYY-MM-DD"
+        vacation:
+          start_date: "YYYY-MM-DD"
+          end_date: "YYYY-MM-DD"
+    ```
+  * via yaml array data in above-referred data file. The first element of the array `modal` with today falling into the range between `start_date` and `end_date` is taken; no further evaluation of the data takes place. Overlapping time ranges are not error-handled.
+  * If a `vacation` object is included in an element of the array `modal` (having its own `start_date` and `end_date` attributes), the announcement is formatted as a vacation announcement.
+* Content for announcements on the contact page
+  * If a `vacation` object is included in an element of the array `modal`, the announcement is also displayed below the opening times on the contact page.
+  * yaml structure
+    ```yml
+    individual_closing_days:
+      - date: "YYYY-MM-DD"
+        note: <string, optional>
+    ```
+  * If the array `individual_closing_days` contains elements, an additional note with a bulleted list of closing days is displayed below the opening times on the contact page. If its attribute `note` is set, its value appears in braces after the associated date.
 
 ## Accordion
 * Listing as Bootstrap Accordion

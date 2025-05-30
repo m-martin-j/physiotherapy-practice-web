@@ -3,4 +3,13 @@
   .intro {
     background: $secondary_light;  // suppress linear-gradient
   }
+
+  #vacation-note {
+    p:last-child {
+      margin: 0;
+    }
+    ul, li {
+      margin-bottom: 0;
+    }
+  }
 }
