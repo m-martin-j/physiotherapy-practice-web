@@ -11,6 +11,12 @@
     @include media-breakpoint-up(md) {
       width: 50%;
     }
+    @include media-breakpoint-up(lg) {
+      width: 40%;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 35%;
+    }
   }
   .icon {
     width: 2.0em;
