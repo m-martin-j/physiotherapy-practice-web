@@ -5,7 +5,7 @@
 // constants
 const cookieName = 'mvp-cookie-consent';
 const recaptchaActivated = {{ site.data.third-party.google_recaptcha.activated }};
-
+const announcementArray = {{ site.data.announcements | jsonify }};
 
 var windowLoaded = false;  // NOTE: currently unused
 window.onload = function() {
@@ -77,27 +77,47 @@ document.querySelectorAll('[data-inviewport]').forEach(el => {
 });
 
 // announcementModal
+function getCurrentAnnouncement(today) {
+  for (const ann of announcementArray) {
+     // start_date and end_date are inclusive, daylight saving time is not accounted for
+    const start = new Date(`${ann.start_date}T00:00:00+01:00`);
+    const end = new Date(`${ann.end_date}T23:59:59.999+01:00`);
+    if (today >= start && today <= end) {
+      return ann;
+    }
+  }
+  return null;
+}
 function launchAnnouncementModal() {
-  const startDate = new Date("{{ site.data.announcement-modal.start_date }}");
-  const endDate = new Date("{{ site.data.announcement-modal.end_date }}");
   const today = new Date();
   const todayStr = today.toDateString();
 
-  const modalVersion = startDate.toDateString().replace(/ /g, "_");
-  const modalShownKey = `mvp-announcementModalSeen-${modalVersion}`;
-  const lastShownDate = localStorage.getItem(modalShownKey);
+  const localStorageKey = 'mvp-announcementModalSeen';
+  const lastShownDate = localStorage.getItem(localStorageKey);
 
-  if (
-    today >= startDate && today <= endDate &&
-    lastShownDate !== todayStr
-  ) {
-    const announcementModal = new bootstrap.Modal(document.getElementById('announcementModal'));
-    announcementModal.show();
+  if (lastShownDate == todayStr) {
+    return;
+  } else {
+    const ann = getCurrentAnnouncement(today);
+    if (!ann) {  // no announcement for today
+      localStorage.setItem(localStorageKey, todayStr);  // set announcement as seen anyway
+      return;
+    } else {
+      const announcementModal = document.getElementById('announcementModal');
+      const announcementModal_BS = new bootstrap.Modal(announcementModal);
+      const modalTitle = announcementModal.querySelector('.modal-title');
+      modalTitle.innerHTML = ann.title;
+      const modalBody = announcementModal.querySelector('.modal-body');
+      modalBody.innerHTML = ann.body;
+      if (ann.body_center_text) {
+        modalBody.classList.add('text-center');
+      }
+      announcementModal_BS.show();
 
-    // Set the modal to be shown only once per day
-    document.getElementById('announcementModal').addEventListener('hidden.bs.modal', function () {
-      localStorage.setItem(modalShownKey, todayStr);
-    });
+      document.getElementById('announcementModal').addEventListener('hidden.bs.modal', function () {
+        localStorage.setItem(localStorageKey, todayStr);
+      });
+    }
   }
 }
 

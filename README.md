@@ -84,12 +84,12 @@ TBD
   * HTML: [_layouts/default.html](_layouts/default.html) - before `</body>`
   * SCSS: [_sass/components/_modal.scss](_sass/components/_modal.scss)
   * JavaScript [assets/js/scripts.js](assets/js/scripts.js) - see comment `announcementModal`
-  * Data: [_data/announcement-modal.yml](_data/announcement-modal.yml)
+  * Data: [_data/announcements.yml](_data/announcements.yml)
 * Activation
-  * Date-based: By setting `start_date` and `end_date` in above-referred data file.
-  * It is shown to visitors once per day, using local storage.
+  * Date-based: By setting `start_date` and `end_date` in above-referred data file. These dates need to exactly conform to the pattern `YYYY-MM-DD`; no time of day may be provided. The beginning and the end of day is automatically used as start and end, respectively.
+  * It is shown to visitors once per day, implemented via using local storage.
 * Content
-  * via above-referred data file.
+  * via yaml array data in above-referred data file. The first array element with a day falling into the range between `start_date` and `end_date` is taken; no further evaluation of the data takes place. Overlapping time ranges are not error-handled.
 
 ## Accordion
 * Listing as Bootstrap Accordion

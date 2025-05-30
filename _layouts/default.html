@@ -45,15 +45,17 @@
 
 
   <div class="modal fade" id="announcementModal" tabindex="-1" aria-labelledby="announcementModal" aria-hidden="true">
-    {% assign modal_data = site.data.announcement-modal %}
+    {% assign modal_data = site.data.announcements %}
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="announcementModalLabel">{{ modal_data.title }}</h1>
+          <h1 class="modal-title fs-5">
+            <!-- will be filled by javascript -->
+          </h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body {% if modal_data.body_center_text == true %}text-center{% endif %}">
-          {{ modal_data.body }}
+        <div class="modal-body">
+          <!-- will be filled by javascript -->
         </div>
         <div class="modal-footer d-flex align-items-center">
           <img class="modal-logo" src="{{ '/images/logo/logo_wtext_color.svg' | relative_url }}" alt="Logo">
