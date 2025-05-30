@@ -1,12 +1,12 @@
 .page-infos {
   .doc-download-button {
-    width: 80%;
+    width: 280px;
     font-size: 0.80rem;
     white-space: normal;
     word-break: break-word;
     @include media-breakpoint-up(sm) {
       font-size: unset;
-      width: 75%;
+      width: 70%;
     }
     @include media-breakpoint-up(md) {
       width: 50%;
@@ -21,7 +21,10 @@
   .icon {
     width: 2.0em;
     height: auto;
-    // margin-right: 0.5em;
+    margin-right: 0.5rem;
     // vertical-align: middle;
+    @include media-breakpoint-up(sm) {
+      margin-right: 0.75rem;
+    }
   }
 }
