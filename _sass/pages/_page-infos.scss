@@ -1,7 +1,11 @@
 .page-infos {
   .doc-download-button {
-    width: 90%;
+    width: 80%;
+    font-size: 0.80rem;
+    white-space: normal;
+    word-break: break-word;
     @include media-breakpoint-up(sm) {
+      font-size: unset;
       width: 75%;
     }
     @include media-breakpoint-up(md) {
