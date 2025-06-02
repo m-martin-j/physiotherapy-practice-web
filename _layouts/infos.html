@@ -7,6 +7,20 @@ bodyClass: "page-infos"
   <div class="container">
 
     <div class="row mb-6">
+      <h2>Dokumente</h2>
+      <p>Hier stellen wir Ihnen wichtige Dokumente für Ihren Besuch in unserer Praxis zur Verfügung. Dabei handelt es sich um einen Anamnesebogen, eine Datenschutzerklärung und verpflichtende Praxishinweise. Sie können diese bequem über die nachstehende Schaltfläche herunterladen, bereits vorab ausfüllen und zu ihrem Termin mitbringen.</p>
+      <div class="text-center">
+        <a href="{% link _downloads/Behandlungsdokumente.pdf %}" class="doc-download-button btn btn-primary" target="_blank" rel="noopener noreferrer">
+          <div class="d-flex flex-row justify-content-center align-items-center">
+            <img src="/images/pdf-document.svg" class="icon">
+            <span>Dokumente herunterladen</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="row mb-6">
+      <h2 class="mb-2">Von A bis Z</h2>
       <div>
         {% include details-accordion.html
           id="accordion-patient-infos"
