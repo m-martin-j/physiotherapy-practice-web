@@ -1,4 +1,19 @@
 .page-infos {
+  .intro-image-absolute {
+    @include media-breakpoint-up(md) {
+      bottom: -80px;
+      left: -75px;
+    }
+    @include media-breakpoint-up(lg) {
+      bottom: -130px;
+      left: -65px;
+    }
+    @include media-breakpoint-up(xl) {
+      bottom: -190px;
+      left: -70px;
+      width: 130%;
+    }
+  }
   .doc-download-button {
     width: 280px;
     white-space: normal;
