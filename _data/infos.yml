@@ -79,6 +79,13 @@
     file: true
     url: _downloads/Praxishinweise_Main_Vital.pdf
     text: "Praxishinweise herunterladen"
+- title: Preisliste für Selbstzahler*innen
+  content: "Für Selbstzahler*innen bieten wir eine Vielzahl von Leistungen an, die nicht über die Krankenkassen abgerechnet werden können. Eine Übersicht über unsere Preise finden Sie hier:"
+  link:
+    external: false
+    file: true
+    url: _downloads/Preisliste_Selbstzahler_Main_Vital.pdf
+    text: "Preisliste herunterladen"
 - title: Privatrezept
   content: "Vor dem ersten Behandlungstermin schließen wir eine Honorarvereinbarung ab, damit Sie bereits im Voraus über die anfallenden Kosten informiert sind. Nach Abschluss der Therapie erhalten Sie Ihre Rechnung zusammen mit dem Rezept."
 - title: Rezeptgebühr
