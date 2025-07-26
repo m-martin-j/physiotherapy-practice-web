@@ -23,6 +23,26 @@
               {% endfor %}
             </ul>
           {% endif %}
+          {% if element.table %}
+            <table>
+              <thead>
+                <tr>
+                  {% for header in element.table.head %}
+                    <th>{{ header }}</th>
+                  {% endfor %}
+                </tr>
+              </thead>
+              <tbody>
+                {% for row in element.table.rows %}
+                  <tr>
+                    {% for cell in row %}
+                      <td>{{ cell }}</td>
+                    {% endfor %}
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          {% endif %}
           {% if element.link %}
             <a
               {% if element.link.url_anchor %}

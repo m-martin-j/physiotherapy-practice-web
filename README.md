@@ -125,6 +125,7 @@ TBD
     * `title` shown in header of element
     * `content` rendered as p of element
     * `bullets` is an array of bullet point strings (if bullets provided, `content` is optional)
+    * `table` is a table element with an arbitrary number of rows and c columns that takes as optional attribute `head` (an array with c elements) and as mandatory attribute `rows` (an array of elements that each contain c elements). (if table provided, `content` is optional)
     * `link` needs attributes `external` set to true|false, `url` set to url|absolute path to internal file, `text` set to the url's text. Its attribute `url_anchor` is optional and is, it set, appended to urls.
 
 
