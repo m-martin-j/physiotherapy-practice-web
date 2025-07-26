@@ -1,0 +1,21 @@
+.page-prices {
+  .accordion {
+    table {
+      td {
+        vertical-align: top;
+
+        &:first-child {
+          text-align: left;
+          width: 99%;
+        }
+        &:last-child {
+          text-align: right;
+          color: $primary;
+          border-left: 1px solid $primary;
+          white-space: nowrap;
+          width: 1%;
+        }
+      }
+    }
+  }
+}

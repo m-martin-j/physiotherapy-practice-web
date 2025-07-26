@@ -33,6 +33,14 @@ Copyright (c) 2024-2025 Martin Trat.
   * `call_button_purpose`: if set to `"voucher_request"`, the user is redirected to the contact form on the contact page with the reason Gutschein being pre-selected via a query parameter. If not set, the button takes the user to the contact page without page anchors or query parameters.
 * defaults are set via [_config.yml](_config.yml) > `defaults`
 
+### Preise
+* Source
+  * Markdown/Content: [_pages/prices.md](_pages/prices.md)
+  * Layout: [_layouts/prices.html](_layouts/prices.html)
+  * Data from [_data/prices.yml](_data/prices.yml) - used in accordion
+* frontmatter attributes
+  * `remark-below-accordion`: A remark displayed below the accordion.
+
 ### About
 (Über Carmen)
 * Team info

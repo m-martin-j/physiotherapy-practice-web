@@ -1,0 +1,33 @@
+---
+layout: page-w-intro
+bodyClass: "page-prices"
+---
+
+<div class="strip strip-white">
+  <div class="container">
+
+    <div class="row mb-6">
+      <div>
+        {% include details-accordion.html
+          id="accordion-service-prices"
+          elements=site.data.prices
+          sort_elements=false
+          uncollapse_first=true
+        %}
+      </div>
+      <p class="mt-2">{{ page.remark-below-accordion }}</p>
+    </div>
+
+    <div class="row justify-content-center mb-1">
+      <div class="col text-center">
+        <p>Noch Fragen offen? Kommen Sie auf uns zu!</p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <a href="{% link _pages/contact.md %}" class="btn btn-primary">Kontakt aufnehmen</a>
+      </div>
+    </div>
+
+  </div>
+</div>

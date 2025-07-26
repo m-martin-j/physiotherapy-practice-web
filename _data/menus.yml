@@ -5,18 +5,21 @@ main:
   - name: "Leistungen"
     url: "/services/"
     weight: 2
+  - name: "Preise"
+    url: "/prices/"
+    weight: 3
   - name: "Informationen"
     url: "/info/"
-    weight: 3
+    weight: 4
   - name: "Über Carmen"
     url: "/about/"
-    weight: 4
+    weight: 5
   - name: "Kontakt"
     url: "/contact/"
-    weight: 5
+    weight: 6
   - name: "Termin online buchen"
     online_appointment_btn: true
-    weight: 6
+    weight: 7
 
 footer:
   - name: "Startseite"

@@ -1,0 +1,34 @@
+
+- title: Krankengymnastik
+  table:
+    rows:
+      - ["20 min", "41,00 €"]
+- title: Manuelle Therapie
+  table:
+    rows:
+      - ["20 min", "49,00 €"]
+- title: Manuelle Lymphdrainage
+  table:
+    rows:
+      - ["30 min", "50,00 €"]
+      - ["45 min", "74,00 €"]
+      - ["60 min", "99,00 €"]
+- title: Massagen
+  content: "Massagen sind als 20-minütige Behandlungen angesetzt."
+  table:
+    rows:
+      - ["Klassische Massage", "30,00 €"]
+      - ["Aromaölmassage", "33,00 €"]
+      - ["Schulter-Nacken-Gesichtsmassage", "32,00 €"]
+      - ["Faszienmassage", "30,00 €"]
+      - ["Triggerpunktbehandlung", "33,00 €"]
+- title: Wärmetherapie
+  table:
+    rows:
+      - ["Heißluft – 20 min", "11,00 €"]
+      - ["Heiße Rolle – 10 min", "19,00 €"]
+      - ["Warmpackung Fango – 20 min", "23,00 €"]
+- title: Ultraschall-Wärmetherapie
+  table:
+    rows:
+      - ["10 min", "20,00 €"]
