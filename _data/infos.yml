@@ -79,6 +79,13 @@
     file: true
     url: _downloads/Praxishinweise_Main_Vital.pdf
     text: "Praxishinweise herunterladen"
+- title: Preisübersicht
+  content: "Hier finden Sie eine vollständige Übersicht aller Leistungen und Preise für Selbstzahler*innen und Privatpatient*innen:"
+  link:
+    external: false
+    file: false
+    url: _pages/prices.md
+    text: "Preise einsehen"
 - title: Privatrezept
   content: "Vor dem ersten Behandlungstermin schließen wir eine Honorarvereinbarung ab, damit Sie bereits im Voraus über die anfallenden Kosten informiert sind. Nach Abschluss der Therapie erhalten Sie Ihre Rechnung zusammen mit dem Rezept."
 - title: Rezeptgebühr

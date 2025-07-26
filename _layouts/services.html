@@ -24,21 +24,34 @@ bodyClass: "page-services"
 </div>
 
 {% assign voucher_service = site.services | where: "voucher", true | first %}
-{% if voucher_service %}
 <div class="strip strip-secondary-light-gradient">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-8 mx-auto text-center">
-        <div class="service service-featured">
+
+      {% if voucher_service %}
+        <div class="col-12 col-md-6 mb-3 text-center d-flex align-items-stretch">
+          <div class="service service-featured w-100">
+            <div class="service-content">
+              <h2 class="service-title">
+                <a href="{{ voucher_service.url | relative_url }}">{{ voucher_service.title }}</a>
+              </h2>
+              <p>{{ voucher_service.excerpt | markdownify | strip_html | truncate: 200 }}</p>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+
+      <div class="col-12 {% if voucher_service %}col-md-6{% else %}col-md-8 mx-auto{% endif %} mb-3 text-center d-flex align-items-stretch">
+        <div class="service service-featured w-100">
           <div class="service-content">
             <h2 class="service-title">
-              <a href="{{ voucher_service.url | relative_url }}">{{ voucher_service.title }}</a>
+              <a href="{% link _pages/prices.md %}">Preise</a>
             </h2>
-            <p>{{ voucher_service.excerpt | markdownify | strip_html | truncate: 200 }}</p>
+            <p>Leistungspreise für Selbstzahler*innen und Privatpatient*innen.</p>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </div>
-{% endif %}
