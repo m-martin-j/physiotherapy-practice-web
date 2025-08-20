@@ -93,6 +93,18 @@ function getSortedIndividualClosingDaysData() {
   // sorted by date
   return announcementData.individual_closing_days.sort((a, b) => new Date(a.date) - new Date(b.date));
 }
+function getNextModalAnnouncementWithVacation(today) {
+  // get only the modal announcement array element with a currently ongoing vacation or the one with the closest vacation.start_date in the future
+  const sortedVacationAnnouncements = getSortedModalAnnouncementData(filter='vacation');
+  for (const ann of sortedVacationAnnouncements) {
+    const vacationEnd = new Date(ann.vacation.end_date);
+    if (today <= vacationEnd) {
+      // a currently ongoing vacation has precedence over one in the future as, after sorting by vacation.start_date, it will be the first one found in the for loop
+      return ann;
+    }
+  }
+  return null;
+}
 
 function getCurrentAnnouncement(today) {
   if (!today) console.error('today date is not provided.');
