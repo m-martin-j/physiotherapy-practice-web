@@ -18,6 +18,10 @@ home:
 cookies:
   expiry_days: 31
 
+announcements:
+  start_offset_days_modal_announcement_vacation: 14
+  min_days_vacation_auto_announcement: 3
+
 collections:
   services:
     output: true

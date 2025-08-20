@@ -77,54 +77,99 @@ document.querySelectorAll('[data-inviewport]').forEach(el => {
 });
 
 // announcementModal
-function getSortedModalAnnouncementData(filter='none') {
-  // filter can be 'none' (sorted by modal start_date) or 'vacation' (sorted by vacation.start_date)
-  if (!announcementData.modal) {
+function getSortedSpecialAnnouncementData() {
+  // sorted by start_date
+  if (!announcementData.special) {
     return [];
   }
-  if(filter === 'none') {
-    return announcementData.modal.sort((a, b) => new Date(a.start_date) - new Date(b.start_date));
-  }
-  else if(filter === 'vacation') {
-    return announcementData.modal.filter(ann => ann.vacation).sort((a, b) => new Date(a.vacation.start_date) - new Date(b.vacation.start_date));
-  }
-  else {
-    console.error('Invalid filter for modal announcement data:', filter);
-  }
+  return announcementData.special.sort((a, b) => new Date(a.start_date) - new Date(b.start_date));
 }
-function getSortedIndividualClosingDaysData() {
-  // sorted by date
-  if (!announcementData.individual_closing_days) {
+function getSortedVacationData(filter='none', min_days_vacation_auto_announcement={{ site.announcements.min_days_vacation_auto_announcement }}) {
+  // sorted by start_date; filter can be 'none' to include all,
+  //  or 'modal_announcement' to only include those with attribute modal_announcement or exceeding min_days_vacation_auto_announcement - 1 with their duration between start and end (included).
+  if (!announcementData.vacation) {
     return [];
   }
-  return announcementData.individual_closing_days.sort((a, b) => new Date(a.date) - new Date(b.date));
-}
-function getNextModalAnnouncementWithVacation(today) {
-  // get only the modal announcement array element with a currently ongoing vacation or the one with the closest vacation.start_date in the future
-  const sortedVacationAnnouncements = getSortedModalAnnouncementData(filter='vacation');
-  for (const ann of sortedVacationAnnouncements) {
-    const vacationEnd = new Date(ann.vacation.end_date);
-    if (today <= vacationEnd) {
-      // a currently ongoing vacation has precedence over one in the future as, after sorting by vacation.start_date, it will be the first one found in the for loop
-      return ann;
-    }
+  let sorted = announcementData.vacation.sort((a, b) => new Date(a.start_date) - new Date(b.start_date));
+  if (filter === 'none') {
+    return sorted;
+  } else if (filter === 'modal_announcement') {
+    sorted.forEach(item => {  // add attribute modal_announcement for such not possessing it but exceeding min_days_vacation_auto_announcement - 1
+      if (!item.modal_announcement && (
+        item.start_date && item.end_date &&
+        (new Date(item.end_date) - new Date(item.start_date)) / (1000 * 60 * 60 * 24) + 1 > (min_days_vacation_auto_announcement - 1)
+      )) {
+        item.modal_announcement = {title: null};
+      }
+    });
+    let filtered = sorted.filter(item => item.modal_announcement);
+    return filtered;
+  } else {
+    console.error('Invalid filter for getSortedVacationData:', filter);
   }
-  return null;
 }
 
-function getCurrentAnnouncement(today) {
+function getCurrentSpecialAnnouncement(today) {
   if (!today) console.error('today date is not provided.');
-  let sortedModalAnnouncementData = getSortedModalAnnouncementData();
+  let sortedModalAnnouncementData = getSortedSpecialAnnouncementData();
+  let currentAnn = null;
   for (const ann of sortedModalAnnouncementData) {
      // start_date and end_date are inclusive, daylight saving time is not accounted for
     const start = new Date(`${ann.start_date}T00:00:00+01:00`);
     const end = new Date(`${ann.end_date}T23:59:59.999+01:00`);
     if (today >= start && today <= end) {
-      return ann;
+      currentAnn = ann;
     }
   }
-  return null;
+  return currentAnn;
 }
+function getCurrentVacationAnnouncement(today, offset_vacation={{ site.announcements.start_offset_days_modal_announcement_vacation }}) {
+  // only such with non-null attribute modal_announcement are considered
+  if (!today) console.error('today date is not provided.');
+  let sortedVacationData = getSortedVacationData(filter='modal_announcement')
+  let currentAnn = null;
+  for (const vac of sortedVacationData) {
+     // start_date and end_date are inclusive, daylight saving time is not accounted for
+    const start = new Date(`${vac.start_date}T00:00:00+01:00`);
+    start.setDate(start.getDate() - offset_vacation);  // shown earlier than vacation start based on offset
+    if (! vac.end_date) {
+      console.error('Vacation end date is not defined.');
+    }
+    const end = new Date(`${vac.end_date}T23:59:59.999+01:00`);
+    if (today >= start && today <= end) {
+      currentAnn = vac;
+      currentAnn.title = vac.modal_announcement.title || "Wir machen Urlaub 🍹";
+      const vacationStartDate = new Date(vac.start_date);
+      const vacationEndDate = new Date(vac.end_date);
+      currentAnn.body = `<strong>Wann:</strong> vom <strong>${vacationStartDate.toLocaleDateString('de-DE')}</strong> bis einschließlich <strong>${vacationEndDate.toLocaleDateString('de-DE')}</strong>`
+      if (vac.modal_announcement.body) {
+        currentAnn.body += "<br><br>" + vac.modal_announcement.body;
+      } else {
+        currentAnn.body += "<br><br>Bitte beachten Sie, dass die Praxis in dieser Zeit geschlossen bleibt.";
+      }
+    }
+  }
+  return currentAnn;
+}
+
+function getCurrentAnnouncement(today) {
+  if (!today) console.error('today date is not provided.');
+  let currentAnn = null;
+
+  let currentSpecialAnn = getCurrentSpecialAnnouncement(today);
+  let currentVacationAnn = getCurrentVacationAnnouncement(today);
+  if (currentVacationAnn && currentSpecialAnn) {
+    console.error('Overlapping announcements found for today.');
+  }
+  if (currentVacationAnn) {
+    currentAnn = currentVacationAnn;
+  }
+  if (currentSpecialAnn) {
+    currentAnn = currentSpecialAnn;
+  }
+  return currentAnn;
+}
+
 function launchAnnouncementModal() {
   const today = new Date();
   const todayStr = today.toDateString();
@@ -145,14 +190,6 @@ function launchAnnouncementModal() {
       const modalTitle = announcementModal.querySelector('.modal-title');
       modalTitle.innerHTML = ann.title;
       const modalBody = announcementModal.querySelector('.modal-body');
-
-      if (ann.vacation) {
-        const vacationStartDate = new Date(ann.vacation.start_date);
-        const vacationEndDate = new Date(ann.vacation.end_date);
-        let vacationText = document.createElement('p');
-        vacationText.innerHTML = `<strong>Wann:</strong> vom <strong>${vacationStartDate.toLocaleDateString('de-DE')}</strong> bis einschließlich <strong>${vacationEndDate.toLocaleDateString('de-DE')}</strong>`;
-        modalBody.appendChild(vacationText);
-      }
 
       let content = document.createElement('div')
       content.innerHTML = ann.body;

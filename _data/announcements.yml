@@ -1,5 +1,5 @@
 
-modal:
+special:
   - title: "Willkommen bei Main Vital"
     body: |-
       Ich freue mich, Sie in der neu eröffneten Physio-Praxis begrüßen und auf Ihrem Weg zur Gesundheit begleiten zu dürfen!
@@ -9,45 +9,41 @@ modal:
     start_date: "2025-06-01"
     end_date: "2025-07-31"
 
-  - title: "Wir machen Urlaub 🍹"
-    body: |-
-      Bitte beachten Sie, dass die Praxis in dieser Zeit geschlossen bleibt.
-    start_date: "2025-09-04"
-    end_date: "2025-09-26"
-    vacation:
-      start_date: "2025-09-18"
-      end_date: "2025-09-26"
-  - title: "Wir machen eine Fortbildung 🚀"
-    body: |-
-      Bitte beachten Sie, dass die Praxis in dieser Zeit geschlossen bleibt.
-    start_date: "2025-10-02"
-    end_date: "2025-10-19"
-    vacation:
-      start_date: "2025-10-16"
-      end_date: "2025-10-19"
-  - title: "Wir machen eine Fortbildung 🚀"
-    body: |-
-      Bitte beachten Sie, dass die Praxis in dieser Zeit geschlossen bleibt.
-    start_date: "2025-11-06"
-    end_date: "2025-11-23"
-    vacation:
-      start_date: "2025-11-20"
-      end_date: "2025-11-23"
-  - title: "Wir machen eine Fortbildung 🚀"
-    body: |-
-      Bitte beachten Sie, dass die Praxis in dieser Zeit geschlossen bleibt.
-    start_date: "2025-11-20"
-    end_date: "2025-12-07"
-    vacation:
-      start_date: "2025-12-04"
-      end_date: "2025-12-07"
 
-individual_closing_days:
-  - date: "2025-08-22"
+vacation:
+  - start_date: "2025-08-22"
+    end_date:
     note:
-  - date: "2025-09-08"
+    modal_announcement:
+  - start_date: "2025-09-08"
+    end_date: "2025-09-09"
     note:
-  - date: "2025-09-09"
+    modal_announcement:
+  - start_date: "2025-09-18"
+    end_date: "2025-09-26"
     note:
-  - date: "2025-12-24"
+    modal_announcement:
+        title:
+        body:
+  - start_date: "2025-10-16"
+    end_date: "2025-10-19"
+    note:
+    modal_announcement:
+        title: "Wir machen eine Fortbildung 🚀"
+        body:
+  - start_date: "2025-11-20"
+    end_date: "2025-11-23"
+    note:
+    modal_announcement:
+        title: "Wir machen eine Fortbildung 🚀"
+        body:
+  - start_date: "2025-12-04"
+    end_date: "2025-12-07"
+    note:
+    modal_announcement:
+        title: "Wir machen eine Fortbildung 🚀"
+        body:
+  - start_date: "2025-12-24"
+    end_date:
     note: "Heiligabend"
+    modal_announcement:

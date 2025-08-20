@@ -56,41 +56,21 @@ bodyClass: "page-contact"
         fillVacationNote();
     });
 
-    function getVacationInfo() {
+    function getNextVacations() {
+        const vacationAnnouncements = getSortedVacationData();
         const today = new Date();
-        const nextVacationAnnouncement = getNextModalAnnouncementWithVacation(today);
-        if (nextVacationAnnouncement && nextVacationAnnouncement.vacation) {
-            const startDate = new Date(nextVacationAnnouncement.vacation.start_date);
-            const endDate = new Date(nextVacationAnnouncement.vacation.end_date);
-            let vacationText = document.createElement('p');
-            vacationText.innerHTML = `Da wir vom <strong>${startDate.toLocaleDateString('de-DE')}</strong> bis einschließlich <strong>${endDate.toLocaleDateString('de-DE')}</strong> im Urlaub sind, bleibt die Praxis in diesem Zeitraum geschlossen.`;
-            return vacationText;
+        today.setHours(0, 0, 1, 0);  // Set to the start of the day
+        let retArr = [];
+        vacationAnnouncements.forEach(announcement => {
+            const startDate = new Date(announcement.start_date);
+            if (startDate >= today) {
+                retArr.push(announcement);
+            }
+        });
+        if (retArr.length === 0) {
+            return null;
         }
-        return null;
-    }
-    function getIndividualClosingInfo() {
-        const indiClosingDays = getSortedIndividualClosingDaysData();
-        if (indiClosingDays && indiClosingDays.length > 0) {
-            const today = new Date();
-            today.setHours(0, 0, 1, 0);  // Set to the start of the day
-            let closingText = document.createElement('p');
-            closingText.innerHTML = "Bitte beachten Sie zudem, dass die Praxis an folgenden Tagen geschlossen ist: ";
-            const dayList = document.createElement('ul');
-            indiClosingDays.forEach(day => {
-                const listItem = document.createElement('li');
-                const dayDate = new Date(day.date);
-                if (dayDate >= today) {
-                    listItem.innerHTML = `${dayDate.toLocaleDateString('de-DE', { weekday: 'long' })}, ${dayDate.toLocaleDateString('de-DE')}`;
-                    if (day.note) {
-                        listItem.innerHTML += ` (${day.note})`;
-                    }
-                    dayList.appendChild(listItem);
-                }
-            });
-            closingText.appendChild(dayList);
-            return closingText;
-        }
-        return null;
+        return retArr;
     }
 
     function fillVacationNote() {
@@ -100,18 +80,27 @@ bodyClass: "page-contact"
             return;
         }
 
-        const vacationText = getVacationInfo();
-        if (vacationText) {
-            vacationNoteDiv.appendChild(vacationText);
-        }
-
-        const indiClosingText = getIndividualClosingInfo();
-        if (indiClosingText) {
-            vacationNoteDiv.appendChild(indiClosingText);
-        }
-
-        const anyNote = vacationText !== null || indiClosingText !== null;
-        if (anyNote) {  // style div
+        let elementArr = getNextVacations();
+        if (elementArr) {
+            let closingText = document.createElement('p');
+            closingText.classList.add("mb-0");
+            closingText.innerHTML = "Bitte beachten Sie zudem, dass die Praxis an folgenden Tagen bzw. in folgenden Zeiträumen <strong>geschlossen</strong> ist:";
+            vacationNoteDiv.appendChild(closingText);
+            let elementTextList = document.createElement('ul');
+            elementArr.forEach((element) => {
+                const listItem = document.createElement('li');
+                const start_date = new Date(element.start_date);
+                listItem.innerHTML = `${start_date.toLocaleDateString('de-DE')}`;  // BACKUP: ${dayDate.toLocaleDateString('de-DE', { weekday: 'long' })},
+                if (element.end_date) {
+                    const end_date = new Date(element.end_date);
+                    listItem.innerHTML += `–${end_date.toLocaleDateString('de-DE')}`;
+                }
+                if (element.note) {
+                    listItem.innerHTML += ` (${element.note})`;
+                }
+                elementTextList.appendChild(listItem);
+            });
+            vacationNoteDiv.appendChild(elementTextList);
             vacationNoteDiv.classList.add("alert", "alert-primary");
             vacationNoteDiv.setAttribute("role", "alert");
         } else {

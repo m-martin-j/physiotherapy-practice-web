@@ -94,32 +94,36 @@ TBD
   * JavaScript [assets/js/scripts.js](assets/js/scripts.js) - see comment `announcementModal`
   * Data: [_data/announcements.yml](_data/announcements.yml)
 * Activation of the modal
-  * Date-based: By setting `start_date` and `end_date` in above-referred data file for an entry of the array `modal`. These dates need to exactly conform to the pattern `YYYY-MM-DD`; no time of day may be provided. The beginning and the end of day is automatically used as start and end, respectively.
-  * It is shown to visitors once per day, implemented via using local storage.
-* Content for modal announcement
-  * yaml structure
+  * Date-based:
+    * By setting `start_date` and `end_date` in above-referred data file for an entry of the array `special` or of the array `vacation`.
+    * In the case of `vacation`, a modal is actived if the duration between `end_date` and `start_date` is at least `announcements.min_days_vacation_auto_announcement` (defined in [_config.yml](_config.yml)) days. It is also activated if the duration is shorter AND the attribute `modal_announcement` is set to a non-null value. Then, an `end_date` must also be provided. If `modal_announcement.title` or `modal_announcement.body` are not set, defaults apply (the empty attributes need to be written in the file to have `modal_announcement` set to a non-null value though in the case of durations not exceeding above-mentioned value).
+    * The dates need to exactly conform to the pattern `YYYY-MM-DD`; no time of day may be provided. The beginning and the end of day is automatically used as start and end of the period for showing the modal, respectively. With respect to the array `vacation` the `start_date` is subtracted by the value `announcements.start_offset_days_modal_announcement_vacation` (defined in [_config.yml](_config.yml)) to define an earlier start of the period for showing the modal.
+  * The first element of each array with today's date falling into the range between `start_date` and `end_date` is taken; no further evaluation of the data takes place. Overlapping time ranges (within each array as well as across both) are not handled.
+  * The modal is shown to visitors once per day, implemented via using local storage.
+* Content on the contact page
+  * Only elements from the array `vacation` are utilized.
+  * If elements are set, a bulleted list of the dates is displayed below the opening times on the contact page.
+  * If the attribute `end_date` is set, the vacation is formatted as a period; if not, it is formatted as a single day.
+  * If the attribute `note` is set, its value appears in braces after the associated date.
+* yaml structure of the data
     ```yml
-    modal:
+    special:
       - title: <string>
         body: |-
           <multi-line string>
         start_date: "YYYY-MM-DD"
         end_date: "YYYY-MM-DD"
-        vacation:
-          start_date: "YYYY-MM-DD"
-          end_date: "YYYY-MM-DD"
+
+    vacation:
+      - start_date: "YYYY-MM-DD"
+        end_date: "YYYY-MM-DD" OPTIONAL
+        note: <string>
+        modal_announcement:
+            title: <string>
+            body: |-
+              <multi-line string>
     ```
-  * via yaml array data in above-referred data file. The first element of the array `modal` with today falling into the range between `start_date` and `end_date` is taken; no further evaluation of the data takes place. Overlapping time ranges are not error-handled.
-  * If a `vacation` object is included in an element of the array `modal` (having its own `start_date` and `end_date` attributes), the announcement is formatted as a vacation announcement.
-* Content for announcements on the contact page
-  * If a `vacation` object is included in an element of the array `modal`, the announcement is also displayed below the opening times on the contact page.
-  * yaml structure
-    ```yml
-    individual_closing_days:
-      - date: "YYYY-MM-DD"
-        note: <string, optional>
-    ```
-  * If the array `individual_closing_days` contains elements, an additional note with a bulleted list of closing days is displayed below the opening times on the contact page. If its attribute `note` is set, its value appears in braces after the associated date.
+
 
 ## Accordion
 * Listing as Bootstrap Accordion
