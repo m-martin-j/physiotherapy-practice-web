@@ -79,6 +79,9 @@ document.querySelectorAll('[data-inviewport]').forEach(el => {
 // announcementModal
 function getSortedModalAnnouncementData(filter='none') {
   // filter can be 'none' (sorted by modal start_date) or 'vacation' (sorted by vacation.start_date)
+  if (!announcementData.modal) {
+    return [];
+  }
   if(filter === 'none') {
     return announcementData.modal.sort((a, b) => new Date(a.start_date) - new Date(b.start_date));
   }
@@ -91,6 +94,9 @@ function getSortedModalAnnouncementData(filter='none') {
 }
 function getSortedIndividualClosingDaysData() {
   // sorted by date
+  if (!announcementData.individual_closing_days) {
+    return [];
+  }
   return announcementData.individual_closing_days.sort((a, b) => new Date(a.date) - new Date(b.date));
 }
 function getNextModalAnnouncementWithVacation(today) {
