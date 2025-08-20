@@ -63,7 +63,7 @@ bodyClass: "page-contact"
             const startDate = new Date(ann.vacation.start_date);
             const endDate = new Date(ann.vacation.end_date);
             let vacationText = document.createElement('p');
-            vacationText.innerHTML = `Da wir vom <strong>${startDate.toLocaleDateString('de-DE')}</strong> bis zum <strong>${endDate.toLocaleDateString('de-DE')}</strong> im Urlaub sind, bleibt die Praxis in diesem Zeitraum geschlossen.`;
+            vacationText.innerHTML = `Da wir vom <strong>${startDate.toLocaleDateString('de-DE')}</strong> bis einschließlich <strong>${endDate.toLocaleDateString('de-DE')}</strong> im Urlaub sind, bleibt die Praxis in diesem Zeitraum geschlossen.`;
             return vacationText;
         }
         return null;

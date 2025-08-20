@@ -114,7 +114,7 @@ function launchAnnouncementModal() {
         const vacationStartDate = new Date(ann.vacation.start_date);
         const vacationEndDate = new Date(ann.vacation.end_date);
         let vacationText = document.createElement('p');
-        vacationText.innerHTML = `<strong>Wann:</strong> vom <strong>${vacationStartDate.toLocaleDateString('de-DE')}</strong> bis zum <strong>${vacationEndDate.toLocaleDateString('de-DE')}</strong>`;
+        vacationText.innerHTML = `<strong>Wann:</strong> vom <strong>${vacationStartDate.toLocaleDateString('de-DE')}</strong> bis einschließlich <strong>${vacationEndDate.toLocaleDateString('de-DE')}</strong>`;
         modalBody.appendChild(vacationText);
       }
 
