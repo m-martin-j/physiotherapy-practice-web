@@ -57,7 +57,8 @@ bodyClass: "page-contact"
     });
 
     function getVacationInfo() {
-        const ann = getCurrentAnnouncement();
+        const today = new Date();
+        const ann = getCurrentAnnouncement(today);
         if (ann && ann.vacation) {
             const startDate = new Date(ann.vacation.start_date);
             const endDate = new Date(ann.vacation.end_date);
@@ -70,7 +71,7 @@ bodyClass: "page-contact"
     function getIndividualClosingInfo() {
         const indiClosingDays = announcementData.individual_closing_days;
         if (indiClosingDays && indiClosingDays.length > 0) {
-            let today = new Date();
+            const today = new Date();
             today.setHours(0, 0, 1, 0);  // Set to the start of the day
             let closingText = document.createElement('p');
             closingText.innerHTML = "Bitte beachten Sie zudem, dass die Praxis an folgenden Tagen geschlossen ist: ";

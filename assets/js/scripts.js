@@ -78,6 +78,7 @@ document.querySelectorAll('[data-inviewport]').forEach(el => {
 
 // announcementModal
 function getCurrentAnnouncement(today) {
+  if (!today) console.error('today date is not provided.');
   for (const ann of announcementData.modal) {
      // start_date and end_date are inclusive, daylight saving time is not accounted for
     const start = new Date(`${ann.start_date}T00:00:00+01:00`);
