@@ -69,7 +69,7 @@ bodyClass: "page-contact"
         return null;
     }
     function getIndividualClosingInfo() {
-        const indiClosingDays = announcementData.individual_closing_days;
+        const indiClosingDays = getSortedIndividualClosingDaysData();
         if (indiClosingDays && indiClosingDays.length > 0) {
             const today = new Date();
             today.setHours(0, 0, 1, 0);  // Set to the start of the day

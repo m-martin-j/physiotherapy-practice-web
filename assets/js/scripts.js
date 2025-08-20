@@ -77,9 +77,27 @@ document.querySelectorAll('[data-inviewport]').forEach(el => {
 });
 
 // announcementModal
+function getSortedModalAnnouncementData(filter='none') {
+  // filter can be 'none' (sorted by modal start_date) or 'vacation' (sorted by vacation.start_date)
+  if(filter === 'none') {
+    return announcementData.modal.sort((a, b) => new Date(a.start_date) - new Date(b.start_date));
+  }
+  else if(filter === 'vacation') {
+    return announcementData.modal.filter(ann => ann.vacation).sort((a, b) => new Date(a.vacation.start_date) - new Date(b.vacation.start_date));
+  }
+  else {
+    console.error('Invalid filter for modal announcement data:', filter);
+  }
+}
+function getSortedIndividualClosingDaysData() {
+  // sorted by date
+  return announcementData.individual_closing_days.sort((a, b) => new Date(a.date) - new Date(b.date));
+}
+
 function getCurrentAnnouncement(today) {
   if (!today) console.error('today date is not provided.');
-  for (const ann of announcementData.modal) {
+  let sortedModalAnnouncementData = getSortedModalAnnouncementData();
+  for (const ann of sortedModalAnnouncementData) {
      // start_date and end_date are inclusive, daylight saving time is not accounted for
     const start = new Date(`${ann.start_date}T00:00:00+01:00`);
     const end = new Date(`${ann.end_date}T23:59:59.999+01:00`);
