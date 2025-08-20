@@ -1,22 +1,5 @@
 
 modal:
-  - title: "Main Vital feiert Eröffnung 🥂"
-    body: |-
-      <strong>Wann:</strong>
-      31.05.2025, 10-16 Uhr
-      <br>
-      <strong>Wo:</strong>
-      Dörfleinser Str. 60,<br>96103 Hallstadt-Dörfleins
-      <br>
-      <br>
-      Ich freue mich auf Sie!
-      <br>
-      <br>
-      <span style="color: #618914;">Terminvereinbarungen sind ab dem 20.05.2025 möglich.</span>
-    # announcement activation horizon: format YYYY-MM-DD, start and end inclusive
-    start_date: "2025-04-01"
-    end_date: "2025-05-31"
-
   - title: "Willkommen bei Main Vital"
     body: |-
       Ich freue mich, Sie in der neu eröffneten Physio-Praxis begrüßen und auf Ihrem Weg zur Gesundheit begleiten zu dürfen!
@@ -26,5 +9,45 @@ modal:
     start_date: "2025-06-01"
     end_date: "2025-07-31"
 
+  - title: "Wir machen Urlaub 🍹"
+    body: |-
+      Bitte beachten Sie, dass die Praxis in dieser Zeit geschlossen bleibt.
+    start_date: "2025-09-04"
+    end_date: "2025-09-26"
+    vacation:
+      start_date: "2025-09-18"
+      end_date: "2025-09-26"
+  - title: "Wir machen eine Fortbildung 🚀"
+    body: |-
+      Bitte beachten Sie, dass die Praxis in dieser Zeit geschlossen bleibt.
+    start_date: "2025-10-02"
+    end_date: "2025-10-19"
+    vacation:
+      start_date: "2025-10-16"
+      end_date: "2025-10-19"
+  - title: "Wir machen eine Fortbildung 🚀"
+    body: |-
+      Bitte beachten Sie, dass die Praxis in dieser Zeit geschlossen bleibt.
+    start_date: "2025-11-06"
+    end_date: "2025-11-23"
+    vacation:
+      start_date: "2025-11-20"
+      end_date: "2025-11-23"
+  - title: "Wir machen eine Fortbildung 🚀"
+    body: |-
+      Bitte beachten Sie, dass die Praxis in dieser Zeit geschlossen bleibt.
+    start_date: "2025-11-20"
+    end_date: "2025-12-07"
+    vacation:
+      start_date: "2025-12-04"
+      end_date: "2025-12-07"
 
 individual_closing_days:
+  - date: "2025-08-22"
+    note:
+  - date: "2025-09-08"
+    note:
+  - date: "2025-09-09"
+    note:
+  - date: "2025-12-24"
+    note: "Heiligabend"
