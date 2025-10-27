@@ -2,6 +2,7 @@
 title: Informationen
 permalink: "/info/"
 layout: infos
+description: TODO
 intro_image: "images/practice/reception_md.jpg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false

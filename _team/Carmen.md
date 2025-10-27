@@ -1,11 +1,12 @@
 ---
 title: "Carmen Eichelsdörfer"
 date: 2018-11-19T10:47:58+10:00
-image: "images/team/sage-kirk-485982-unsplash.jpg"
+image: "images/team/Carmen_3_md.jpg"
 jobtitle: "Chefin"
 linkedinurl:
-promoted:
+promoted: true
 weight: 1
+layout: team-promoted
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit,

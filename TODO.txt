@@ -1,0 +1,8 @@
+Über uns
+* intro-image-absolute:
+  * Korrektur-sass
+  * besseres Foto; Panoramaformat?
+
+
+weitreichend
+* nur strip intro soviel margin bottom? spätere strips weniger?
