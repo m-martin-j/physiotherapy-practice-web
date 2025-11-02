@@ -16,7 +16,7 @@ show_call_box_button: true
 
 | Montag    | 11:30 - 19:00 Uhr |
 | Dienstag  | 07:30 - 15:00 Uhr |
-| Mittwoch  | 11:30 - 19:00 Uhr |
+| Mittwoch  | 08:00 - 19:00 Uhr |
 | Donnerstag| 07:30 - 15:00 Uhr |
 | Freitag   | 07:30 - 15:00 Uhr |
 
