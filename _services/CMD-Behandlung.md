@@ -6,7 +6,7 @@ weight: 9
 
 Eine Behandlung zur Linderung von Verspannungen und Schmerzen im Kiefer- und Kopfbereich.
 
-Die Craniomandibuläre Dysfunktion (CMD) umfasst Beschwerden, wie Verspannungen und häufig auch Zähneknirschen oder -pressen, die durch Fehlfunktionen im Kiefergelenk und der umliegenden Muskulatur verursacht werden. Diese Symptome können zu Einschränkungen im Alltag führen.
+Die craniomandibuläre Dysfunktion (CMD) umfasst Beschwerden, wie Verspannungen und häufig auch Zähneknirschen oder -pressen, die durch Fehlfunktionen im Kiefergelenk und der umliegenden Muskulatur verursacht werden. Diese Symptome können zu Einschränkungen im Alltag führen.
 
 Durch gezielte physiotherapeutsiche Maßnahmen wird die Kiefermuskulatur entlastet, Fehlhaltungen korrigiert und die Gelenkbeweglichkeit wiederhergestellt. Mit gezielten manuellen Techniken und Übungen lindern wir Ihre Beschwerden und tragen so zu
 einer nachhaltigen Verbesserung Ihrer Lebensqualität bei.
