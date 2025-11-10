@@ -3,6 +3,11 @@
   table:
     rows:
       - ["20 min", "41,00 €"]
+- title: PNF-Behandlung
+  content: "Nach Vollendung des 18. Lebensjahres als Einzelbehandlung."
+  table:
+    rows:
+      - ["30 min", "65,00 €"]
 - title: Manuelle Therapie
   table:
     rows:
