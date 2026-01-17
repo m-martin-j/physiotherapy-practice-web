@@ -1,73 +1,70 @@
 ---
-layout: default
+layout: page-w-intro
 bodyClass: "page-about"
 ---
-
-<div class="intro">
-  <div class="container">
-    <div class="row justify-content-start">
-      <div class="col-12 col-md-7 order-2 order-md-1">
-        <h1 class="title">{{page.title}}</h1>
-        <div class="heading-underline"></div>
-        <p>Hallo, ich bin Carmen Eichelsdörfer,</p>
-        <div class="font-family-heading qualifications my-5" data-inviewport="fly-in" data-insuccession="" data-root-margin="0% 0% -15% 0%">
-          <p>Physiotherapeutin</p>
-          <p>Heilpraktikerin</p>
-          <p>Osteopathin in Ausbildung</p>
-        </div>
-        <p class="w-100">
-          Mit einer fundierten Ausbildung und jahrelanger Erfahrung in der Physiotherapie und Heilpraktik widme ich mich der ganzheitlichen Behandlung meiner Patienten. Im Rahmen meiner Arbeit biete ich eine Vielzahl von Therapiemethoden an, um Ihre Beschwerden gezielt und nachhaltig zu lindern.
-        </p>
-      </div>
-      {% if page.intro_image %}
-      <div class="col-12 col-md-5 order-1 order-md-2 position-relative">
-        <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relative_url }}" />
-      </div>
-      {% endif %}
-    </div>
-  </div>
-</div>
 
 <div class="strip strip-white">
   <div class="container">
     <div class="row">
-      <h2>
-        Meine Qualifikationen
-      </h2>
+      <h2>Das Team</h2>
+      <p>{{ page.section-team-text }}</p>
     </div>
-    <div class="row justify-content-start align-items-center">
-      <div class="col-12 col-md-5 col-lg-4">
-        <ul>
-          <li>Manuelle Therapie</li>
-          <li>Manuelle Lymphdrainage</li>
-          <li>Krankengymnastik am Gerät</li>
-          <li>Kinesiotaping</li>
-          <li>Myoreﬂextrainer</li>
-          <li>BALLance Concepts</li>
-        </ul>
+
+    {% assign promoted_teams = site.team | where: "promoted", true | sort: "weight" %}
+    {% if promoted_teams.size != 0 %}
+      <div class="row">
+        {% for team in promoted_teams %}
+          <div class="col-12 col-md-6 mb-2">
+            <div class="team team-summary team-summary-large">
+              {% if team.image %}
+                <div class="team-image">
+                  <img alt="{{ team.title }}" class="img-fluid mb-2" src="{{ team.image | relative_url }}" />
+                </div>
+              {% endif %}
+              <div class="team-meta my-auto">
+                <h2 class="team-name">
+                  <a href="{{ team.url | relative_url }}">{{ team.title }}</a>
+                </h2>
+                <p class="team-description">{{ team.jobtitle }}</p>
+                {% if team.linkedinurl %}
+                  <a target="_blank" href="{{ team.linkedinurl }}" rel="noreferrer">LinkedIn</a>
+                {% endif %}
+              </div>
+              <!-- <div class="team-content">{{ team.excerpt | truncate: 120 }}</div> --> <!-- TODO: first element in md-file being html leads to errors -->
+            </div>
+          </div>
+        {% endfor %}
       </div>
-      <div class="col-12 col-md-7 col-lg-8">
-        <p>
-          Mein Behandlungsspektrum umfasst vor allem klassische Erkrankungen aus den orthopädischen und chirurgischen Bereichen.
-          Durch die Kombination verschiedener Therapieansätze biete ich Ihnen eine individuelle und effektive Behandlung, um Ihre Genesung optimal zu fördern.
-          <br>
-          Ich freue mich darauf, Sie in meiner Praxis begrüßen zu dürfen und Sie auf Ihrem Weg zu mehr Wohlbefinden und Gesundheit zu begleiten!
-        </p>
+    {% endif %}
+
+    <!-- NOTE: for now, only promoted members -->
+    <!-- {% assign teams = site.team | where: "promoted", empty | sort: "weight" %}
+    {% for team in teams %}
+      <div class="col-12 col-md-6 mb-3">
+        <div class="team team-summary">
+          {% if team.image %}
+            <div class="team-image">
+                <img alt="{{ team.title }}" class="img-fluid mb-2" src="{{ team.image | relative_url }}" />
+            </div>
+          {% endif %}
+          <div class="team-meta">
+            <h2 class="team-name">
+              <a href="{{ team.url | relative_url }}">{{ team.title }}</a>
+            </h2>
+            <p class="team-description">{{ team.jobtitle }}</p>
+          </div>
+        </div>
       </div>
-    </div>
+    {% endfor %} -->
+
   </div>
 </div>
 
 <div class="strip strip-secondary-light-gradient">
   <div class="container">
     <div class="row justify-content-start align-items-center">
-      <div class="col-12 col-md-5 order-1 order-md-2 ps-md-5">
-        <h2>Die Praxis</h2>
-        <p>Zu finden in Hallstadt-Dörﬂeins &mdash;<br>Modern, großzügig und barrierefrei!</p>
-      </div>
-      <div class="col-12 col-md-7 order-2 order-md-1 content" data-inviewport="fly-in" data-root-margin="0% 0% 45% 0%" style="--fly-in-start-x: -40%;">
-        <img alt="Das Gebäude der Physiotharpiepraxis, ein Neubau, in Frontansicht." src="{{ 'images/practice/building_outer_front_2_md.jpg' | relative_url }}" />
-      </div>
+      <h2>Die Praxis</h2>
+      <p>Zu finden in Hallstadt-Dörﬂeins&mdash;Modern, großzügig und barrierefrei!</p>
     </div>
     <div class="row justify-content-center">
       <p>Unsere neue Physiotherapiepraxis ist hervorragend ausgestattet:</p>
@@ -80,7 +77,7 @@ bodyClass: "page-about"
           <li><strong>Großzügige Therapieräume:</strong> Große moderne und lichtdurchflutete Räume mit hochwertiger Therapieausstattung.</li>
         </ul>
       </div>
-      <div class="col-12 col-md-10 col-lg-8 content">
+      <div class="col-12 col-md-10 content">
         <img alt="Ein warm erleuchteter Gymnastikraum mit hölzernen Ornamenten and der Wand, einer Sprossenwand, sowie physiotherapeutische Hilfsmittel." src="{{ 'images/practice/gymnastics_room_md.jpg' | relative_url }}" />
         <img alt="Ein warm erleuchteter Therapieraum, in dem mittig eine Behandlungsliege, mit grünen Polstern bezogen, steht." src="{{ 'images/practice/therapy_room_md.jpg' | relative_url }}" />
       </div>
@@ -97,53 +94,3 @@ bodyClass: "page-about"
     </div>
   </div>
 </div>
-<!-- Das Team
-<div class="strip strip-secondary-light-gradient">
-  <div class="container">
-    <h2>Das Team</h2>
-    <p>Unser Team ist qualifiziert. Jeder mag Pizza.</p>
-    {% assign promoted_teams = site.team | where: "promoted", true | sort: "weight" %}
-    {% if promoted_teams.size != 0 %}
-      <div class="row pb-6">
-          {% for team in promoted_teams %}
-          <div class="col-12 col-md-6 mb-2">
-              <div class="team team-summary team-summary-large">
-                  {% if team.image %}
-                  <div class="team-image">
-                      <img alt="{{ team.title }}" class="img-fluid mb-2" src="{{ team.image | relative_url }}" />
-                  </div>
-                  {% endif %}
-                  <div class="team-meta">
-                      <h2 class="team-name"><a href="{{ team.url | relative_url }}">{{ team.title }}</a></h2>
-                      <p class="team-description">{{ team.jobtitle }}</p>
-                      {% if team.linkedinurl %}
-                      <a target="_blank" href="{{ team.linkedinurl }}" rel="noreferrer">LinkedIn</a>
-                      {% endif %}
-                  </div>
-                  <div class="team-content">{{ team.excerpt | truncate: 120 }}</div>
-              </div>
-          </div>
-          {% endfor %}
-      </div>
-    {% endif %}
-    <div class="row">
-        {% assign teams = site.team | where: "promoted", empty | sort: "weight" %}
-        {% for team in teams %}
-        <div class="col-12 col-md-6 mb-3">
-            <div class="team team-summary">
-                {% if team.image %}
-                <div class="team-image">
-                    <img alt="{{ team.title }}" class="img-fluid mb-2" src="{{ team.image | relative_url }}" />
-                </div>
-                {% endif %}
-                <div class="team-meta">
-                    <h2 class="team-name"><a href="{{ team.url | relative_url }}">{{ team.title }}</a></h2>
-                    <p class="team-description">{{ team.jobtitle }}</p>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-  </div>
-</div>
--->

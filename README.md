@@ -42,15 +42,18 @@ Copyright (c) 2024-2025 Martin Trat.
   * `remark-below-accordion`: A remark displayed below the accordion.
 
 ### About
-(Über Carmen)
+(Über uns)
 * Team info
   * Source
     * Markdown: [_pages/about.md](_pages/about.md), [_team](_team)
     * Layout: [_layouts/about.html](_layouts/about.html)
     * Media: [images/team](images/team)
-  * Team member container (suitable for a team of 2 or more persons) - currently hidden (see Layout)
-    * Reads from member Markdown files
-    * Style with highlight personnel: Set `promoted: true` in member Markdown file
+      * Backup illustrations: https://icons8.com/illustrations/illustration/person-waving-from-open-window-welcoming-new-users-or-guests; https://icons8.com/illustrations/illustration/pixeltrue-healthy-eating-1
+  * Team member container (suitable for a team of 2 or more persons)
+    * Reads from member Markdown files:
+      * Style with highlight personnel: Set `promoted: true`
+      * `title`: populates Team member name on about page
+      * `first_name`: populates Team member name on member-individual page ("Hallo, ich bin <...>")
     * `_config.yml`: Output of the `_team` folder must be enabled:
       ```yml
       team:

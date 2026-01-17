@@ -3,37 +3,41 @@
   ol, ul {
     padding-left: 1.0rem;
   }
-  .qualifications {
-    p {
-      font-weight: 500;
-      font-style: italic;
-      width: 250px;
-    }
-  }
-  .intro-image-absolute {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    --crop-img-top: 10%;
-    --crop-img-bottom: 40%;
-    clip-path: inset(var(--crop-img-top) 0 var(--crop-img-bottom) 0);
-    margin-top: calc(var(--crop-img-top) * -1);
-    margin-bottom: calc(var(--crop-img-bottom) * -1);
+
+  .intro { // workaround/overrides for portrait-oriented images in intro
     @include media-breakpoint-up(md) {
-      clip-path: unset;
-      margin-top: unset;
-      margin-bottom: unset;
-      bottom: -30px;
-      left: -15px;
-      width: 120%;
+      padding-top: 80px;
+      padding-bottom: 80px;
     }
     @include media-breakpoint-up(lg) {
-      bottom: -100px;
+      padding-top: 140px;
+      padding-bottom: 180px;
     }
     @include media-breakpoint-up(xl) {
-      left: 20px;
+      padding-top: 140px;
+      padding-bottom: 245px;
+    }
+  }
+
+  .intro-image-absolute {
+    max-height: 405px;
+    width: auto;
+    max-width: 100%;
+    @include media-breakpoint-up(md) {
+      max-height: none;
+      bottom: -95px;
+      left: -45px;
+      max-width: unset;
+      width: 110%;
+    }
+    @include media-breakpoint-up(lg) {
+      bottom: -190px;
+      left: -50px;
       width: 100%;
+    }
+    @include media-breakpoint-up(xl) {
+      bottom: -290px;
+      left: 0px;
     }
   }
 }

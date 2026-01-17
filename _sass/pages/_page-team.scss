@@ -1,0 +1,16 @@
+
+.page-team {
+  .portrait {
+    max-height: 280px;
+    @include media-breakpoint-up(sm) {
+      max-height: 350px;
+      max-width: 350px;
+    }
+    @include media-breakpoint-up(md) {
+      max-height: none;
+      max-width: none;
+      width: 75%;
+      height: auto;
+    }
+  }
+}

@@ -120,6 +120,7 @@ $sub-footer-text-color: $white;
 @import "components/fonts"; // self host font
 @import "components/accordion";
 @import "components/breadcrumb";
+@import "components/qualifications";
 @import "components/animation";
 
 // Pages
@@ -130,6 +131,7 @@ $sub-footer-text-color: $white;
 @import "pages/page-prices";
 @import "pages/page-service";
 @import "pages/page-services";
+@import "pages/page-team";
 
 body {
   font-family: $font-family-base;

@@ -27,7 +27,7 @@ collections:
     output: true
     sort_by: weight
   team:
-    output: false
+    output: true
     permalink: /about/team/:name/
   pages:
     output: true

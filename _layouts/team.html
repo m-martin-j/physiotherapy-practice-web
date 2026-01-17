@@ -1,21 +1,62 @@
 ---
 layout: default
+bodyClass: "page-team"
 ---
 
 <!-- TODO: when applying this layout again, adapt to existing layouts to ensure consistent style -->
+<!--
+  * more?
+-->
 
-<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+<div class="container pt-2">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      {% assign parent_page = site.pages | where: 'role', 'about' %}
+      {% assign parent_page_title = parent_page[0].title %}
+      <li class="breadcrumb-item"><a href="{{ "about" | relative_url }}">{{ parent_page_title }}</a></li>
+      <li class="breadcrumb-item active" aria-current="page">{{page.title}}</li>
+    </ol>
+  </nav>
+</div>
+
+<div class="container pb-6 pt-3 pt-lg-8">
+  <h1>Hallo, ich bin {{page.first_name}}</h1>
+  <div class="heading-underline"></div>
   <div class="row justify-content-start">
-    <div class="col-12 col-md-8">
-      <div class="team team-single">
-        <h1>{{page.title}}</h1>
-        <div class="heading-underline"></div>
-        <img alt="{{ page.title }}" class="d-block d-md-none w-75 rounded mx-auto mb-2" src="{{ page.image | relative_url }}" />
-        <div class="content">{{content}}</div>
-      </div>
+    <div class="col-12 col-md-6 order-1 order-md-2">
+      {% if page.image %}
+        <img alt="{{ page.title }}" class="portrait d-block img-fluid rounded mx-auto mb-2" src="{{ page.image | relative_url }}" />
+      {% endif %}
     </div>
-    <div class="col-md-4">
-      <img alt="{{ page.title }}" class="d-none d-md-inline img-fluid rounded mb-2" src="{{ page.image | relative_url }}" />
+    <div class="col-12 col-md-6 order-2 order-md-1">
+        <div class="content">{{content}}</div>
     </div>
   </div>
 </div>
+
+{% if page.qualifications %}
+  <div class="container pb-6 pt-3 pb-lg-10">
+    <div class="row justify-content-start">
+      <h2>Meine Qualifikationen</h2>
+    </div>
+
+    <div class="row justify-content-start align-items-center">
+      <div class="col-12 col-md-5 col-lg-4">
+        <ul>
+          {% for qualification in page.qualifications.items %}
+            <li>{{ qualification }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      {% if page.qualifications.comment %}
+        <div class="col-12 col-md-7 col-lg-8">
+          <p>
+            {{ page.qualifications.comment }}
+          </p>
+        </div>
+      {% endif %}
+
+    </div>
+  </div>
+{% endif %}
