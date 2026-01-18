@@ -13,7 +13,7 @@ qualifications:
 ---
 
 
-<div class="font-family-heading qualifications my-5" data-inviewport="fly-in" data-insuccession="" data-root-margin="0% 0% -15% 0%">
+<div class="font-family-heading qualifications mb-2" data-inviewport="fly-in" data-insuccession="" data-root-margin="0% 0% -15% 0%">
   <p>Physiotherapeutin</p>
   <p>Heilpraktikerin</p>
   <p>Osteopathin in Ausbildung</p>
