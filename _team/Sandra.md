@@ -9,10 +9,15 @@ promoted: true
 weight: 2
 qualifications:
   items: ['PNF-Krankengymnastik', 'Manuelle Lymphdrainage', 'Cranio-Sacral-Therapie']
-  comment: "Ich freue mich sehr, Teil des Teams von Main Vital Physiotherapie zu sein. Für mich ist Physiotherapie mehr als nur Technik. Es ist ein Zusammenspiel aus Vertrauen, Einfühlungsvermögen und dem Ziel, dass Sie sich wieder frei und entspannt bewegen können. Ich begleite Sie gerne auf diesem Weg und unterstütze Sie dabei, Ihre Lebensqualität zu steigern—Schritt für Schritt."
+  comment: |
+    Besonders gerne arbeite ich mit orthopädischen Patient*innen und gestalte die Therapie dabei bewusst aktiv. Neben einer gezielten Übungsauswahl lege ich Wert auf eine ausgewogene Mischung aus Anleitung, Begleitung und individueller Anpassung. Gemeinsam erarbeiten wir Therapieansätze, die alltagstauglich sind und nachhaltig wirken.
+    <br>
+    Ein weiterer Schwerpunkt meiner Arbeit ist die Manuelle Lymphdrainage, die ich mit viel Ruhe und Feingefühl durchführe und die von vielen als besonders wohltuend empfunden wird.
+    <br>
+    Zusätzlich habe ich eine Ausbildung in der PNF-Krankengymnastik im neurologischen Bereich, die meine therapeutische Arbeit sinnvoll ergänzt.
 ---
 
 Seit 1998 arbeite ich als Physiotherapeutin und es bereitet mir große Freude, Menschen auf ihrem Weg zu mehr Beweglichkeit, Entspannung und Wohlbefinden zu begleiten.
 Mir ist besonders wichtig, dass Sie sich bei mir gut aufgehoben fühlen.
 Jede Behandlung gestalte ich individuell, mit Ruhe, Aufmerksamkeit und einem offenen Ohr für Ihre Anliegen.
-Ich mag es, genau hinzuschauen, zuzuhören und gemeinsam mit Ihnen Fortschritte zu feiern.
+Ich mag es, genau hinzuschauen, zuzuhören und gemeinsam mit Ihnen bei Main Vital Fortschritte zu feiern.

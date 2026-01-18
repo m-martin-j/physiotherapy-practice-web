@@ -3,7 +3,7 @@ title: "Carmen Eichelsdörfer"
 first_name: Carmen
 date: 2018-11-19T10:47:58+10:00
 image: "images/team/Carmen_3_md.jpg"
-jobtitle: "Chefin"
+jobtitle: "Praxisinhaberin & Physiotherapeutin"
 linkedinurl:
 promoted: true
 weight: 1
