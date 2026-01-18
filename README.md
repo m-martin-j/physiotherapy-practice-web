@@ -47,6 +47,7 @@ Copyright (c) 2024-2025 Martin Trat.
   * Source
     * Markdown: [_pages/about.md](_pages/about.md), [_team](_team)
     * Layout: [_layouts/about.html](_layouts/about.html)
+    * SCSS: [_sass/pages/_page-team.scss](_sass/pages/_page-team.scss)
     * Media: [images/team](images/team)
       * Backup illustrations: https://icons8.com/illustrations/illustration/person-waving-from-open-window-welcoming-new-users-or-guests; https://icons8.com/illustrations/illustration/pixeltrue-healthy-eating-1
   * Team member container (suitable for a team of 2 or more persons)
@@ -54,6 +55,7 @@ Copyright (c) 2024-2025 Martin Trat.
       * Style with highlight personnel: Set `promoted: true`
       * `title`: populates Team member name on about page
       * `first_name`: populates Team member name on member-individual page ("Hallo, ich bin <...>")
+      * `image`: sets the path to a member picture. In case of very long names, the image may overlap the "Hallo, ich bin <...>". Adjustments for all members' pictures could then be done to top/left in [_sass/pages/_page-team.scss](_sass/pages/_page-team.scss).
     * `_config.yml`: Output of the `_team` folder must be enabled:
       ```yml
       team:

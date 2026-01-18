@@ -2,15 +2,29 @@
 .page-team {
   .portrait {
     max-height: 280px;
+    max-width: 280px;
     @include media-breakpoint-up(sm) {
       max-height: 350px;
       max-width: 350px;
     }
     @include media-breakpoint-up(md) {
-      max-height: none;
-      max-width: none;
-      width: 75%;
-      height: auto;
+      position: absolute;
+      top: -30px;
+      left: 50px;
+      max-height: 400px;
+      max-width: 400px;
+    }
+    @include media-breakpoint-up(lg) {
+      top: -120px;  // with wide pictures in landscape format, top/left might result in overlapping the name
+      left: 90px;
+      max-height: 450px;
+      max-width: 450px;
+    }
+    @include media-breakpoint-up(xl) {
+      top: -150px;
+      left: 90px;
+      max-height: 500px;
+      max-width: 500px;
     }
   }
 }
