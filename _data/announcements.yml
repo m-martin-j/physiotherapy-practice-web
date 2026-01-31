@@ -36,13 +36,13 @@ vacation:
         title: "Wir machen eine Fortbildung 🚀"
         body:
   - start_date: "2026-03-05"
-    end_date: "2026-03-06"
+    end_date:
     note:
     modal_announcement:
         title: "Wir machen eine Fortbildung 🚀"
         body:
   - start_date: "2026-03-12"
-    end_date: "2026-03-13"
+    end_date:
     note:
     modal_announcement:
         title: "Wir machen eine Fortbildung 🚀"
@@ -52,13 +52,13 @@ vacation:
     note:
     modal_announcement:
   - start_date: "2026-06-18"
-    end_date: "2026-06-19"
+    end_date:
     note:
     modal_announcement:
         title: "Wir machen eine Fortbildung 🚀"
         body:
   - start_date: "2026-12-03"
-    end_date: "2026-12-04"
+    end_date:
     note:
     modal_announcement:
         title: "Wir machen eine Fortbildung 🚀"
