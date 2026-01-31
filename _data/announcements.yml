@@ -23,32 +23,12 @@ vacation:
     end_date:
     note:
     modal_announcement:
-  - start_date: "2025-09-18"
-    end_date: "2025-09-26"
-    note:
-    modal_announcement:
-        title:
-        body:
-  - start_date: "2025-11-20"
-    end_date: "2025-11-23"
-    note:
-    modal_announcement:
-        title: "Wir machen eine Fortbildung 🚀"
-        body:
   - start_date: "2025-12-04"
     end_date: "2025-12-07"
     note:
     modal_announcement:
         title: "Wir machen eine Fortbildung 🚀"
         body:
-  - start_date: "2025-12-24"
-    end_date:
-    note: "Heiligabend"
-    modal_announcement:
-  - start_date: "2025-12-31"
-    end_date:
-    note: "Silvester"
-    modal_announcement:
   - start_date: "2026-01-29"
     end_date: "2026-01-30"
     note:
@@ -67,6 +47,10 @@ vacation:
     modal_announcement:
         title: "Wir machen eine Fortbildung 🚀"
         body:
+  - start_date: "2026-05-07"
+    end_date:
+    note:
+    modal_announcement:
   - start_date: "2026-06-18"
     end_date: "2026-06-19"
     note:
@@ -79,3 +63,11 @@ vacation:
     modal_announcement:
         title: "Wir machen eine Fortbildung 🚀"
         body:
+  - start_date: "2026-12-24"
+    end_date:
+    note: "Heiligabend"
+    modal_announcement:
+  - start_date: "2026-12-31"
+    end_date:
+    note: "Silvester"
+    modal_announcement:
