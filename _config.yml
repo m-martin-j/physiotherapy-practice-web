@@ -21,6 +21,8 @@ cookies:
 announcements:
   start_offset_days_modal_announcement_vacation: 14
   min_days_vacation_auto_announcement: 3
+  default_title_modal_announcement_vacation: "Wir machen Urlaub 🍹"
+  default_body_addendum_modal_announcement_vacation: "<br><br>Bitte beachten Sie, dass die Praxis in dieser Zeit geschlossen bleibt."
 
 collections:
   services:

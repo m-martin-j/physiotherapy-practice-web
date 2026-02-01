@@ -92,24 +92,32 @@ TBD
   * Layout: [_includes/social.html](_includes/social.html)
 
 
-## Announcements
+## Announcements/Vacation Times
 * Source
   * HTML: [_includes/announcementModal.html](_includes/announcementModal.html), [_layouts/contact.html](_layouts/contact.html), [_pages/contact.md](_pages/contact.md)
   * SCSS: [_sass/components/_modal.scss](_sass/components/_modal.scss)
   * JavaScript [assets/js/scripts.js](assets/js/scripts.js) - see comment `announcementModal`
   * Data: [_data/announcements.yml](_data/announcements.yml)
-* Activation of the modal
-  * Date-based:
-    * By setting `start_date` and `end_date` in above-referred data file for an entry of the array `special` or of the array `vacation`.
-    * In the case of `vacation`, a modal is activated if the duration between `end_date` and `start_date` is at least `announcements.min_days_vacation_auto_announcement` (defined in [_config.yml](_config.yml)) days. It is also activated if the duration is shorter AND the attribute `modal_announcement` is set to a non-null value. Then, an `end_date` must also be provided. If `modal_announcement.title` or `modal_announcement.body` are not set, defaults apply (the empty attributes need to be written in the file to have `modal_announcement` set to a non-null value though in the case of durations not exceeding above-mentioned value).
-    * The dates need to exactly conform to the pattern `YYYY-MM-DD`; no time of day may be provided. The beginning and the end of day is automatically used as start and end of the period for showing the modal, respectively. With respect to the array `vacation`, the `start_date` is subtracted by the value `announcements.start_offset_days_modal_announcement_vacation` (defined in [_config.yml](_config.yml)) to define an earlier start of the period for showing the modal.
-    * In the case of `special`, a modal is activated from `start_date` until `end_date`.
+* Activation of the modal based on the data in [_data/announcements.yml](_data/announcements.yml):
+  * Special announcement data (array `special`):
+    * The modal is always activated exactly beginning with `start_date` (start time of day) and ending with `end_date` (end time of day).
+    * `modal_announcement.title` and `modal_announcement.body` must be set.
+  * Vacation data (array `vacation`):
+    * duration-based activation trigger:
+      * the modal is activated if the duration between `end_date` and `start_date` is at least `announcements.min_days_vacation_auto_announcement` (defined in [_config.yml](_config.yml)) days.
+    * content-based/forced trigger:
+      * the modal is activated if the attribute `modal_announcement` is set to a non-null value (a non-null value is provided even if `modal_announcement`'s attributes `title` and `body` are null/empty), even if above-described duration is shorter than the above-mentioned minimum.
+    * in any case: If `modal_announcement.title` or `modal_announcement.body` are not set, defaults apply (see object `announcements` in [_config.yml](_config.yml)).
+    * the modal is activated beginning with a date (start time of day) calculated by subtracting the value `announcements.start_offset_days_modal_announcement_vacation` (defined in [_config.yml](_config.yml)) from `start_date`. It ends with `end_date` (end time of day).
+  * `start_date` must be set in all cases. If `end_date` is not set, it is automatically set equal to `start_date`.
+  * The dates need to exactly conform to the pattern `YYYY-MM-DD`; no time of day may be provided.
   * The first element of each array with today's date falling into the range between `start_date` and `end_date` is taken; no further evaluation of the data takes place. Overlapping time ranges (within each array as well as across both) are not handled.
   * The modal is shown to visitors once per day, implemented via using local storage.
 * Content on the contact page
   * Only elements from the array `vacation` are utilized.
   * If elements are set, a bulleted list of the dates is displayed below the opening times on the contact page.
-  * If the attribute `end_date` is set, the vacation is formatted as a period; if not, it is formatted as a single day.
+  * `start_date` must be set
+  * If the attribute `end_date` is set, the vacation is formatted as a period; if not set or if set equal to `start_date`, it is formatted as a single day.
   * If the attribute `note` is set, its value appears in braces after the associated date.
 * yaml structure of the data
     ```yml

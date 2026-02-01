@@ -82,6 +82,9 @@ function getSortedSpecialAnnouncementData() {
   if (!announcementData.special) {
     return [];
   }
+  announcementData.special.forEach(item => {
+    if (!item.end_date) { item.end_date = item.start_date; }
+  });
   return announcementData.special.sort((a, b) => new Date(a.start_date) - new Date(b.start_date));
 }
 function getSortedVacationData(filter='none', min_days_vacation_auto_announcement={{ site.announcements.min_days_vacation_auto_announcement }}) {
@@ -90,6 +93,9 @@ function getSortedVacationData(filter='none', min_days_vacation_auto_announcemen
   if (!announcementData.vacation) {
     return [];
   }
+  announcementData.vacation.forEach(item => {
+    if (!item.end_date) { item.end_date = item.start_date; }
+  });
   let sorted = announcementData.vacation.sort((a, b) => new Date(a.start_date) - new Date(b.start_date));
   if (filter === 'none') {
     return sorted;
@@ -117,13 +123,22 @@ function getCurrentSpecialAnnouncement(today) {
      // start_date and end_date are inclusive, daylight saving time is not accounted for
     const start = new Date(`${ann.start_date}T00:00:00+01:00`);
     const end = new Date(`${ann.end_date}T23:59:59.999+01:00`);
+    // title and body must be non-null for special announcements
+    if (!ann.title || !ann.body) {
+      console.error('Special announcement title or body is not defined.');
+      return null;
+    }
     if (today >= start && today <= end) {
       currentAnn = ann;
     }
   }
   return currentAnn;
 }
-function getCurrentVacationAnnouncement(today, offset_vacation={{ site.announcements.start_offset_days_modal_announcement_vacation }}) {
+function getCurrentVacationAnnouncement(
+  today,
+  offset_vacation={{ site.announcements.start_offset_days_modal_announcement_vacation }},
+  default_title='{{ site.announcements.default_title_modal_announcement_vacation }}',
+  default_body_addendum='{{ site.announcements.default_body_addendum_modal_announcement_vacation }}') {
   // only such with non-null attribute modal_announcement are considered
   if (!today) console.error('today date is not provided.');
   let sortedVacationData = getSortedVacationData(filter='modal_announcement')
@@ -132,20 +147,22 @@ function getCurrentVacationAnnouncement(today, offset_vacation={{ site.announcem
      // start_date and end_date are inclusive, daylight saving time is not accounted for
     const start = new Date(`${vac.start_date}T00:00:00+01:00`);
     start.setDate(start.getDate() - offset_vacation);  // shown earlier than vacation start based on offset
-    if (! vac.end_date) {
-      console.error('Vacation end date is not defined.');
-    }
     const end = new Date(`${vac.end_date}T23:59:59.999+01:00`);
     if (today >= start && today <= end) {
       currentAnn = vac;
-      currentAnn.title = vac.modal_announcement.title || "Wir machen Urlaub 🍹";
+      currentAnn.title = vac.modal_announcement.title || default_title;
       const vacationStartDate = new Date(vac.start_date);
       const vacationEndDate = new Date(vac.end_date);
-      currentAnn.body = `<strong>Wann:</strong> vom <strong>${vacationStartDate.toLocaleDateString('de-DE')}</strong> bis einschließlich <strong>${vacationEndDate.toLocaleDateString('de-DE')}</strong>`
+      if (vac.end_date == vac.start_date) {
+        currentAnn.body = `<strong>Wann:</strong> am <strong>${vacationStartDate.toLocaleDateString('de-DE')}</strong>`;
+      }
+      else {
+        currentAnn.body = `<strong>Wann:</strong> vom <strong>${vacationStartDate.toLocaleDateString('de-DE')}</strong> bis einschließlich <strong>${vacationEndDate.toLocaleDateString('de-DE')}</strong>`
+      }
       if (vac.modal_announcement.body) {
         currentAnn.body += "<br><br>" + vac.modal_announcement.body;
       } else {
-        currentAnn.body += "<br><br>Bitte beachten Sie, dass die Praxis in dieser Zeit geschlossen bleibt.";
+        currentAnn.body += default_body_addendum;
       }
     }
   }

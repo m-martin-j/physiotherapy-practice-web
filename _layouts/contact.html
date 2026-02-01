@@ -91,7 +91,7 @@ bodyClass: "page-contact"
                 const listItem = document.createElement('li');
                 const start_date = new Date(element.start_date);
                 listItem.innerHTML = `${start_date.toLocaleDateString('de-DE')}`;  // BACKUP: ${dayDate.toLocaleDateString('de-DE', { weekday: 'long' })},
-                if (element.end_date) {
+                if (element.end_date && element.end_date !== element.start_date) {
                     const end_date = new Date(element.end_date);
                     listItem.innerHTML += `–${end_date.toLocaleDateString('de-DE')}`;
                 }
