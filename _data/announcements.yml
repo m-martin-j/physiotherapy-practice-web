@@ -33,6 +33,12 @@ vacation:
     end_date:
     note:
     modal_announcement:
+  - start_date: "2026-05-15"
+    end_date: "2026-05-18"
+    note:
+    modal_announcement:
+        title: "Wir machen Urlaub ☀️"
+        body:
   - start_date: "2026-06-18"
     end_date:
     note:
