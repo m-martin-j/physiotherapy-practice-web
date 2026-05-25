@@ -17,40 +17,58 @@ vacation:
     modal_announcement:
         title: "Wir machen eine Fortbildung 🚀"
         body:
-  - start_date: "2026-03-05"
-    end_date:
+  - start_date: "2026-06-04"
+    end_date: "2026-06-08"
     note:
     modal_announcement:
-        title: "Wir machen eine Fortbildung 🚀"
-        body:
-  - start_date: "2026-03-12"
-    end_date:
-    note:
-    modal_announcement:
-        title: "Wir machen eine Fortbildung 🚀"
-        body:
-  - start_date: "2026-05-07"
-    end_date:
-    note:
-    modal_announcement:
-  - start_date: "2026-05-15"
-    end_date: "2026-05-18"
-    note:
-    modal_announcement:
-        title: "Wir machen Urlaub ☀️"
-        body:
   - start_date: "2026-06-18"
     end_date:
     note:
     modal_announcement:
         title: "Wir machen eine Fortbildung 🚀"
         body:
+  - start_date: "2026-07-06"
+    end_date:
+    note:
+    modal_announcement:
+  - start_date: "2026-08-10"
+    end_date:
+    note:
+    modal_announcement:
+  - start_date: "2026-08-14"
+    end_date:
+    note:
+    modal_announcement:
+  - start_date: "2026-08-20"
+    end_date:
+    note:
+    modal_announcement:
+  - start_date: "2026-09-07"
+    end_date: "2026-09-10"
+    note:
+    modal_announcement:
+  - start_date: "2026-10-07"
+    end_date: "2026-10-08"
+    note:
+    modal_announcement:
+  - start_date: "2026-11-02"
+    end_date:
+    note:
+    modal_announcement:
   - start_date: "2026-12-03"
     end_date:
     note:
     modal_announcement:
         title: "Wir machen eine Fortbildung 🚀"
         body:
+  - start_date: "2026-12-10"
+    end_date:
+    note:
+    modal_announcement:
+  - start_date: "2026-12-14"
+    end_date:
+    note:
+    modal_announcement:
   - start_date: "2026-12-24"
     end_date:
     note: "Heiligabend"
