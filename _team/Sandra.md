@@ -1,6 +1,6 @@
 ---
 title: "Sandra Haimerl"
-first_name: Sandra Haimerl
+first_name: Sandra
 date: 2018-12-20T13:44:55+10:00
 image: "images/team/placeholder_f_md.jpg"
 jobtitle: "Physiotherapeutin"
