@@ -55,6 +55,14 @@ vacation:
     end_date:
     note:
     modal_announcement:
+  - start_date: "2026-11-09"
+    end_date: "2026-11-10"
+    note:
+    modal_announcement:
+  - start_date: "2026-11-12"
+    end_date:
+    note:
+    modal_announcement:
   - start_date: "2026-12-03"
     end_date:
     note:
