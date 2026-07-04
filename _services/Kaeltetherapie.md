@@ -13,7 +13,7 @@ Die Kältetherapie ist eine bewährte Methode in der Physiotherapie, die gezielt
   elements=site.data.services-details.kaeltetherapie.gesamt
 %}
 
-![Person, die einen blauen kühlenden Beutel mit weißer Kappe auf den vorderen Schulterbereich auflegt]({{ "/images/services/Kaeltetherapie.jpg" | relative_url }})
+![Ein Eis-Lolly wird auf dem Knie eines Patienten angewandt. Im Vordergrund ist die Verpackung des Eis-Lolly zu sehen.]({{ "/images/services/Kaeltetherapie.jpg" | relative_url }})
 
 Mit Kältereizen können neben akuten Entzündungen und Ödemen auch die Begleiterscheinungen degenerativer Gelenk- und Wirbelsäulenerkrankungen, Weichteilrheumatismus oder Traumata effektiv behandelt werden.
 

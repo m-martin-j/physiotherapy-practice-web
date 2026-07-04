@@ -11,7 +11,7 @@ Die craniomandibuläre Dysfunktion (CMD) umfasst Beschwerden, wie Verspannungen 
 Durch gezielte physiotherapeutsiche Maßnahmen wird die Kiefermuskulatur entlastet, Fehlhaltungen korrigiert und die Gelenkbeweglichkeit wiederhergestellt. Mit gezielten manuellen Techniken und Übungen lindern wir Ihre Beschwerden und tragen so zu
 einer nachhaltigen Verbesserung Ihrer Lebensqualität bei.
 
-![Eine Person, die auf einer Behandlungsliege liegt und von einer behandelnden Person mit schwarzen medizinischen Handschuhen an den Kiefermuskeln sanft behandelt wird.]({{ "/images/services/CMD_md.jpeg" | relative_url }})
+![Eine Person, die auf einer Behandlungsliege liegt und von Carmen mit weißen medizinischen Handschuhen an den Kiefermuskeln sanft behandelt wird.]({{ "/images/services/CMD_md.jpeg" | relative_url }})
 
 **Behandlungsschwerpunkte:**
 * Schmerzlinderung und -management

@@ -9,7 +9,7 @@ Die propriozeptive neuromuskuläre Fazilitation (PNF) ist eine physiotherapeutis
 Durch gezielte Bewegungsmuster, Dehnung und Widerstände werden Bewegungen erleichtert und Muskeln gezielt aktiviert.
 Diese Technik unterstützt die Koordination, Kraft und Beweglichkeit, besonders wenn Bewegungsabläufe eingeschränkt oder gestört sind.
 
-![Einer älteren Patientin wird die rechte Hand im Rahmen einer PNF-Anwendung von einem Physiotherapeuten gedehnt.]({{ "/images/services/PNF_md.jpeg" | relative_url }})
+![Einer Patientin wird die linke Hand im Rahmen einer PNF-Anwendung von Carmen gedehnt.]({{ "/images/services/PNF_md.jpeg" | relative_url }})
 
 **Sie eignet sich in den folgenden Fällen besonders:**
 * nach Schlaganfall oder anderen neurologischen Erkrankungen
