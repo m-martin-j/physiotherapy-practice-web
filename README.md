@@ -139,6 +139,18 @@ TBD
     ```
 
 
+## Hiring CTA
+* A floating "Wir suchen Verstärkung!" badge is shown on the home page only, fixed to the viewport (bottom-right on mobile, top-right on desktop) independent of scroll position, to advertise open positions without adding a navigation entry.
+* It links to the job posting PDF in [_downloads/Stellenanzeige Main Vital Physiotherapie.pdf](<_downloads/Stellenanzeige Main Vital Physiotherapie.pdf>), opened in a new tab.
+* On mobile, the badge is pinned to the bottom of the viewport while scrolling, but stops there once the footer approaches so it doesn't cover it (see `updateHiringCtaPosition` below). On desktop it stays fixed top-right, so this doesn't apply (the footer never comes close to it).
+* Activation
+  * Controlled via [_config.yml](_config.yml) - `hiring.cta_active` (`true`/`false`).
+* Source
+  * HTML: [_includes/hiring-cta.html](_includes/hiring-cta.html), included in [_layouts/home.html](_layouts/home.html)
+  * SCSS: [_sass/components/_hiring-cta.scss](_sass/components/_hiring-cta.scss)
+  * JavaScript: [assets/js/scripts.js](assets/js/scripts.js) - hidden while the mobile menu overlay is open (section `mobile menu`); `updateHiringCtaPosition` keeps it clear of the footer on mobile (section `hiring CTA`)
+
+
 ## Accordion
 * Listing as Bootstrap Accordion
   * SCSS: [_sass/components/_accordion.scss](_sass/components/_accordion.scss)

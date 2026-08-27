@@ -1,0 +1,68 @@
+
+$zindex-hiring-cta: 1040; // above sticky header (1020), below cookie consent banner (1049/1050)
+$hiring-cta-overhang: 30px; // how far the badge hangs past the bootstrap container's edge, on desktop
+$hiring-cta-mobile-offset: 40px; // mobile resting distance from the viewport bottom edge
+$hiring-cta-footer-gap: 16px; // gap kept above the footer once it approaches, on mobile - independent of the resting offset above
+
+.hiring-cta {
+  position: fixed;
+  z-index: $zindex-hiring-cta;
+  display: inline-block;
+  // exposed so scripts.js can tell mobile and desktop layout apart without duplicating the breakpoint
+  --hiring-cta-desktop-breakpoint: #{map-get($grid-breakpoints, $switch-menu-mobile-desktop-breakpoint)};
+  // exposed so scripts.js can keep its footer-avoidance handoff in sync without duplicating these values
+  --hiring-cta-mobile-offset: #{$hiring-cta-mobile-offset};
+  --hiring-cta-footer-gap: #{$hiring-cta-footer-gap};
+  padding: 0.9rem 1.6rem;
+  border-radius: 50px;
+  background-color: $primary;
+  color: $white;
+  font-family: $font-family-heading;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11);
+  animation: hiringCtaPulse 2.5s ease-in-out infinite;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+  // mobile: bottom-right
+  bottom: $hiring-cta-mobile-offset;
+  right: 1rem;
+
+  &:hover {
+    color: $white;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(50, 50, 93, 0.18);
+  }
+
+  &.hidden {
+    display: none;
+  }
+
+  // desktop: top-right, offset below the sticky header. Positioned so the badge
+  // straddles the right edge of the bootstrap container - partly overlapping the
+  // content area, partly hanging into the outer margin - but never closer than
+  // 1rem to the screen edge. Container widths per breakpoint come from
+  // $container-max-widths in _bootstrap-variables.scss.
+  @include media-breakpoint-up($switch-menu-mobile-desktop-breakpoint) {
+    bottom: auto;
+    top: 140px;
+    font-size: 1.15rem;
+    padding: 1rem 1.85rem;
+    right: max(1rem, calc(50vw - #{map-get($container-max-widths, lg)} / 2 - #{$hiring-cta-overhang}));
+  }
+
+  @include media-breakpoint-up(xl) {
+    right: max(1rem, calc(50vw - #{map-get($container-max-widths, xl)} / 2 - #{$hiring-cta-overhang}));
+  }
+}
+
+@keyframes hiringCtaPulse {
+  0%, 100% {
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 0 0 0 color.scale($primary, $alpha: -50%);
+  }
+  50% {
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 0 0 8px color.scale($primary, $alpha: -100%);
+  }
+}

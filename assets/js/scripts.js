@@ -30,7 +30,43 @@ menuTrigger.onclick = function() {
     menuContainer.classList.toggle('open');
     menuTrigger.classList.toggle('is-active')
     body.classList.toggle('lock-scroll')
+    document.getElementById('hiring-cta')?.classList.toggle('hidden');
 }
+
+// hiring CTA: on mobile it's pinned to the viewport bottom, but it should stop
+// there once the footer approaches, so it never covers the footer content
+var hiringCta = document.getElementById('hiring-cta');
+var siteFooter = document.querySelector('.footer');
+var hiringCtaDesktopBreakpoint = hiringCta
+  ? parseInt(getComputedStyle(hiringCta).getPropertyValue('--hiring-cta-desktop-breakpoint')) || 992
+  : 992;
+var hiringCtaMobileOffset = hiringCta
+  ? parseInt(getComputedStyle(hiringCta).getPropertyValue('--hiring-cta-mobile-offset')) || 16
+  : 16;
+var hiringCtaFooterGap = hiringCta
+  ? parseInt(getComputedStyle(hiringCta).getPropertyValue('--hiring-cta-footer-gap')) || 16
+  : 16;
+
+function updateHiringCtaPosition() {
+  if (!hiringCta || !siteFooter) return;
+  // desktop layout positions the badge via `top`, not `bottom` - nothing to adjust there.
+  // NOTE: getComputedStyle().bottom is NOT usable to detect this - browsers resolve it to a
+  // used pixel value for positioned elements, never the literal 'auto', even when the
+  // stylesheet says `bottom: auto`.
+  if (window.innerWidth >= hiringCtaDesktopBreakpoint) {
+    hiringCta.style.bottom = '';
+    return;
+  }
+  // pushUp keeps hiringCtaFooterGap clear of the footer once engaged; comparing against
+  // hiringCtaMobileOffset (not hiringCtaFooterGap) is what keeps the handoff from the CSS
+  // default to this inline value seamless, since that's the value the CSS default equals.
+  var pushUp = window.innerHeight - siteFooter.getBoundingClientRect().top + hiringCtaFooterGap;
+  hiringCta.style.bottom = pushUp > hiringCtaMobileOffset ? pushUp + 'px' : '';
+}
+
+window.addEventListener('scroll', updateHiringCtaPosition);
+window.addEventListener('resize', updateHiringCtaPosition);
+updateHiringCtaPosition();
 
 // shrinking the header on scroll
 window.onscroll = function() {

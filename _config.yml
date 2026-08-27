@@ -18,6 +18,9 @@ home:
 cookies:
   expiry_days: 31
 
+hiring:
+  cta_active: true  # shows/hides the floating "Wir suchen Verstärkung!" badge on the home page
+
 announcements:
   start_offset_days_modal_announcement_vacation: 14
   min_days_vacation_auto_announcement: 3
